@@ -50,6 +50,8 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 - 🛠️ **Focus**: AI Agents, Decentralized Systems, Enterprise Infrastructure
 - ☕️ **buy me a cofee**: https://www.buymeacoffee.com/shardsinc
 
+<a href="https://www.buymeacoffee.com/shardsinc" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 ---
 <p align="center">
   <i>Designing the future of autonomous systems, one shard at a time.</i>
