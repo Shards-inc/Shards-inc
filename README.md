@@ -37,8 +37,8 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 ### 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=Shards-inc&show_icons=true&theme=tokyonight" alt="Shards-inc's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api/top-langs/?username=Shards-inc&layout=compact&theme=tokyonight" alt="Shards-inc's Top Languages" width="48%" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Shards-inc&show_icons=true&theme=tokyonight" alt="Shards-inc's GitHub Stats" width="48%" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Shards-inc&layout=compact&theme=tokyonight" alt="Shards-inc's Top Languages" width="48%" />
 </p>
 
 <p align="center">
