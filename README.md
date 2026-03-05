@@ -72,8 +72,6 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 [![](https://visitcount.itsvg.in/api?id=Ayais12210&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
-
 ---
 <p align="center">
   <i>Designing the future of autonomous systems, one shard at a time.</i>
