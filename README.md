@@ -37,9 +37,19 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 ### 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shards-inc&show_icons=true&theme=transparent&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shards-inc&layout=compact&theme=transparent&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Shards-inc&show_icons=true&theme=transparent&hide_border=true" alt="Shards-inc's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shards-inc&layout=compact&theme=transparent&hide_border=true" alt="Shards-inc's Top Languages" width="48%" />
 </p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shards-inc&theme=transparent&hide_border=true" alt="Shards-inc's GitHub Streak Stats" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Shards-inc/Shards-inc/output/github-contribution-grid-snake.svg" alt="github-snake">
+</p>
+
+<!-- Note: For the GitHub contribution snake to appear, you need to set up a GitHub Action to generate and commit the SVG to an 'output' branch. A common action is 'JamesIves/github-pages-deploy-action'. -->
 
 ---
 
