@@ -48,6 +48,7 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 - 💼 **Hireable**: Yes
 - 🌐 **Location**: Remote / Global
 - 🛠️ **Focus**: AI Agents, Decentralized Systems, Enterprise Infrastructure
+- ☕️ **buymeacofee**: https://www.buymeacoffee.com/shardsinc
 
 ---
 <p align="center">
