@@ -76,3 +76,5 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 <p align="center">
   <i>Designing the future of autonomous systems, one shard at a time.</i>
 </p>
+
+[![Proof HTML](https://github.com/Shards-foundation/demo-repository/actions/workflows/proof-html.yml/badge.svg)](https://github.com/Shards-foundation/demo-repository/actions/workflows/proof-html.yml)
