@@ -65,6 +65,8 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 
 <a href="https://www.buymeacoffee.com/shardsinc" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
+<iframe src="https://github.com/sponsors/Shards-inc/button" title="Sponsor Shards-inc" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
