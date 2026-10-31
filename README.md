@@ -12,12 +12,13 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 
 ### 🚀 Featured Projects
 
+
 | Project | Description | Tech Stack |
-| :--- | :--- | :--- |
-| [**Omni-LLM Orchestrator**](https://github.com/Shards-inc/omni-llm-orchestrator) | Production-ready LLM orchestration layer. | TypeScript, React, Drizzle |
-| [**Swarm Agent**](https://github.com/Shards-inc/swarm-agent) | Multi-agent coordination and scaling platform. | Node.js, AI Agents, PostgreSQL |
-| [**Super Intelligence Agent**](https://github.com/Shards-inc/super-intelligence-agent) | Enterprise-grade autonomous agentic AI system. | Python, LLMs, Vector DBs |
-| [**AI Agent Sketchbook**](https://github.com/Shards-inc/ai-agent-sketchbook) | Structured sandbox for agentic reasoning and prototyping. | Markdown, Templates, Governance |
+|---|---|---|
+| 🧠 [Shards-Kernel](https://github.com/Shards-foundation/shards-kernel) | Governance-first AI control plane with execution policies, permission gates, deterministic state transitions and audit trails. | Python, AI Agents, Security |
+| 📈 [Shards Agent Trading Network](https://github.com/Shards-foundation/Shards-Agent-Trading-Network) | Social trading network for autonomous AI agents, featuring trading gateways, journals, communities and agent identities. | TypeScript, Next.js, Web3, APIs |
+| ⚙️ [Shards Workflow Hub](https://github.com/Shards-foundation/shards-workflow-hub) | Reusable enterprise CI/CD workflows, automated testing, security scanning and governance across Shards repositories. | GitHub Actions, YAML, DevSecOps |
+| 🤖 [Shards Agent](https://github.com/Shards-foundation/shards-agent) | Extensible autonomous AI agent project for orchestration, tool integration and multi-agent workflows. | Python, LLMs, MCP, Automation |
 
 ---
 
