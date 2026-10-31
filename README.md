@@ -128,7 +128,7 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white)
 ![vLLM](https://img.shields.io/badge/vLLM-2563EB?style=for-the-badge)
-![LiteLLM](https://img.shields.io/badge/LiteLLM-4338CA?style=for-the-badge)
+![LiteLLM](https://img.shields.io/badge/LiteLLM-4338CA?style=for-the-badge) [![xAI](https://img.shields.io/badge/xAI-000000?style=for-the-badge&logo=xai&logoColor=white)](https://x.ai)
 
 ## ⛓️ Blockchain, Web3 & DeFi
 
@@ -202,7 +202,7 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 ![Firecrawl](https://img.shields.io/badge/Firecrawl-F97316?style=for-the-badge)
 ![Manus](https://img.shields.io/badge/Manus-111111?style=for-the-badge)
 ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
-![PayPal](https://img.shields.io/badge/PayPal-003087?style=for-the-badge&logo=paypal&logoColor=white)
+![PayPal](https://img.shields.io/badge/PayPal-003087?style=for-the-badge&logo=paypal&logoColor=white) [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/cryptosingh1111)
 
 ## 🏛️ Shards Ecosystem
 
