@@ -1,4 +1,5 @@
-# 👋 Hi, I'm Ayai (Shards-inc)
+# (Shards-inc / Shards/foundation)
+"https://github.com/Shards-foundation"
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Shards-inc&fontSize=90&animation=fadeIn&fontAlignY=38" width="100%" />
