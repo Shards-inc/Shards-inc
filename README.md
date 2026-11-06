@@ -1,4 +1,4 @@
-# (Shards-inc / Shards/foundation)
+# (Shards-inc / Shards-foundation)
 "https://github.com/Shards-foundation"
 
 <p align="center">
