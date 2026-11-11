@@ -82,3 +82,82 @@ def test_candidate_is_labeled_heuristic_not_verified():
     r=appmod.map_maigret_result('TikTok',{'status':Status(),'url_user':'https://www.tiktok.com/@octocat'},'octocat')
     assert r['status']=='found'
     assert r['verification']=='heuristic_candidate'
+
+
+def test_terminal_snapshot_callback_uses_job_secret_and_excludes_runtime_state(monkeypatch):
+    import json
+    import httpx
+    jid = 'f' * 8 + '-1234-1234-1234-' + 'a' * 12
+    token = 'only-the-private-backend-knows-this'
+    appmod.jobs[jid] = {
+        'id': jid,
+        'state': 'complete',
+        'engine': 'maigret',
+        'created_monotonic': 123.0,
+        'status_token_digest': appmod.hash_token(token),
+        'results': [{'source': 'Public', 'profile_url': 'https://example.com/u/octocat', 'status': 'found'}],
+        'summary': {'attempted': 1, 'found': 1},
+    }
+    requests = []
+    original = httpx.AsyncClient
+
+    def intercept(req):
+        payload = json.loads(req.content)
+        assert req.url == appmod.RESULT_CALLBACK_URL
+        assert req.headers['x-scan-status-token'] == token
+        assert payload['id'] == jid
+        assert 'created_monotonic' not in payload
+        assert 'status_token_digest' not in payload
+        assert 'username' not in payload
+        requests.append(payload)
+        return httpx.Response(201, json={'stored': True})
+
+    def mock_client(*args, **kwargs):
+        return original(*args, transport=httpx.MockTransport(intercept), **kwargs)
+
+    monkeypatch.setattr(httpx, 'AsyncClient', mock_client)
+    try:
+        assert asyncio.run(appmod.publish_terminal_result(jid, token)) is True
+        assert len(requests) == 1
+    finally:
+        appmod.jobs.pop(jid, None)
+
+
+def test_finished_scan_publishes_results_without_exposing_status_token(monkeypatch):
+    from uuid import uuid4
+    jid = str(uuid4())
+    token = 'secret-token'
+    calls = []
+
+    async def fake_search(username, sites):
+        assert username == 'octocat' and sites == 25
+        return [{'source': 'Example', 'status': 'found', 'profile_url': 'https://example.com/u/octocat'}]
+
+    async def fake_publish(job, credential):
+        calls.append((job, credential))
+        return True
+
+    monkeypatch.setattr(appmod, 'execute_maigret', fake_search)
+    monkeypatch.setattr(appmod, 'publish_terminal_result', fake_publish)
+    appmod.jobs[jid] = {
+        'id': jid,
+        'created_monotonic': __import__('time').monotonic(),
+        'state': 'queued',
+        'status_token_digest': appmod.hash_token(token),
+        'summary': {},
+        'results': [],
+    }
+    original_q = appmod.queued
+    original_a = appmod.active
+    appmod.queued = 1
+    appmod.active = 0
+    try:
+        asyncio.run(appmod.run_one(jid, 'octocat', 25, token))
+        assert appmod.jobs[jid]['state'] == 'complete'
+        assert appmod.jobs[jid]['summary']['found'] == 1
+        assert calls == [(jid, token)]
+        assert 'status_token_digest' not in appmod.snapshot(appmod.jobs[jid])
+    finally:
+        appmod.jobs.pop(jid, None)
+        appmod.queued = original_q
+        appmod.active = original_a
