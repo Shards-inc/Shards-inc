@@ -1,1 +1,206 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+"""Private, bounded Maigret scanner API for the Shards Privacy Hub.
+
+The public Cloudflare Worker is the only intended caller. A scan is short-lived and
+held in process memory; this free-host preview is not a durable job queue.
+"""
+from __future__ import annotations
+
+import asyncio
+from collections import OrderedDict
+from datetime import datetime, timezone
+import hmac
+import importlib.resources
+import logging
+import os
+import re
+import time
+from typing import Any
+from urllib.parse import urlparse
+from uuid import uuid4
+
+from fastapi import FastAPI, Depends, Header, HTTPException, Response
+from pydantic import BaseModel, Field
+
+APP_NAME = 'Shards Private Scan Engine'
+USER_RE = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._-]{0,30}[A-Za-z0-9]$')
+ACTIVE_LIMIT = 1
+QUEUE_LIMIT = 2
+JOBS_LIMIT = 24
+TTL_SECONDS = 1800
+API_TOKEN = os.getenv('SCANNER_API_TOKEN', '')
+MAX_SITES = int(os.getenv('SCANNER_MAX_SITES', '150'))
+LOGGER = logging.getLogger('shards_privacy_scanner')
+
+app = FastAPI(title=APP_NAME, docs_url=None, redoc_url=None, openapi_url=None)
+# Never persist username scans to disk or log the submitted username.
+jobs: OrderedDict[str, dict[str, Any]] = OrderedDict()
+queued = 0
+active = 0
+lock = asyncio.Lock()
+scan_semaphore = asyncio.Semaphore(ACTIVE_LIMIT)
+
+
+class ScanInput(BaseModel):
+    username: str = Field(min_length=2, max_length=32)
+    sites: int = Field(default=100, ge=25, le=150)
+    consent: bool
+
+
+async def authorise(authorization: str | None = Header(default=None)) -> None:
+    if len(API_TOKEN) < 32:
+        raise HTTPException(503, 'Scanner is not configured')
+    candidate = authorization.removeprefix('Bearer ') if authorization else ''
+    if not hmac.compare_digest(candidate, API_TOKEN):
+        raise HTTPException(401, 'Unauthorised')
+
+
+def snapshot(job: dict[str, Any]) -> dict[str, Any]:
+    return {k: v for k, v in job.items() if k not in ('created_monotonic',)}
+
+
+def evict_old() -> None:
+    now = time.monotonic()
+    for jid, item in list(jobs.items()):
+        if item['state'] in ('complete', 'failed') and now - item['created_monotonic'] > TTL_SECONDS:
+            jobs.pop(jid, None)
+    while len(jobs) > JOBS_LIMIT:
+        # Never evict an active job to make room.
+        done = next((jid for jid, item in jobs.items() if item['state'] in ('complete', 'failed')), None)
+        if done is None:
+            break
+        jobs.pop(done, None)
+
+
+def map_maigret_result(name: str, value: dict[str, Any]) -> dict[str, Any]:
+    result = value.get('status')
+    enum = getattr(result, 'status', None)
+    state = str(getattr(enum, 'value', 'Unknown')).lower()
+    status = {'claimed': 'found', 'available': 'no_public_match', 'illegal': 'not_applicable'}.get(state, 'unknown')
+    profile = str(value.get('url_user') or '')
+    parsed = urlparse(profile)
+    if status == 'found' and (parsed.scheme != 'https' or not parsed.hostname or parsed.username or parsed.password):
+        status = 'unknown'
+    return {
+        'source': str(name)[:90],
+        'status': status,
+        'profile_url': profile[:600] if status == 'found' else None,
+        'reason': str(getattr(result, 'context', '') or '')[:140] if status == 'unknown' else None,
+    }
+
+
+async def execute_maigret(username: str, sites: int) -> list[dict[str, Any]]:
+    # Import on use to allow health checks even when package dependency is broken.
+    from maigret import search as maigret_search
+    from maigret.sites import MaigretDatabase
+
+    path = importlib.resources.files('maigret').joinpath('resources/data.json')
+    db = MaigretDatabase().load_from_path(str(path))
+    selected = db.ranked_sites_dict(top=sites, excluded_tags=['nsfw', 'dating'])
+    # 12 concurrent site connections avoids triggering large bursts and host bans.
+    data = await maigret_search(
+        username=username,
+        site_dict=selected,
+        logger=LOGGER,
+        timeout=9,
+        max_connections=12,
+        retries=0,
+        is_parsing_enabled=False,
+        no_progressbar=True,
+    )
+    return [map_maigret_result(n, row) for n, row in data.items()]
+
+
+async def run_one(jid: str, username: str, sites: int) -> None:
+    global active, queued
+    async with scan_semaphore:
+        async with lock:
+            queued -= 1
+            active += 1
+            jobs[jid]['state'] = 'running'
+            jobs[jid]['started_at'] = datetime.now(timezone.utc).isoformat()
+        try:
+            # Hard overall deadline, independent of per-source timeouts.
+            result = await asyncio.wait_for(execute_maigret(username, sites), timeout=105)
+            summary = {
+                'attempted': len(result),
+                'found': sum(1 for x in result if x['status'] == 'found'),
+                'no_public_match': sum(1 for x in result if x['status'] == 'no_public_match'),
+                'unknown': sum(1 for x in result if x['status'] == 'unknown'),
+                'not_applicable': sum(1 for x in result if x['status'] == 'not_applicable'),
+            }
+            jobs[jid].update(state='complete', summary=summary, results=result,
+                             completed_at=datetime.now(timezone.utc).isoformat())
+        except Exception:
+            LOGGER.exception('Scanner job failed (identifier omitted from logs)')
+            jobs[jid].update(state='failed', error='Search engine unavailable or timed out',
+                             completed_at=datetime.now(timezone.utc).isoformat())
+        finally:
+            async with lock:
+                active -= 1
+            evict_old()
+
+
+@app.get('/health')
+async def health() -> dict[str, Any]:
+    return {'status': 'ok' if len(API_TOKEN) >= 32 else 'not_configured',
+            'service': 'shards-privacy-maigret', 'mode': 'ephemeral_staging',
+            'authenticated': len(API_TOKEN) >= 32}
+
+
+@app.get('/health/catalogue')
+async def catalogue() -> dict[str, Any]:
+    """Public, read-only discovery-engine readiness; does not scan usernames."""
+    try:
+        from maigret.sites import MaigretDatabase
+        path = importlib.resources.files('maigret').joinpath('resources/data.json')
+        db = MaigretDatabase().load_from_path(str(path))
+        count = len(db.ranked_sites_dict(top=500, excluded_tags=['nsfw', 'dating']))
+        if count < 50:
+            raise ValueError('Site catalogue unexpectedly small')
+        return {'status': 'ok', 'engine': 'maigret', 'configured_sites_sample': count,
+                'default_site_limit': MAX_SITES, 'real_scan_tested': False,
+                'note': 'Catalogue readiness is not proof that every remote site works'}
+    except Exception:
+        LOGGER.exception('Maigret catalogue readiness check failed')
+        raise HTTPException(503, 'Maigret catalogue unavailable')
+
+
+@app.post('/v1/scans', status_code=202, dependencies=[Depends(authorise)])
+async def start_scan(payload: ScanInput, response: Response) -> dict[str, Any]:
+    global queued
+    username = payload.username.strip()
+    if not USER_RE.fullmatch(username) or not payload.consent:
+        raise HTTPException(400, 'Valid username and authorisation are required')
+    if payload.sites > MAX_SITES:
+        raise HTTPException(400, 'Requested scan exceeds configured site budget')
+    async with lock:
+        evict_old()
+        if active + queued >= ACTIVE_LIMIT + QUEUE_LIMIT or len(jobs) >= JOBS_LIMIT:
+            raise HTTPException(429, 'Scanner at capacity; retry later')
+        jid = str(uuid4())
+        queued += 1
+        jobs[jid] = {
+            'id': jid,
+            'state': 'queued',
+            'requested_sites': payload.sites,
+            'created_at': datetime.now(timezone.utc).isoformat(),
+            'created_monotonic': time.monotonic(),
+            'engine': 'maigret',
+            'results': [],
+            'summary': {'attempted': 0, 'found': 0, 'no_public_match': 0, 'unknown': 0, 'not_applicable': 0},
+        }
+    asyncio.create_task(run_one(jid, username, payload.sites))
+    response.headers['Cache-Control'] = 'no-store'
+    return snapshot(jobs[jid])
+
+
+@app.get('/v1/scans/{jid}', dependencies=[Depends(authorise)])
+async def scan_result(jid: str, response: Response) -> dict[str, Any]:
+    response.headers['Cache-Control'] = 'no-store'
+    if not re.fullmatch(r'[0-9a-f-]{36}', jid):
+        raise HTTPException(404, 'Unknown scan')
+    evict_old()
+    value = jobs.get(jid)
+    if value is None:
+        raise HTTPException(410, 'Scan is no longer available (expired or worker restarted)')
+    return snapshot(value)
