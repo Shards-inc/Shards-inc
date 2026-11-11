@@ -45,6 +45,22 @@
       const item=text(stats,'div','', 'stat'); text(item,'small',label); text(item,'strong',value??'—');
     }
   }
+  const RESUME_KEY='shards_privacy_deep_job_v1';
+  const jobIdRE=/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/;
+  function saveJob(id) {
+    if(!jobIdRE.test(id))return;
+    try{sessionStorage.setItem(RESUME_KEY,JSON.stringify({id,created:Date.now()}));}catch(e){}
+  }
+  function restoreJob() {
+    try{
+      const raw=sessionStorage.getItem(RESUME_KEY);
+      if(!raw)return null;
+      const val=JSON.parse(raw);
+      if(!val||!jobIdRE.test(val.id)||!Number.isFinite(val.created)||val.created>Date.now()+60000||Date.now()-val.created>1800000){sessionStorage.removeItem(RESUME_KEY);return null;}
+      return val;
+    }catch(e){return null;}
+  }
+  function clearJob() { try{sessionStorage.removeItem(RESUME_KEY)}catch(e){} }
   function sleep(ms) { return new Promise(resolve => setTimeout(resolve,ms)); }
   async function jsonFetch(url, options={}) {
     const res = await fetch(url, {credentials:'same-origin',cache:'no-store',...options});
@@ -99,6 +115,7 @@
         method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({username,consent:true})
       });
       if(!queued.id) throw new Error('Scanner did not supply a job identifier');
+      saveJob(queued.id);
       setStatus('Scan accepted. Inspecting ranked public sites…','running');
       const completed=await poll(queued.id);
       lastResult=completed; summary(completed.summary||{}); output.hidden=false;
@@ -118,4 +135,21 @@
     const a=document.createElement('a');a.href=url;a.download='shards-public-footprint.json';a.click();
     setTimeout(()=>URL.revokeObjectURL(url),1000);
   });
+  // Refreshing a mobile tab must not create another scan. Only the opaque job ID is stored.
+  (async () => {
+    const saved=restoreJob();
+    if(!saved)return;
+    active=true;start.disabled=true;startedAt=saved.created;
+    setStatus('Restoring existing scan · no new request submitted…','running');
+    try{
+      const completed=await poll(saved.id);
+      lastResult=completed;summary(completed.summary||{});output.hidden=false;
+      filter.value='found';render();
+      setStatus('Recovered: '+(completed.summary?.found||0)+' candidates from '+(completed.summary?.attempted||0)+' results.', 'complete');
+    }catch(error){
+      const reason=String(error?.message||'Session recovery unavailable');
+      if(/(?:403|404|410|session|expired|authoris)/i.test(reason))clearJob();
+      setStatus(reason+' · no new scan was started','failed');
+    }finally{active=false;start.disabled=false;start.textContent='START DEEP SCAN ↗';}
+  })();
 })();

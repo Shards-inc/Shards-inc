@@ -36,6 +36,7 @@ jobs:
         with:
           node-version: '22'
       - run: node --check privacy-scanner/web/deep.js
+      - run: node privacy-scanner/tests/frontend-resume.cjs
       - run: node --check privacy-scanner/cloudflare/worker.js
       - name: Validate privacy gateway controls
         run: |
