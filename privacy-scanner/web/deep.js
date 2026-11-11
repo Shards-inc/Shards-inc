@@ -53,19 +53,24 @@
     return value;
   }
   async function prewarm() {
-    // Render Free instances suspend after inactivity; the health path wakes the instance.
-    // This does not submit a username or consume a deep-scan budget.
-    for (let i=0;i<2;i++) {
-      setStatus(i ? 'Scanner is starting; checking its readiness again…' : 'Checking scanner readiness…', 'running');
+    // Render Free may need over a minute to boot; never bill or consume a scan on readiness.
+    const maxWaitMs=145000, deadline=Date.now()+maxWaitMs;
+    let attempts=0;
+    while(Date.now()<deadline) {
+      attempts += 1;
+      const elapsed=Math.floor((maxWaitMs-(deadline-Date.now()))/1000);
+      setStatus(attempts===1 ? 'Waking private scanner… No scan submitted.' : 'Waiting for scanner to start · '+elapsed+'s elapsed · no scan submitted', 'running');
       try {
         const health=await jsonFetch('/api/identity/deep/health');
-        if (health.status==='ok') return;
-      } catch(e) {
-        if (i===1) throw new Error('Scanner is unavailable. The host may be waking or restarting. No deep scan was started.');
+        if(health.status==='ok')return;
+        if(health.status==='misconfigured')throw new Error('Scanner is misconfigured; no scan submitted.');
+      }catch(e) {
+        if(e.message && e.message.includes('misconfigured'))throw e;
       }
-      await sleep(6500);
+      if(Date.now()>=deadline)break;
+      await sleep(Math.min(6500,deadline-Date.now()));
     }
-    throw new Error('Scanner is not ready. No deep scan was started.');
+    throw new Error('Scanner did not become ready within 145 seconds. No scan was started or budget consumed.');
   }
   async function poll(id) {
     // No fake progress percentages: backend reports queued/running/complete/failed.
