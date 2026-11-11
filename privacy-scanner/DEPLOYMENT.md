@@ -20,7 +20,7 @@
 
 | Gate | Status | Basis |
 |---|---|---|
-| Scanner local unit tests | PASS | 9 pytest tests in backend |
+| Scanner local unit tests | PASS | 11 pytest tests in backend after result callback changes |
 | Browser scripts parse | PASS | `node --check deep-ui.js` |
 | Deep page has referenced controls | PASS | HTML element inspection |
 | Cloudflare service health bridge | PASS | `GET /api/identity/deep/health` returned Maigret catalogue details when host warm |
@@ -30,7 +30,8 @@
 | False-positive homepage filter | PASS | 10 raw candidate findings reduced to 9, Discord homepage rejected |
 | Staging browser full workflow | PASS | 118 site results, 9 candidates, 23 unknown; cards rendered; JSON export control present |
 | Production deployment | SEE LIVE SITE | Confirm exact current deployed Worker version in Cloudflare and repeat UI acceptance after release |
-| Durable job queue/restart recovery | BLOCKED | Free Render memory is ephemeral |
+| Completed result cache | IMPLEMENTED (pending live recovery test) | Authenticated one-time terminal snapshot written to Cloudflare D1; hourly expiry cleanup |
+| Durable job queue/restart recovery | BLOCKED | In-flight work remains ephemeral on Render Free |
 | Paid customer readiness | BLOCKED | Auth, billing, processor/legal review and provider reliability outstanding |
 
 ## Rollback
@@ -44,3 +45,7 @@ Use Cloudflare Workers version deployments to restore the previous known-working
 - Never misrepresent upstream 403/429/CAPTCHA as proof of an absent account.
 - Explain to users that public sites receive their username during the search.
 - Delete expired temporary job and permit records and revise use of deterministic username hashes before a paid launch.
+
+## Temporary result preservation (v0.3)
+
+The scanner publishes a terminal snapshot to the Cloudflare `/api/identity/deep/complete` endpoint with the existing per-job status secret. Cloudflare verifies the session is unexpired, validates the payload, and persists it in D1 `identity_deep_results` using `INSERT OR IGNORE` to make callback retries idempotent. The status endpoint checks the completed snapshot only after verifying the session cookie. An hourly scheduled handler removes expired records. The snapshot is accessible for at most 30 minutes after job creation; physical deletion may lag by up to an hour. This is not a durable in-flight queue. Do not advertise disaster recovery until a real Render-restart test passes.
