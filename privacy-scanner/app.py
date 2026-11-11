@@ -34,6 +34,19 @@ ATTEST_URL = 'https://privacy.shardsinc.co.uk/api/identity/deep/consume'
 RESULT_CALLBACK_URL = 'https://privacy.shardsinc.co.uk/api/identity/deep/complete'
 MAX_SITES = int(os.getenv('SCANNER_MAX_SITES', '150'))
 LOGGER = logging.getLogger('shards_privacy_scanner')
+# Third-party site errors sometimes embed the searched username, full profile URLs,
+# response headers or anti-bot HTML in exception messages. These are personal data.
+# Never route those diagnostics to the provider's persistent application logs.
+SITE_LOGGER = logging.getLogger('shards_privacy_scanner.site_checks')
+SITE_LOGGER.addHandler(logging.NullHandler())
+SITE_LOGGER.propagate = False
+SITE_LOGGER.disabled = True
+for _namespace in ('maigret', 'maigret.checking', 'socid_extractor', 'aiohttp', 'curl_cffi'):
+    _logger = logging.getLogger(_namespace)
+    _logger.addHandler(logging.NullHandler())
+    _logger.propagate = False
+    _logger.disabled = True
+
 
 app = FastAPI(title=APP_NAME, docs_url=None, redoc_url=None, openapi_url=None)
 # Never persist username scans to disk or log the submitted username.
@@ -125,7 +138,7 @@ async def execute_maigret(username: str, sites: int) -> list[dict[str, Any]]:
     data = await maigret_search(
         username=username,
         site_dict=selected,
-        logger=LOGGER,
+        logger=SITE_LOGGER,
         timeout=9,
         max_connections=12,
         retries=0,
@@ -185,14 +198,14 @@ async def run_one(jid: str, username: str, sites: int, status_secret: str) -> No
             jobs[jid].update(state='complete', summary=summary, results=result,
                              completed_at=datetime.now(timezone.utc).isoformat())
         except Exception:
-            LOGGER.exception('Scanner job failed (identifier omitted from logs)')
+            LOGGER.warning('Scanner job failed; external exception details withheld for privacy')
             jobs[jid].update(state='failed', error='Search engine unavailable or timed out',
                              completed_at=datetime.now(timezone.utc).isoformat())
         finally:
             try:
                 await publish_terminal_result(jid, status_secret)
             except Exception:
-                LOGGER.exception('Could not preserve terminal scan state')
+                LOGGER.warning('Could not preserve terminal scan state; exception details withheld')
             async with lock:
                 active -= 1
             evict_old()
@@ -219,7 +232,7 @@ async def catalogue() -> dict[str, Any]:
                 'default_site_limit': MAX_SITES, 'real_scan_tested': False,
                 'note': 'Catalogue readiness is not proof that every remote site works'}
     except Exception:
-        LOGGER.exception('Maigret catalogue readiness check failed')
+        LOGGER.warning('Maigret catalogue readiness check failed; exception details withheld')
         raise HTTPException(503, 'Maigret catalogue unavailable')
 
 

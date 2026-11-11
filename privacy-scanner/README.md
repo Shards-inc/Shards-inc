@@ -15,6 +15,7 @@ Browser → Cloudflare Worker → Render FastAPI service → approved Maigret si
 - Cloudflare stores a hash of a secure browser session cookie plus the Render status token. Subsequent status requests must present the original cookie; the browser never receives the Render token.
 - While a job runs, its username and state exist in Render process memory. When the job finishes, Render sends an authenticated terminal snapshot to Cloudflare D1, keyed by the job UUID and limited to the original session expiry (30 minutes from job creation). Snapshots are not public and may outlive their expiry in storage until the hourly deletion cron runs (at most about an hour beyond expiry if the cron succeeds). If Render restarts during a scan, the in-flight job is still lost.
 - An identical handle on multiple sites **does not prove common real-world ownership**. A Maigret `Claimed` status is only a **heuristic candidate**. Candidates require an HTTPS URL containing the exact submitted username in the URL path or query. Generic homepages and ambiguous ID-only URLs are downgraded to `unknown`.
+- Raw third-party Maigret diagnostics are intentionally suppressed: provider exceptions have previously included queried usernames in persistent Render logs. Generic health, capacity and status events remain available without searched identifiers.
 - `unknown` includes site blocks, bot challenges, 403/429, malformed responses, generic links or timeouts. A negative result is not proof that a user has no account.
 
 ## Endpoints
@@ -51,7 +52,7 @@ A local HTTP scan will not work unless a valid permit is issued and consumed by 
 
 ## Verification record
 
-- 11 November 2026: eleven local tests pass, including rejection of generic profile homepages and identity-mismatch URLs.
+- 11 November 2026: twelve local tests pass, including rejection of generic profile homepages and identity-mismatch URLs.
 - 11 November 2026: Render deployed and its `/health` and `/health/catalogue` endpoints returned HTTP 200.
 - 11 November 2026: real controlled backend scan of `cryptosingh1111` completed: 118 site results; original mapping produced 10 `claimed` results, including an invalid Discord homepage.
 - 11 November 2026: revised validator downgraded the generic Discord result; staging browser ran and rendered 9 candidate matches from 118 site results, 23 unknown, with JSON export control available.

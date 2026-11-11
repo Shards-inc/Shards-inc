@@ -161,3 +161,14 @@ def test_finished_scan_publishes_results_without_exposing_status_token(monkeypat
         appmod.jobs.pop(jid, None)
         appmod.queued = original_q
         appmod.active = original_a
+
+
+def test_maigret_diagnostics_are_suppressed_for_privacy(caplog):
+    import logging
+    assert appmod.SITE_LOGGER.disabled
+    assert appmod.SITE_LOGGER.propagate is False
+    with caplog.at_level(logging.DEBUG):
+        appmod.SITE_LOGGER.error('Unhandled provider error for cryptosingh1111: URL leaked')
+    assert 'cryptosingh1111' not in caplog.text
+    for name in ('maigret', 'maigret.checking', 'socid_extractor', 'aiohttp', 'curl_cffi'):
+        assert logging.getLogger(name).disabled
