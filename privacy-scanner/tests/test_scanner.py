@@ -28,10 +28,10 @@ def test_validation():
 def test_status_mapping():
     class Code: value='Claimed'
     class Status: status=Code(); context=None
-    value={'status':Status(),'url_user':'https://example.com/foo'}
-    assert appmod.map_maigret_result('Site',value)['status']=='found'
+    value={'status':Status(),'url_user':'https://example.com/u/octocat'}
+    assert appmod.map_maigret_result('Site',value,'octocat')['status']=='found'
     value['url_user']='javascript:alert(1)'
-    assert appmod.map_maigret_result('Site',value)['status']=='unknown'
+    assert appmod.map_maigret_result('Site',value,'octocat')['status']=='unknown'
 
 
 def test_unknown_scan():
@@ -57,3 +57,28 @@ def test_authentication_is_per_scan(monkeypatch):
         authorized=test.get(url,headers={'x-scan-status-token':secret})
         assert authorized.status_code==200
         assert 'status_token' not in authorized.json()
+
+
+def test_claimed_homepage_is_not_a_profile():
+    class Code: value='Claimed'
+    class Status: status=Code(); context=None
+    generic={'status': Status(), 'url_user': 'https://discord.com'}
+    r=appmod.map_maigret_result('Discord',generic,'octocat')
+    assert r['status']=='unknown'
+    assert r['profile_url'] is None
+    assert 'exact username' in r['reason']
+
+def test_claimed_different_identity_is_not_a_match():
+    class Code: value='Claimed'
+    class Status: status=Code(); context=None
+    for url in ('https://example.com/u/octocatters', 'https://example.com/u/other',
+                'https://example.com/u/octocat_extra', 'http://example.com/u/octocat'):
+        result=appmod.map_maigret_result('Site',{'status':Status(),'url_user':url},'octocat')
+        assert result['status']=='unknown',url
+
+def test_candidate_is_labeled_heuristic_not_verified():
+    class Code: value='Claimed'
+    class Status: status=Code(); context=None
+    r=appmod.map_maigret_result('TikTok',{'status':Status(),'url_user':'https://www.tiktok.com/@octocat'},'octocat')
+    assert r['status']=='found'
+    assert r['verification']=='heuristic_candidate'
