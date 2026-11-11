@@ -31,6 +31,7 @@ QUEUE_LIMIT = 2
 JOBS_LIMIT = 24
 TTL_SECONDS = 1800
 ATTEST_URL = 'https://privacy.shardsinc.co.uk/api/identity/deep/consume'
+RESULT_CALLBACK_URL = 'https://privacy.shardsinc.co.uk/api/identity/deep/complete'
 MAX_SITES = int(os.getenv('SCANNER_MAX_SITES', '150'))
 LOGGER = logging.getLogger('shards_privacy_scanner')
 
@@ -134,7 +135,36 @@ async def execute_maigret(username: str, sites: int) -> list[dict[str, Any]]:
     return [map_maigret_result(n, row, username) for n, row in data.items()]
 
 
-async def run_one(jid: str, username: str, sites: int) -> None:
+async def publish_terminal_result(jid: str, status_secret: str) -> bool:
+    """Write a short-lived result snapshot to Cloudflare D1 through an authenticated callback.
+
+    Failure here must not fabricate success or make the underlying scan disappear;
+    the browser can still poll the in-memory source. The callback is idempotent.
+    """
+    item = jobs.get(jid)
+    if not item or item['state'] not in ('complete', 'failed'):
+        return False
+    payload = snapshot(item)
+    # No username, IP, permit, or secret may be included in the persisted snapshot.
+    async with httpx.AsyncClient(timeout=10, follow_redirects=False) as client:
+        for attempt in range(3):
+            try:
+                r = await client.post(
+                    RESULT_CALLBACK_URL,
+                    json=payload,
+                    headers={'x-scan-status-token': status_secret, 'content-type': 'application/json'},
+                )
+                if r.status_code in (200, 201):
+                    return True
+            except (httpx.HTTPError, ValueError):
+                pass
+            if attempt < 2:
+                await asyncio.sleep(0.75 * (attempt + 1))
+    LOGGER.warning('Result preservation callback failed; ephemeral results remain available')
+    return False
+
+
+async def run_one(jid: str, username: str, sites: int, status_secret: str) -> None:
     global active, queued
     async with scan_semaphore:
         async with lock:
@@ -159,6 +189,10 @@ async def run_one(jid: str, username: str, sites: int) -> None:
             jobs[jid].update(state='failed', error='Search engine unavailable or timed out',
                              completed_at=datetime.now(timezone.utc).isoformat())
         finally:
+            try:
+                await publish_terminal_result(jid, status_secret)
+            except Exception:
+                LOGGER.exception('Could not preserve terminal scan state')
             async with lock:
                 active -= 1
             evict_old()
@@ -217,7 +251,7 @@ async def start_scan(payload: ScanInput, response: Response, x_scan_permit: str 
             'results': [],
             'summary': {'attempted': 0, 'found': 0, 'no_public_match': 0, 'unknown': 0, 'not_applicable': 0},
         }
-    asyncio.create_task(run_one(jid, username, payload.sites))
+    asyncio.create_task(run_one(jid, username, payload.sites, status_secret))
     response.headers['Cache-Control'] = 'no-store'
     return {**snapshot(jobs[jid]), 'status_token': status_secret}
 
