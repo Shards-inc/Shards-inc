@@ -18,7 +18,7 @@ import os
 import re
 import time
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 from uuid import uuid4
 
 from fastapi import FastAPI, Depends, Header, HTTPException, Response
@@ -83,20 +83,32 @@ def evict_old() -> None:
         jobs.pop(done, None)
 
 
-def map_maigret_result(name: str, value: dict[str, Any]) -> dict[str, Any]:
+def map_maigret_result(name: str, value: dict[str, Any], searched_username: str) -> dict[str, Any]:
     result = value.get('status')
     enum = getattr(result, 'status', None)
     state = str(getattr(enum, 'value', 'Unknown')).lower()
     status = {'claimed': 'found', 'available': 'no_public_match', 'illegal': 'not_applicable'}.get(state, 'unknown')
     profile = str(value.get('url_user') or '')
     parsed = urlparse(profile)
-    if status == 'found' and (parsed.scheme != 'https' or not parsed.hostname or parsed.username or parsed.password):
-        status = 'unknown'
+    reason = str(getattr(result, 'context', '') or '')[:140] if status == 'unknown' else None
+    if status == 'found':
+        # Maigret's "Claimed" state is a detection heuristic, not proof of
+        # common identity. Do not count homepages or ambiguous ID-only URLs.
+        # A provider-specific authenticated adapter must corroborate ID-only
+        # account links before they can be classified as a positive result.
+        path_query = unquote(parsed.path + ('?' + parsed.query if parsed.query else ''))
+        handle_pattern = r'(?<![A-Za-z0-9_.-])' + re.escape(searched_username) + r'(?![A-Za-z0-9_.-])'
+        if (parsed.scheme != 'https' or not parsed.hostname or '.' not in parsed.hostname
+                or parsed.username or parsed.password
+                or not re.search(handle_pattern, path_query, re.IGNORECASE)):
+            status = 'unknown'
+            reason = 'Site heuristic did not return an exact username-bearing public profile URL'
     return {
         'source': str(name)[:90],
         'status': status,
         'profile_url': profile[:600] if status == 'found' else None,
-        'reason': str(getattr(result, 'context', '') or '')[:140] if status == 'unknown' else None,
+        'verification': 'heuristic_candidate' if status == 'found' else None,
+        'reason': reason,
     }
 
 
@@ -119,7 +131,7 @@ async def execute_maigret(username: str, sites: int) -> list[dict[str, Any]]:
         is_parsing_enabled=False,
         no_progressbar=True,
     )
-    return [map_maigret_result(n, row) for n, row in data.items()]
+    return [map_maigret_result(n, row, username) for n, row in data.items()]
 
 
 async def run_one(jid: str, username: str, sites: int) -> None:
