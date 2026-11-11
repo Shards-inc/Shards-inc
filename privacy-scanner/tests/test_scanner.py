@@ -1,25 +1,20 @@
-from fastapi.testclient import TestClient
 import asyncio
 import importlib
-from pathlib import Path
-import os
-import pytest
+from unittest.mock import AsyncMock
+from fastapi.testclient import TestClient
 
-os.environ['SCANNER_API_TOKEN'] = 'a' * 48
 appmod = importlib.import_module('app')
 client = TestClient(appmod.app)
-HEADERS={'authorization': 'Bearer ' + 'a' * 48}
 
 
 def test_health():
-    r = client.get('/health')
-    assert r.status_code == 200
-    assert r.json()['authenticated'] is True
+    r=client.get('/health')
+    assert r.status_code==200 and r.json()['authenticated'] is True
 
 
-def test_auth():
-    for headers in ({}, {'authorization':'Bearer not-valid'}):
-        assert client.post('/v1/scans', headers=headers, json={'username':'octocat','consent':True,'sites':25}).status_code == 401
+def test_permit_rejected():
+    r=client.post('/v1/scans', json={'username':'octocat','consent':True,'sites':25}, headers={'x-scan-permit':'bad'})
+    assert r.status_code==401
 
 
 def test_validation():
@@ -27,22 +22,38 @@ def test_validation():
            {'username':'octocat','consent':False,'sites':25},
            {'username':'octocat','consent':True,'sites':151}]
     for case in cases:
-        assert client.post('/v1/scans', headers=HEADERS,json=case).status_code in (400,422)
+        assert client.post('/v1/scans',json=case).status_code in (400,422)
 
 
 def test_status_mapping():
-    class Code:
-        value='Claimed'
-    class Status:
-        status=Code()
-        context=None
-    result=appmod.map_maigret_result('MySite',{'status':Status(),'url_user':'https://example.com/foo'})
-    assert result['status']=='found'
-    assert result['profile_url']=='https://example.com/foo'
-    result=appmod.map_maigret_result('MySite',{'status':Status(),'url_user':'javascript:alert(1)'})
-    assert result['status']=='unknown'
+    class Code: value='Claimed'
+    class Status: status=Code(); context=None
+    value={'status':Status(),'url_user':'https://example.com/foo'}
+    assert appmod.map_maigret_result('Site',value)['status']=='found'
+    value['url_user']='javascript:alert(1)'
+    assert appmod.map_maigret_result('Site',value)['status']=='unknown'
 
 
 def test_unknown_scan():
-    r=client.get('/v1/scans/00000000-0000-0000-0000-000000000000',headers=HEADERS)
+    r=client.get('/v1/scans/00000000-0000-0000-0000-000000000000')
     assert r.status_code==410
+
+
+def test_authentication_is_per_scan(monkeypatch):
+    async def verify(token, username):
+        return token=='a'*64 and username=='octocat'
+    async def stub_scanner(username, sites):
+        return [{'source':'Known','status':'found','profile_url':'https://example.com/known','reason':None}]
+    monkeypatch.setattr(appmod,'validate_permit',verify)
+    monkeypatch.setattr(appmod,'execute_maigret',stub_scanner)
+    with TestClient(appmod.app) as test:
+        resp=test.post('/v1/scans',json={'username':'octocat','consent':True,'sites':25},headers={'x-scan-permit':'a'*64})
+        assert resp.status_code==202
+        body=resp.json()
+        secret=body['status_token']
+        url='/v1/scans/'+body['id']
+        assert test.get(url).status_code==403
+        assert test.get(url,headers={'x-scan-status-token':'wrong'}).status_code==403
+        authorized=test.get(url,headers={'x-scan-status-token':secret})
+        assert authorized.status_code==200
+        assert 'status_token' not in authorized.json()
