@@ -9,6 +9,9 @@ import asyncio
 from collections import OrderedDict
 from datetime import datetime, timezone
 import hmac
+import hashlib
+import secrets
+import httpx
 import importlib.resources
 import logging
 import os
@@ -27,7 +30,7 @@ ACTIVE_LIMIT = 1
 QUEUE_LIMIT = 2
 JOBS_LIMIT = 24
 TTL_SECONDS = 1800
-API_TOKEN = os.getenv('SCANNER_API_TOKEN', '')
+ATTEST_URL = 'https://privacy.shardsinc.co.uk/api/identity/deep/consume'
 MAX_SITES = int(os.getenv('SCANNER_MAX_SITES', '150'))
 LOGGER = logging.getLogger('shards_privacy_scanner')
 
@@ -46,16 +49,25 @@ class ScanInput(BaseModel):
     consent: bool
 
 
-async def authorise(authorization: str | None = Header(default=None)) -> None:
-    if len(API_TOKEN) < 32:
-        raise HTTPException(503, 'Scanner is not configured')
-    candidate = authorization.removeprefix('Bearer ') if authorization else ''
-    if not hmac.compare_digest(candidate, API_TOKEN):
-        raise HTTPException(401, 'Unauthorised')
+async def validate_permit(token: str, username: str) -> bool:
+    """Single-use scan permit; no shared credentials across cloud accounts."""
+    if not re.fullmatch(r'[0-9a-f]{64}', token):
+        return False
+    try:
+        async with httpx.AsyncClient(timeout=13, follow_redirects=False) as client:
+            r = await client.post(ATTEST_URL, json={'token': token, 'username': username})
+        return r.status_code == 200 and r.json() == {'authorised': True}
+    except Exception:
+        LOGGER.warning('Scan permit attestation failed; request denied')
+        return False
+
+
+def hash_token(value: str) -> str:
+    return hashlib.sha256(value.encode('ascii')).hexdigest()
 
 
 def snapshot(job: dict[str, Any]) -> dict[str, Any]:
-    return {k: v for k, v in job.items() if k not in ('created_monotonic',)}
+    return {k: v for k, v in job.items() if k not in ('created_monotonic', 'status_token_digest')}
 
 
 def evict_old() -> None:
@@ -142,9 +154,9 @@ async def run_one(jid: str, username: str, sites: int) -> None:
 
 @app.get('/health')
 async def health() -> dict[str, Any]:
-    return {'status': 'ok' if len(API_TOKEN) >= 32 else 'not_configured',
-            'service': 'shards-privacy-maigret', 'mode': 'ephemeral_staging',
-            'authenticated': len(API_TOKEN) >= 32}
+    return {'status': 'ok',
+            'service': 'shards-privacy-maigret', 'mode': 'ephemeral_permit_bridge',
+            'authenticated': True}
 
 
 @app.get('/health/catalogue')
@@ -165,21 +177,25 @@ async def catalogue() -> dict[str, Any]:
         raise HTTPException(503, 'Maigret catalogue unavailable')
 
 
-@app.post('/v1/scans', status_code=202, dependencies=[Depends(authorise)])
-async def start_scan(payload: ScanInput, response: Response) -> dict[str, Any]:
+@app.post('/v1/scans', status_code=202)
+async def start_scan(payload: ScanInput, response: Response, x_scan_permit: str | None = Header(default=None)) -> dict[str, Any]:
     global queued
     username = payload.username.strip()
     if not USER_RE.fullmatch(username) or not payload.consent:
         raise HTTPException(400, 'Valid username and authorisation are required')
     if payload.sites > MAX_SITES:
         raise HTTPException(400, 'Requested scan exceeds configured site budget')
+    if not x_scan_permit or not await validate_permit(x_scan_permit, username):
+        raise HTTPException(401, 'Single-use scan permit required')
     async with lock:
         evict_old()
         if active + queued >= ACTIVE_LIMIT + QUEUE_LIMIT or len(jobs) >= JOBS_LIMIT:
             raise HTTPException(429, 'Scanner at capacity; retry later')
         jid = str(uuid4())
+        status_secret = secrets.token_urlsafe(32)
         queued += 1
         jobs[jid] = {
+            'status_token_digest': hash_token(status_secret),
             'id': jid,
             'state': 'queued',
             'requested_sites': payload.sites,
@@ -191,11 +207,11 @@ async def start_scan(payload: ScanInput, response: Response) -> dict[str, Any]:
         }
     asyncio.create_task(run_one(jid, username, payload.sites))
     response.headers['Cache-Control'] = 'no-store'
-    return snapshot(jobs[jid])
+    return {**snapshot(jobs[jid]), 'status_token': status_secret}
 
 
-@app.get('/v1/scans/{jid}', dependencies=[Depends(authorise)])
-async def scan_result(jid: str, response: Response) -> dict[str, Any]:
+@app.get('/v1/scans/{jid}')
+async def scan_result(jid: str, response: Response, x_scan_status_token: str | None = Header(default=None)) -> dict[str, Any]:
     response.headers['Cache-Control'] = 'no-store'
     if not re.fullmatch(r'[0-9a-f-]{36}', jid):
         raise HTTPException(404, 'Unknown scan')
@@ -203,4 +219,6 @@ async def scan_result(jid: str, response: Response) -> dict[str, Any]:
     value = jobs.get(jid)
     if value is None:
         raise HTTPException(410, 'Scan is no longer available (expired or worker restarted)')
+    if not x_scan_status_token or not hmac.compare_digest(hash_token(x_scan_status_token), value['status_token_digest']):
+        raise HTTPException(403, 'Scan session token required')
     return snapshot(value)
