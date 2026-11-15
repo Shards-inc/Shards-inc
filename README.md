@@ -13,8 +13,8 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 
 ### NVIDIA Source Intelligence
 
-- [Searchable NVIDIA catalogue](https://github.com/Shards-inc/Shards-inc/tree/main/docs/nvidia-catalogue) — real GitHub fork inventory, integration priorities and machine-readable metadata
-- [NVIDIA upstream watch](https://github.com/Shards-inc/Shards-inc/actions/workflows/nvidia-catalogue.yml) — daily HEAD-change checks for strategic Agent OS, MCP, Kernel and inference projects
+- [Searchable NVIDIA catalogue](https://catalogue.shardsinc.co.uk/) — mobile-friendly catalogue of genuine forks, capability filters and integration priorities
+- [NVIDIA upstream watch](https://github.com/Shards-inc/Shards-inc/issues/2) — daily source-HEAD monitoring for strategic Agent OS, MCP, Kernel and inference projects
 - [Versioned monitoring policy](https://github.com/Shards-inc/Shards-inc/blob/main/config/nvidia_catalogue_watch.json) — curated candidates and evaluation rationale
 
 All NVIDIA code retains its original upstream identity; source forks are not automatically merged or deployed.
