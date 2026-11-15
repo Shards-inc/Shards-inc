@@ -1,0 +1,61 @@
+name: Shards NVIDIA catalogue and upstream watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/nvidia-catalogue.yml
+      - scripts/nvidia_catalogue.py
+      - config/nvidia_catalogue_watch.json
+      - docs/nvidia-catalogue/index.html
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: nvidia-catalogue-sync
+  cancel-in-progress: false
+
+jobs:
+  catalogue:
+    name: Catalogue, verify and monitor
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout trusted default branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Validate generator
+        run: |
+          python3 -m py_compile scripts/nvidia_catalogue.py
+          python3 scripts/nvidia_catalogue.py --selftest
+
+      - name: Inventory Shards-inc forks and compare upstream SHAs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/nvidia_catalogue.py
+
+      - name: Commit only generated catalogue files
+        run: |
+          set -eu
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/nvidia-catalogue/README.md docs/nvidia-catalogue/catalogue.json docs/nvidia-catalogue/catalogue-data.js docs/nvidia-catalogue/watch-state.json docs/nvidia-catalogue/changes.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "chore(catalogue): refresh NVIDIA fork index and upstream SHAs"
+            git push origin HEAD:main
+          fi
+
+      - name: Notify via a single persistent GitHub issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/nvidia_catalogue.py --notify-only
