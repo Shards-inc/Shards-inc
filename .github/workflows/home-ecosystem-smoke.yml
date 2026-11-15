@@ -1,0 +1,74 @@
+name: Shards Homepage Ecosystem navigation smoke
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/home-ecosystem-smoke.yml
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify homepage overlay and directory from the public internet
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.error
+          from html.parser import HTMLParser
+          HOST='https://shardsinc.co.uk'
+          def get(path,base=HOST):
+              with urllib.request.urlopen(urllib.request.Request(base+path,headers={'User-Agent':'Shards-Nav-Test/1.0'}),timeout=20) as r:
+                  return r.status,r.read(1000000).decode('utf-8','replace'),dict(r.headers)
+          def check(msg,ok,detail=''):
+              print(('PASS' if ok else 'FAIL')+': '+msg+' '+str(detail)[:200])
+              if not ok: raise SystemExit(1)
+          code,html,head=get('/')
+          print('Homepage',code,'bytes=',len(html),'Content-Type=',head.get('Content-Type'))
+          check('Homepage served successfully',code==200 and '<html' in html.lower(),code)
+          check('Existing Lovable root preserved','id="root"' in html or 'shards-inc-immersive' in html or 'src="/assets/' in html)
+          check('Interactive Ecosystem tab injected','<details class="sh-ec-nav"' in html and 'Ecosystem' in html)
+          check('External CSS stylesheet attached','href="/__shards/ecosystem.css"' in html)
+          class Finder(HTMLParser):
+              def __init__(self):
+                  super().__init__();self.links=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag=='a':
+                      d=dict(attrs)
+                      if d.get('href'):self.links.append(d['href'])
+          f=Finder();f.feed(html)
+          wanted=['agents','mcp','security','privacy','voice','demo','sim']
+          for x in wanted:
+              check('Homepage links '+x, 'https://'+x+'.shardsinc.co.uk/' in f.links)
+          check('Honeypot is not listed as public app','https://trap.shardsinc.co.uk/' not in f.links)
+          check('Duplicate preview is not promoted','https://home-preview.shardsinc.co.uk/' not in f.links)
+          code,css,ch=get('/__shards/ecosystem.css')
+          check('Navigation CSS live',code==200 and '.sh-ec-nav' in css and '@media' in css,code)
+          check('CSS response content type','text/css' in ch.get('Content-Type',''))
+          code,body,headers=get('/ecosystem')
+          check('Full directory page live',code==200 and 'One ecosystem' in body and 'Agent Hub' in body,code)
+          check('Experimental Boundary Lab labelled', 'Experimental simulation' in body)
+          code,preview,phead=get('/',base='https://home-preview.shardsinc.co.uk')
+          check('Preview still works',code==200 and 'sh-ec-nav' in preview)
+          check('Preview remains noindex','noindex' in phead.get('X-Robots-Tag','').lower())
+          print('SHARDS NAVIGATION E2E: PASS')
+          PY
+      - name: Check HTTP to HTTPS redirect and canonical www
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.error
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,*args,**kwargs): return None
+          opener=urllib.request.build_opener(NoRedirect)
+          for url,expected in [
+              ('http://shardsinc.co.uk/','https://shardsinc.co.uk/'),
+              ('https://www.shardsinc.co.uk/','https://shardsinc.co.uk/')]:
+              try: r=opener.open(url,timeout=12)
+              except urllib.error.HTTPError as e: r=e
+              loc=r.headers.get('Location','')
+              print(url,r.status,loc)
+              assert r.status in (301,302,307,308) and loc==expected
+          print('CANONICAL REDIRECTS: PASS')
+          PY
