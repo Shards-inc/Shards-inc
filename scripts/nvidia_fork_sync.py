@@ -127,9 +127,9 @@ def main():
     if shutil.which("gh") is None:
         raise SystemExit("BLOCKED: install GitHub CLI (pkg install gh).")
     try:
-        actor = gh(["user", "--jq", ".login"])
-    except GHError:
-        # -jq yields a JSON string, not a JSON object.
+        actor_data = gh(["user"])
+        actor = actor_data["login"]
+    except (GHError, KeyError, TypeError):
         raise SystemExit("BLOCKED: GitHub CLI authentication failed (gh auth login).")
     if actor.lower() != TARGET.lower():
         raise SystemExit(f"BLOCKED: authenticated as {actor}; required {TARGET}.")
