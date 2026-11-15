@@ -1,4 +1,29 @@
 {
-  "schema_version": 1,
-  "heads": {}
+  "heads": {
+    "ai-dynamo/dynamo": "b20fe6fe94021b854597965c7305931175e8f482",
+    "ai-dynamo/nixl": "1958864a1bad755ea246a4dbd395a9b39522830c",
+    "nvidia-nemo/agent-hardener": "f37f58625c9ee0a112e7756532a404189322d369",
+    "nvidia-nemo/curator": "bb670416eebb67011c2fc649e8df85db9572ce0e",
+    "nvidia-nemo/evaluator": "ea35ba36756abd59de201f60af8a2feba014744d",
+    "nvidia-nemo/guardrails": "5d7f4c1ca62fb6155066e6c581379d1a5ec11338",
+    "nvidia-nemo/nemotron": "a121b64f95f31c0eced9179240ab1fe1bd2c12c2",
+    "nvidia/ai-factory-operations-agent": "54972382750e20c2f69329bf89ef022aefc14a72",
+    "nvidia/context-aware-rag": "e16cb2daaed359ad12ab14215caab170c934e63d",
+    "nvidia/garak": "892779207cbc38f65a738ef9cbdfbc1e83aa0b55",
+    "nvidia/gpu-operator": "0addf2f67b32df8b3deeae6e4bd5f057335cc484",
+    "nvidia/nemo-agent-toolkit": "9296f5311a4aebfb0e583221cc2bc774ad2f0732",
+    "nvidia/nemo-retriever": "378fda86ad88fd8cc8b86c5b50ca339e229713f2",
+    "nvidia/nemoclaw": "82e1ad7474ec7175c5b860b2bfa9d7940bc6e75f",
+    "nvidia/nvidia-container-toolkit": "f0e220ddd94e5aba384f62f9f0b3c8cfdafcf712",
+    "nvidia/openshell": "2e5589b2180dd432320adda124c4f7bcede119b5",
+    "nvidia/openshell-research": "9a0f3c874a1b79dcb8d0af6e51996658a9ae138c",
+    "nvidia/personal-ai-router": "40975d667cbb9785a299f4a3d5e1752fc4927ab9",
+    "nvidia/skillspector": "c81615007d40e86051a302a3cf897f8a05264928",
+    "nvidia/tensorrt-llm": "72f85d772ffe9c01d8f92e9e7b59b501c325f05b",
+    "nvidia/workbench-example-agentic-rag": "1f05c9c255a3d1c3ea120deb3a3853147f098de4",
+    "triton-inference-server/python_backend": "942b66fc1472e98ec3e346475dd3dbd9d21d3264",
+    "triton-inference-server/server": "1751a2c84904ef21d7c424179891ab7e0f7f5a89",
+    "triton-inference-server/vllm_backend": "22f3280b6a62ccf12734a3ca4ea961488fcf0bf4"
+  },
+  "schema_version": 1
 }
