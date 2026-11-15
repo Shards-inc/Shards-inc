@@ -51,7 +51,7 @@ jobs:
           check('Experimental Boundary Lab labelled', 'Experimental simulation' in body)
           code,preview,phead=get('/',base='https://home-preview.shardsinc.co.uk')
           check('Preview still works',code==200 and 'sh-ec-nav' in preview)
-          check('Preview remains noindex','noindex' in phead.get('X-Robots-Tag','').lower())
+          check('Preview remains noindex','noindex' in {k.lower():v for k,v in phead.items()}.get('x-robots-tag','').lower(),str(phead.get('x-robots-tag',phead.get('X-Robots-Tag'))))
           print('SHARDS NAVIGATION E2E: PASS')
           PY
       - name: Check HTTP to HTTPS redirect and canonical www
