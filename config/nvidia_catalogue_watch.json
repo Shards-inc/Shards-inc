@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "target_account": "Shards-inc",
+  "nvidia_related_owners": [
+    "NVIDIA",
+    "NVIDIA-NeMo",
+    "NVIDIA-AI-IOT",
+    "triton-inference-server",
+    "rapidsai",
+    "NVIDIA-Omniverse",
+    "isaac-sim",
+    "ai-dynamo",
+    "NVlabs"
+  ],
+  "watchlist": [
+    {
+      "upstream": "NVIDIA/NemoClaw",
+      "priority": "P0",
+      "category": "Agent OS",
+      "shards_use": "Agent sandbox orchestration; evaluate governable execution",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/OpenShell",
+      "priority": "P0",
+      "category": "Agent OS",
+      "shards_use": "Sandbox runtime policies and agent isolation",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/NeMo-Agent-Toolkit",
+      "priority": "P0",
+      "category": "MCP / Agent Hub",
+      "shards_use": "Agent integrations and tracing",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/SkillSpector",
+      "priority": "P0",
+      "category": "Kernel / Security",
+      "shards_use": "Inspection of agent skills and provenance",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/garak",
+      "priority": "P0",
+      "category": "Kernel / Security",
+      "shards_use": "Adversarial testing of LLM applications",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA-NeMo/Guardrails",
+      "priority": "P0",
+      "category": "Kernel / Security",
+      "shards_use": "Language-model guardrails alongside deterministic permits",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/OpenShell-Research",
+      "priority": "P1",
+      "category": "Agent OS",
+      "shards_use": "Research developments in secure runtime design",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/AI-Factory-Operations-Agent",
+      "priority": "P1",
+      "category": "Agent OS",
+      "shards_use": "Operational agent patterns and interfaces",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/Personal-AI-Router",
+      "priority": "P1",
+      "category": "MCP / Agent Hub",
+      "shards_use": "Routing policies and personal-agent orchestration",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA-NeMo/Nemotron",
+      "priority": "P1",
+      "category": "Models / Training",
+      "shards_use": "Model training and evaluation recipe changes",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA-NeMo/Evaluator",
+      "priority": "P1",
+      "category": "Models / Training",
+      "shards_use": "Evaluation harness updates",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA-NeMo/Curator",
+      "priority": "P1",
+      "category": "Models / Training",
+      "shards_use": "Dataset preparation pipelines",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA-NeMo/agent-hardener",
+      "priority": "P1",
+      "category": "Kernel / Security",
+      "shards_use": "Agent security verification workflows",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/NeMo-Retriever",
+      "priority": "P1",
+      "category": "RAG / Data",
+      "shards_use": "Retriever and knowledge integration",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/context-aware-rag",
+      "priority": "P1",
+      "category": "RAG / Data",
+      "shards_use": "Context-aware retrieval examples",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/workbench-example-agentic-rag",
+      "priority": "P1",
+      "category": "RAG / Data",
+      "shards_use": "Agentic retrieval workflow patterns",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/TensorRT-LLM",
+      "priority": "P1",
+      "category": "Inference",
+      "shards_use": "Efficient inference and serving APIs",
+      "watch": true
+    },
+    {
+      "upstream": "triton-inference-server/server",
+      "priority": "P1",
+      "category": "Inference",
+      "shards_use": "Triton serving and inference endpoints",
+      "watch": true
+    },
+    {
+      "upstream": "triton-inference-server/vllm_backend",
+      "priority": "P1",
+      "category": "Inference",
+      "shards_use": "vLLM-to-Triton backend integration",
+      "watch": true
+    },
+    {
+      "upstream": "triton-inference-server/python_backend",
+      "priority": "P1",
+      "category": "Inference",
+      "shards_use": "Custom Python model serving",
+      "watch": true
+    },
+    {
+      "upstream": "ai-dynamo/dynamo",
+      "priority": "P1",
+      "category": "Inference",
+      "shards_use": "Distributed inference scheduling architecture",
+      "watch": true
+    },
+    {
+      "upstream": "ai-dynamo/nixl",
+      "priority": "P1",
+      "category": "Inference",
+      "shards_use": "Inference data movement and memory transports",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/nvidia-container-toolkit",
+      "priority": "P1",
+      "category": "Infrastructure",
+      "shards_use": "Container/runtime GPU integration",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/gpu-operator",
+      "priority": "P1",
+      "category": "Infrastructure",
+      "shards_use": "GPU scheduling and device management",
+      "watch": true
+    },
+    {
+      "upstream": "NVIDIA/k8s-device-plugin",
+      "priority": "P2",
+      "category": "Infrastructure",
+      "shards_use": "Kubernetes device resource allocation",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA/TransformerEngine",
+      "priority": "P2",
+      "category": "Models / Training",
+      "shards_use": "Transformer model optimisation",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA/Model-Optimizer",
+      "priority": "P2",
+      "category": "Models / Training",
+      "shards_use": "Quantisation and model compression",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA/Megatron-LM",
+      "priority": "P2",
+      "category": "Models / Training",
+      "shards_use": "Large-scale distributed training",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA/cosmos",
+      "priority": "P2",
+      "category": "Robotics / Simulation",
+      "shards_use": "World models and physical-AI research",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA/Isaac-GR00T",
+      "priority": "P2",
+      "category": "Robotics / Simulation",
+      "shards_use": "Robotics foundation-model resources",
+      "watch": false
+    },
+    {
+      "upstream": "isaac-sim/IsaacLab",
+      "priority": "P2",
+      "category": "Robotics / Simulation",
+      "shards_use": "Robot learning and simulation",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA/physicsnemo",
+      "priority": "P2",
+      "category": "Robotics / Simulation",
+      "shards_use": "Physics-informed simulation tooling",
+      "watch": false
+    },
+    {
+      "upstream": "NVIDIA-Omniverse/PhysX",
+      "priority": "P2",
+      "category": "Robotics / Simulation",
+      "shards_use": "Physics engine and simulation assets",
+      "watch": false
+    }
+  ]
+}
