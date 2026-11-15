@@ -56,6 +56,26 @@ jobs:
           check("real Solana token scan",status==200 and sol.get("kind")=="token" and sol.get("sources",{}).get("rugcheck",{}).get("status")=="ok" and sol.get("verified_source_count",0)>0,sol.get("risk",sol.get("error")))
           print("FULL E2E SMOKE: PASS")
           PY
+      - name: Verify HTTPS enforcement on main and security domains
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import urllib.request
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,*args,**kwargs): return None
+          opener=urllib.request.build_opener(NoRedirect)
+          for host in ("shardsinc.co.uk","security.shardsinc.co.uk"):
+              req=urllib.request.Request("http://"+host+"/",headers={"User-Agent":"Shards-Security-HTTPS-Audit/1.0"})
+              try:
+                  resp=opener.open(req,timeout=15)
+              except urllib.error.HTTPError as e:
+                  resp=e
+              code=resp.status
+              location=resp.headers.get("Location","")
+              print(host,"HTTP",code,"Location:",location)
+              assert code in (301,302,307,308) and location.startswith("https://"+host+"/"), "Missing HTTPS redirect for "+host
+          print("HTTPS REDIRECTS: PASS")
+          PY
       - name: Check deployed browser JavaScript syntax
         shell: bash
         run: |
