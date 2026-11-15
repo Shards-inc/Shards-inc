@@ -161,9 +161,46 @@ def verify(destination, upstream):
             return True
     return False
 
+def is_transient_network_error(message):
+    m = str(message).lower()
+    return any(marker in m for marker in (
+        "i/o timeout", "timed out", "timeout", "connection reset",
+        "temporary failure", "connection refused", "http 502",
+        "http 503", "http 504", "unexpected eof",
+    ))
+
 def fork(source, destination_name):
+    """Retry a fork POST only after a failed POST is reconciled with GitHub.
+
+    A timeout may mean the POST actually succeeded. Never retry on 403/429
+    rate limits, non-network errors, or an occupied destination name.
+    """
     body = {"name": destination_name, "default_branch_only": False}
-    return gh(["-X", "POST", "--input", "-", "repos/" + source + "/forks"], body)
+    destination = TARGET + "/" + destination_name
+    for attempt in range(3):
+        try:
+            return gh(["-X", "POST", "--input", "-",
+                       "repos/" + source + "/forks"], body)
+        except GHError as exc:
+            if not is_transient_network_error(exc):
+                raise
+            # Reconcile the uncertain POST before considering another POST.
+            if verify(destination, source):
+                print("POST response lost, but real fork exists: " + destination,
+                      flush=True)
+                return {"full_name": destination, "fork": True}
+            existing = get_repo(destination)
+            if existing is not None:
+                raise GHError("STOP: destination is occupied by an unrelated "
+                              "repository; will not retry: " + destination) from exc
+            if attempt == 2:
+                raise GHError("Fork POST timed out three times with no verified "
+                              "fork; stopped: " + destination) from exc
+            wait = (5, 12)[attempt]
+            print("Transient POST failure; destination confirmed absent. "
+                  f"Retrying same fork in {wait}s ({attempt + 1}/2)", flush=True)
+            time.sleep(wait)
+    raise GHError("Unexpected fork retry state")
 
 def destination_for(repo, taken):
     source = repo["full_name"]
