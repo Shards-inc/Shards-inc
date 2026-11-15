@@ -61,12 +61,7 @@ def gh(args, payload=None):
             failure = (r.stderr or r.stdout).strip()[:800]
         except (OSError, subprocess.TimeoutExpired) as exc:
             failure = str(exc)
-        low = failure.lower()
-        retryable = any(marker in low for marker in (
-            "i/o timeout", "timed out", "timeout", "connection reset",
-            "temporary failure", "connection refused", "eof",
-            "http 502", "http 503", "http 504",
-        ))
+        retryable = is_transient_network_error(failure)
         if is_write or not retryable or attempt == 2:
             raise GHError(failure)
         pause = (2, 5)[attempt]
@@ -162,11 +157,19 @@ def verify(destination, upstream):
     return False
 
 def is_transient_network_error(message):
+    """Classify connectivity failures; never mistake GitHub 403/429 for transient."""
+    if is_rate_limited(message):
+        return False
     m = str(message).lower()
     return any(marker in m for marker in (
         "i/o timeout", "timed out", "timeout", "connection reset",
         "temporary failure", "connection refused", "http 502",
         "http 503", "http 504", "unexpected eof",
+        "error connecting to api.github.com",
+        "check your internet connection",
+        "could not resolve host", "name resolution",
+        "network is unreachable", "no route to host",
+        "tls handshake timeout", "dial tcp",
     ))
 
 def fork(source, destination_name):
