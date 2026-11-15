@@ -26,6 +26,8 @@ Re-run the final command for subsequent batches. The script skips forks whose `p
 - Handles identical repository names from different upstream organisations by generating a destination name containing the upstream organisation.
 - Serial requests with a delay (default 6 seconds); stops on failures or rate limits rather than flooding GitHub.
 - Verifies newly created forks by checking their `parent.full_name`.
+- Uses paginated GraphQL to collect existing fork-parent relationships in bulk, rather than one REST request per existing fork.
+- Retries temporary read-only connectivity errors with bounded backoff; **never blindly retries a fork-creation POST**.
 - Writes an audit report to `~/nvidia-fork-audit.json`; reports accepted-but-unverified forks separately.
 
 ## Configuration
