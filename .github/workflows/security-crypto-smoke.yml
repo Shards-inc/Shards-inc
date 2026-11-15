@@ -1,0 +1,54 @@
+name: Shards Security crypto scanner smoke test
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/security-crypto-smoke.yml
+permissions:
+  contents: read
+jobs:
+  live-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Exercise deployed Cloudflare Worker and real upstream data
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.request
+          import urllib.error
+          from urllib.parse import urlencode
+          BASE="https://security.shardsinc.co.uk"
+          def request(path):
+              req=urllib.request.Request(BASE+path, headers={"Accept":"application/json","User-Agent":"Shards-Security-Verification/1.0"})
+              try:
+                  with urllib.request.urlopen(req,timeout=28) as r:
+                      return r.status,r.read(150000).decode('utf-8')
+              except urllib.error.HTTPError as e:
+                  return e.code,e.read(50000).decode("utf-8","replace")
+          def check(name,success,info=""):
+              print(("PASS" if success else "FAIL")+": "+name+" "+str(info)[:250])
+              if not success:
+                  raise SystemExit(1)
+          status, body=request("/")
+          check("homepage HTTP 200 and scanner present",status==200 and 'id="sc-scan"' in body and "PhishRisk" in body,status)
+          status, body=request("/app.js")
+          check("client javascript available",status==200 and "shards_crypto_watchlist_v1" in body,status)
+          status, body=request("/api/status")
+          check("existing status endpoint preserved",status==200 and json.loads(body).get("service")=="Shards Security",status)
+          status, body=request("/api/crypto/token?chain=1&address=invalid")
+          check("token input validation",status==400 and "error" in json.loads(body),status)
+          status, body=request("/api/crypto/wallet?chain=solana&address=not-a-sol-address")
+          check("wallet input validation",status==400 and "error" in json.loads(body),status)
+          token_address="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+          status, body=request("/api/crypto/token?"+urlencode({"chain":"1","address":token_address}))
+          print("TOKEN RESPONSE",status,body[:1200])
+          token=json.loads(body)
+          check("real Ethereum token scan",status==200 and token.get("kind")=="token" and token.get("verified_source_count",0)>0 and any(x.get("status")=="ok" for x in token.get("sources",{}).values()),token.get("risk"))
+          status, body=request("/api/crypto/wallet?"+urlencode({"chain":"1","address":"0x000000000000000000000000000000000000dEaD"}))
+          print("WALLET RESPONSE",status,body[:1200])
+          wallet=json.loads(body)
+          check("real wallet address scan",status==200 and wallet.get("kind")=="wallet" and wallet.get("verified_source_count",0)>0 and wallet.get("sources",{}).get("goplus",{}).get("status")=="ok",wallet.get("risk",wallet.get("error")))
+          print("FULL E2E SMOKE: PASS")
+          PY
