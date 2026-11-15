@@ -2,16 +2,17 @@
 
 Generated from verified GitHub fork-parent relationships.
 
-Last scan: 2026-11-15T22:57:29+00:00  
-NVIDIA-related forks: 489  
+Last scan: 2026-11-15T23:01:18+00:00  
+NVIDIA-related forks: 495  
 Curated integration candidates: 30  
 Monitored forks: 22
 
 ## Browse
 
-- [Mobile-searchable HTML](index.html) (GitHub Pages or local files)
+- [Live mobile catalogue](https://catalogue.shardsinc.co.uk/)
 - [Full JSON index](catalogue.json)
 - [Latest watch report](changes.json)
+- [Persistent upstream notifications](https://github.com/Shards-inc/Shards-inc/issues/2)
 
 ## Strategic candidates
 
@@ -54,10 +55,10 @@ Monitored forks: 22
 - Inference: 73
 - Infrastructure: 81
 - Kernel / Security: 5
-- MCP / Agent Hub: 40
+- MCP / Agent Hub: 41
 - Models / Training: 66
 - RAG / Data: 45
-- Research / Other: 121
+- Research / Other: 126
 - Robotics / Simulation: 54
 
 ## Monitoring
