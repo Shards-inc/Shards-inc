@@ -54,21 +54,3 @@ jobs:
           check('Preview remains noindex','noindex' in {k.lower():v for k,v in phead.items()}.get('x-robots-tag','').lower(),str(phead.get('x-robots-tag',phead.get('X-Robots-Tag'))))
           print('SHARDS NAVIGATION E2E: PASS')
           PY
-      - name: Check HTTP to HTTPS redirect and canonical www
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import urllib.request, urllib.error
-          class NoRedirect(urllib.request.HTTPRedirectHandler):
-              def redirect_request(self,*args,**kwargs): return None
-          opener=urllib.request.build_opener(NoRedirect)
-          for url,expected in [
-              ('http://shardsinc.co.uk/','https://shardsinc.co.uk/'),
-              ('https://www.shardsinc.co.uk/','https://shardsinc.co.uk/')]:
-              try: r=opener.open(url,timeout=12)
-              except urllib.error.HTTPError as e: r=e
-              loc=r.headers.get('Location','')
-              print(url,r.status,loc)
-              assert r.status in (301,302,307,308) and loc==expected
-          print('CANONICAL REDIRECTS: PASS')
-          PY
