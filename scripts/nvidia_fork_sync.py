@@ -44,26 +44,92 @@ class GHError(RuntimeError):
     pass
 
 def gh(args, payload=None):
+    """Read operations retry transient failures; fork POSTs are NEVER replayed."""
     cmd = ["gh", "api", "-H", "Accept: application/vnd.github+json"] + args
-    try:
-        r = subprocess.run(
-            cmd, input=json.dumps(payload) if payload is not None else None,
-            text=True, capture_output=True, timeout=120,
-        )
-    except (OSError, subprocess.TimeoutExpired) as exc:
-        raise GHError(str(exc)) from exc
-    if r.returncode:
-        raise GHError((r.stderr or r.stdout).strip()[:800])
-    try:
-        return json.loads(r.stdout)
-    except ValueError as exc:
-        raise GHError("Unexpected non-JSON response from GitHub CLI") from exc
+    is_write = "-X" in args and "POST" in args
+    for attempt in range(3 if not is_write else 1):
+        try:
+            r = subprocess.run(
+                cmd, input=json.dumps(payload) if payload is not None else None,
+                text=True, capture_output=True, timeout=120,
+            )
+            if r.returncode == 0:
+                try:
+                    return json.loads(r.stdout)
+                except ValueError as exc:
+                    raise GHError("Unexpected non-JSON response from GitHub CLI") from exc
+            failure = (r.stderr or r.stdout).strip()[:800]
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            failure = str(exc)
+        low = failure.lower()
+        retryable = any(marker in low for marker in (
+            "i/o timeout", "timed out", "timeout", "connection reset",
+            "temporary failure", "connection refused", "eof",
+            "http 502", "http 503", "http 504",
+        ))
+        if is_write or not retryable or attempt == 2:
+            raise GHError(failure)
+        pause = (2, 5)[attempt]
+        print(f"Transient GitHub read error; retry {attempt + 1}/2 in {pause}s",
+              file=sys.stderr, flush=True)
+        time.sleep(pause)
+    raise GHError("Unexpected retry loop exit")
 
 def listing(path):
     pages = gh(["--paginate", "--slurp", path])
     if not isinstance(pages, list) or any(not isinstance(p, list) for p in pages):
         raise GHError("Unexpected GitHub pagination response: " + path)
     return [item for page in pages for item in page]
+
+def list_owned_with_parents():
+    """Fetch Shards-inc-owned repository names and fork parents via GraphQL.
+
+    Unlike the REST repository-list response, GraphQL includes parent in the
+    same page, reducing N per-fork GETs to approximately ceil(N/100) requests.
+    """
+    query = (
+        "query($cursor:String){viewer{login repositories("
+        "first:100 affiliations:OWNER after:$cursor "
+        "orderBy:{field:NAME direction:ASC}){"
+        "pageInfo{hasNextPage endCursor}"
+        "nodes{name nameWithOwner isFork parent{nameWithOwner}}}}}"
+    )
+    cursor = None
+    previous_cursors = set()
+    owned = []
+    while True:
+        params = ["graphql", "-f", "query=" + query]
+        if cursor is not None:
+            params += ["-f", "cursor=" + cursor]
+        result = gh(params)
+        if result.get("errors"):
+            raise GHError("GraphQL errors: " + json.dumps(result["errors"])[:500])
+        try:
+            viewer = result["data"]["viewer"]
+            if viewer["login"].lower() != TARGET.lower():
+                raise GHError("GraphQL returned an unexpected authenticated user")
+            block = viewer["repositories"]
+            nodes = block["nodes"]
+            page_info = block["pageInfo"]
+        except (KeyError, TypeError, AttributeError) as exc:
+            raise GHError("Malformed GitHub GraphQL repository response") from exc
+        for node in nodes:
+            if not node or not node.get("name") or not node.get("nameWithOwner"):
+                raise GHError("Missing repository identity in GraphQL response")
+            if node["nameWithOwner"].split("/", 1)[0].lower() != TARGET.lower():
+                raise GHError("GraphQL returned a repository owned by another account")
+            if node["isFork"] and not (node.get("parent") or {}).get("nameWithOwner"):
+                raise GHError("Existing fork has an unknown upstream parent: "
+                              + node["nameWithOwner"])
+            owned.append(node)
+        if not page_info["hasNextPage"]:
+            break
+        next_cursor = page_info.get("endCursor")
+        if not next_cursor or next_cursor in previous_cursors:
+            raise GHError("GraphQL pagination cursor is missing or repeated")
+        previous_cursors.add(next_cursor)
+        cursor = next_cursor
+    return owned
 
 def get_repo(full_name):
     try:
@@ -151,23 +217,17 @@ def main():
             source_map[r["full_name"].lower()] = r
         print(f"  {org}: {len(source_repos)} eligible nonarchived source repositories found")
 
-    # Existing fork relationships must be established by GitHub metadata,
-    # not guessed from identical names or old report files.
+    # GraphQL includes parent data per repository, avoiding one REST GET per
+    # existing fork. Account and unknown-parent checks remain fail-closed.
     try:
-        own_repos = listing("user/repos?affiliation=owner&per_page=100")
-        own_repos = [r for r in own_repos
-                     if r.get("owner", {}).get("login", "").lower() == TARGET.lower()]
+        own_repos = list_owned_with_parents()
         taken = {r["name"].lower(): r for r in own_repos}
-        upstreams = set()
-        for r in own_repos:
-            if r.get("fork"):
-                detail = r if r.get("parent") else get_repo(r["full_name"])
-                if detail is None:
-                    raise GHError("Missing owned fork: " + r["full_name"])
-                parent = parent_name(detail)
-                if not parent:
-                    raise GHError("Cannot verify existing fork parent: " + r["full_name"])
-                upstreams.add(parent)
+        upstreams = {
+            r["parent"]["nameWithOwner"].lower()
+            for r in own_repos if r["isFork"]
+        }
+        print(f"Existing Shards-inc repositories: {len(own_repos)} "
+              f"({len(upstreams)} distinct verified upstream parents)")
     except GHError as exc:
         raise SystemExit(f"BLOCKED: Cannot inspect existing Shards-inc forks: {exc}") from exc
 
