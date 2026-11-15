@@ -52,6 +52,10 @@ jobs:
             echo "No generated changes."
           else
             git commit -m "chore(catalogue): refresh NVIDIA fork index and upstream SHAs"
+            # The profile repo can receive unrelated README changes while the scan runs.
+            # Rebase ONLY this generated-data commit; never force-push.
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main
           fi
 
