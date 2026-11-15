@@ -1,0 +1,1 @@
+window.SHARDS_NVIDIA_CATALOGUE = null;
