@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Shards NVIDIA Source Catalogue</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0a0f17;color:#e7effb;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;min-height:100vh}a{color:#8dc1ff;text-decoration:none}a:hover{text-decoration:underline}
+header{background:radial-gradient(ellipse at 85% 5%,#234d86 0,transparent 40%),linear-gradient(135deg,#101d31,#0a0f17 70%);border-bottom:1px solid #24354a;padding:34px max(20px,calc((100vw - 1180px)/2))}
+.eyebrow{text-transform:uppercase;letter-spacing:.19em;color:#8cb3de;font-size:.75rem;font-weight:700}
+h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.12;margin:.6rem 0}header p{color:#bac7d8;max-width:680px;line-height:1.6}
+.container{max-width:1180px;padding:22px 20px 65px;margin:auto}.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-22px 0 24px}
+.metric{padding:18px;border:1px solid #2d435e;background:#111e2c;border-radius:14px}.metric strong{display:block;font-size:clamp(1.25rem,3vw,2rem)}.metric span{font-size:.78rem;color:#a8bbd1}
+.filters{padding:16px;background:#111b29;border:1px solid #26374b;border-radius:14px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+label{font-size:.78rem;color:#bbcadc;display:flex;gap:7px;flex-direction:column}
+input,select{background:#0b1420;color:#f2f6fc;border:1px solid #3a4b63;padding:12px;border-radius:9px;font:inherit;min-width:0;outline-offset:3px}
+input:focus,select:focus{border-color:#82b9fa;outline:1px solid #82b9fa}
+.switches{display:flex;align-items:center;gap:18px;margin:14px 0 20px;flex-wrap:wrap}
+.switches label{display:flex;flex-direction:row;align-items:center;gap:8px;font-size:.85rem;cursor:pointer}
+.switches input{accent-color:#67b8fc}
+#resultCount{color:#afc0d4;margin-left:auto;font-size:.84rem}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{border:1px solid #2d4057;border-radius:14px;background:#0f1a28;padding:17px;min-width:0;overflow-wrap:anywhere;display:flex;flex-direction:column;gap:11px}
+.card:hover{border-color:#557cab}.top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card h2{font-size:1.06rem;margin:0;line-height:1.4}.chip{border:1px solid #445974;border-radius:99px;padding:4px 9px;font-size:.7rem;white-space:nowrap;color:#c8d7e8}
+.chip.p0{border-color:#86b9fb;color:#b2d5ff}.chip.p1{border-color:#77a9a7;color:#9ddecf}
+.desc{margin:0;color:#b5c2d3;font-size:.85rem;line-height:1.6;flex:1}
+.meta{display:flex;gap:7px;flex-wrap:wrap}.pill{border:1px solid #30445d;border-radius:6px;padding:4px 7px;color:#bbcadd;font-size:.73rem}
+.potential{font-size:.8rem;padding:10px;background:#18273b;border-left:2px solid #4ca7e9;border-radius:4px;color:#d2dff1}
+.links{display:flex;gap:18px;font-size:.83rem;padding-top:3px}
+.note{font-size:.8rem;color:#9eb1c8;line-height:1.7;margin:22px 0}
+.status{padding:26px;text-align:center;color:#c3d5ea}.action{background:#253e60;border:1px solid #4d6d93;color:white;border-radius:8px;padding:8px 12px;cursor:pointer}
+.action:hover{background:#365578}
+footer{font-size:.78rem;color:#97aabe;padding:16px 0;border-top:1px solid #26354b;margin-top:28px}
+@media(max-width:700px){.filters{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.metrics{margin-top:-14px}.metric{padding:12px}.switches{gap:11px}.container{padding:14px 13px 40px}header{padding:25px 14px}.card{padding:14px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Shards-inc / Research Intelligence</div>
+  <h1>NVIDIA source catalogue</h1>
+  <p>A searchable index of genuine NVIDIA-related GitHub forks. Explore source projects, assess integration fit, and follow a curated upstream watchlist.</p>
+  <p><a href="https://github.com/Shards-inc/Shards-inc/tree/main/docs/nvidia-catalogue">View source and audit reports</a></p>
+</header>
+<main class="container">
+  <section class="metrics" aria-label="Catalogue metrics">
+    <div class="metric"><strong id="count">—</strong><span>Verified forks</span></div>
+    <div class="metric"><strong id="priorityCount">—</strong><span>Curated candidates</span></div>
+    <div class="metric"><strong id="monitorCount">—</strong><span>Monitored forks</span></div>
+  </section>
+  <section class="filters" aria-label="Catalogue filters">
+    <label>Search repos, capabilities and descriptions<input id="query" type="search" placeholder="e.g. MCP, NemoClaw, Triton, guardrails" autocomplete="off"></label>
+    <label>Capability<select id="category"><option value="">All capabilities</option></select></label>
+    <label>Priority<select id="priority"><option value="">All priorities</option><option value="P0">P0 · Immediate</option><option value="P1">P1 · Strategic</option><option value="P2">P2 · Research</option><option value="Archive">Archive</option></select></label>
+  </section>
+  <div class="switches">
+    <label><input type="checkbox" id="monitored"> Upstream monitored only</label>
+    <label><input type="checkbox" id="curated"> Integration candidates only</label>
+    <button id="clear" class="action" type="button">Reset filters</button>
+    <span id="resultCount" aria-live="polite">Loading catalogue…</span>
+  </div>
+  <section id="results" class="cards" aria-live="polite"></section>
+  <div id="status" class="status" role="status"></div>
+  <p class="note" id="stamp"></p>
+  <footer>
+    A fork is not an endorsement, a deployment or a licence grant for model weights or datasets.
+    Upstream HEAD changes are review signals only. No merges or deployments are automated.
+    Powered by GitHub metadata, without external analytics or tracking scripts.
+  </footer>
+</main>
+<script src="catalogue-data.js"></script>
+<script>
+"use strict";
+(function(){
+const data=window.SHARDS_NVIDIA_CATALOGUE;
+const byId=(id)=>document.getElementById(id);
+const results=byId("results"), status=byId("status"), count=byId("resultCount");
+if(!data||!Array.isArray(data.entries)){
+  status.textContent="The catalogue has not been generated yet. Check the NVIDIA catalogue GitHub Actions workflow.";
+  count.textContent="No data available";
+  return;
+}
+byId("count").textContent=String(data.total);
+byId("priorityCount").textContent=String(data.priority_count);
+byId("monitorCount").textContent=String(data.monitored_count);
+byId("stamp").textContent="Last catalogue scan: "+(data.generated_at||"not yet generated")+
+  ". Head equality is not proof that histories are identical; compare before merging.";
+for(const category of Object.keys(data.categories||{}).sort()){
+  const opt=document.createElement("option");opt.value=category;opt.textContent=category;
+  byId("category").appendChild(opt);
+}
+const label=(tag,cls,content)=>{
+  const n=document.createElement(tag);n.className=cls;n.textContent=content;return n;
+};
+function safeLink(url,text){
+  const a=document.createElement("a");
+  try{
+    const parsed=new URL(url);
+    if(parsed.protocol==="https:" && parsed.hostname==="github.com"){a.href=parsed.href;}
+  }catch(_){}
+  a.textContent=text;a.target="_blank";a.rel="noopener noreferrer";return a;
+}
+function makeCard(row){
+  const card=document.createElement("article");card.className="card";
+  const top=label("div","top","");
+  const title=document.createElement("h2");title.appendChild(safeLink(row.fork_url,row.fork));
+  top.append(title,label("span","chip "+(row.priority==="P0"?"p0":row.priority==="P1"?"p1":""),row.priority));
+  card.appendChild(top);
+  card.appendChild(label("p","desc",row.description||"No project description supplied by upstream."));
+  const meta=label("div","meta","");
+  for(const item of [row.category,row.language,row.licence]){
+    meta.appendChild(label("span","pill",item||"Unknown"));
+  }
+  if(row.monitoring)meta.appendChild(label("span","pill","Upstream monitored"));
+  card.appendChild(meta);
+  if(row.shards_use)card.appendChild(label("div","potential","Potential integration: "+row.shards_use));
+  const links=label("div","links","");
+  links.append(safeLink(row.upstream_url,"Upstream: "+row.upstream),safeLink(row.fork_url,"Open fork"));
+  card.appendChild(links);
+  return card;
+}
+function render(){
+  const q=byId("query").value.trim().toLowerCase();
+  const cat=byId("category").value, priority=byId("priority").value;
+  const monitored=byId("monitored").checked,curated=byId("curated").checked;
+  const filtered=data.entries.filter(r=>{
+    if(cat && r.category!==cat)return false;
+    if(priority && r.priority!==priority)return false;
+    if(monitored && !r.monitoring)return false;
+    if(curated && r.priority==="Archive")return false;
+    const haystack=[r.fork,r.upstream,r.description,r.category,r.language,r.licence,r.shards_use].join(" ").toLowerCase();
+    return !q||haystack.includes(q);
+  });
+  count.textContent=filtered.length+" of "+data.entries.length+" repositories";
+  results.replaceChildren();
+  const frag=document.createDocumentFragment();
+  for(const row of filtered.slice(0,300))frag.appendChild(makeCard(row));
+  results.appendChild(frag);
+  status.textContent=filtered.length>300?"Showing first 300 matches. Narrow your search to see the rest.":
+                     filtered.length===0?"No matching repositories. Adjust your filters.":"";
+}
+for(const id of ["query","category","priority","monitored","curated"])
+  byId(id).addEventListener(id==="query"?"input":"change",render);
+byId("clear").addEventListener("click",()=>{
+  byId("query").value="";byId("category").value="";byId("priority").value="";
+  byId("monitored").checked=false;byId("curated").checked=false;render();
+});
+render();
+})();
+</script>
+</body>
+</html>
