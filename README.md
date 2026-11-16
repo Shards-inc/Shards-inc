@@ -24,6 +24,8 @@ Shards also accepts **small, fixed-scope technical service enquiries**. A free w
 
 **[View services and request a free assessment](https://project32432.websitepublisher.ai/)**
 
+**[Verified enquiry-capture case study](portfolio/verified-business-enquiry-capture.md)** — platform-side test evidence, limitations and concrete scope (not a claim of completed customer sales).
+
 The enquiry is free; it does not charge or create a contract. Security preflights are not penetration tests or certifications. Paid services are agreed individually before any work starts.
 
 ---
