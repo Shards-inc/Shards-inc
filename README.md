@@ -11,6 +11,23 @@ I specialize in designing **mechanical, digital, and decentralized systems** wit
 
 ---
 
+## Commercial Services — Enquiries Open
+
+Shards also accepts **small, fixed-scope technical service enquiries**. A free workflow assessment is available before commissioning work. Prices below are starting points, subject to an agreed scope and quote.
+
+| Service | Indicative starting price |
+|---|---:|
+| Workflow opportunity map | £39 |
+| Developer onboarding and documentation pack | £59 |
+| AI agent / MCP integration preflight (read-only) | £79 |
+| Custom workflow or API automation | Quoted after discovery |
+
+**[View services and request a free assessment](https://project32432.websitepublisher.ai/)**
+
+The enquiry is free; it does not charge or create a contract. Security preflights are not penetration tests or certifications. Paid services are agreed individually before any work starts.
+
+---
+
 ### NVIDIA Source Intelligence
 
 - [Searchable NVIDIA catalogue](https://catalogue.shardsinc.co.uk/) — mobile-friendly catalogue of genuine forks, capability filters and integration priorities
