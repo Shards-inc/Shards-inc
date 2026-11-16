@@ -1,0 +1,54 @@
+name: Shards NVIDIA licence evidence audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 7 * * *"
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/nvidia-license-audit.yml
+      - scripts/nvidia_license_audit.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shards-nvidia-licence-evidence
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout scoped repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Compile and validate read-only auditor
+        run: |
+          python3 -m py_compile scripts/nvidia_license_audit.py
+          python3 scripts/nvidia_license_audit.py --selftest
+
+      - name: Refresh restricted SPDX evidence (read-only)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/nvidia_license_audit.py --inspect-limit 40 --delay 3
+
+      - name: Commit generated reports to Shards-inc only
+        run: |
+          set -eu
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/nvidia-catalogue/licence-review.json docs/nvidia-catalogue/LICENCE_REVIEW.md
+          if git diff --cached --quiet; then
+            echo "No report changes."
+          else
+            git commit -m "chore: refresh NVIDIA licence evidence inventory"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
