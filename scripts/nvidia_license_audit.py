@@ -16,7 +16,8 @@ import sys
 import time
 from pathlib import Path
 
-from nvidia_fork_sync import GHError, ORGS, OSI, TARGET, gh, listing, list_owned_with_parents
+from nvidia_fork_sync import GHError, ORGS, OSI, TARGET, gh, listing
+from nvidia_catalogue import all_forks
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config" / "nvidia_catalogue_watch.json"
@@ -124,15 +125,24 @@ def inspect_license(repo):
 def audit(inspect_limit, delay):
     if shutil.which("gh") is None:
         raise RuntimeError("gh CLI is required")
-    actor = gh(["user"]).get("login")
-    if not actor or actor.lower() != TARGET.lower():
-        raise RuntimeError("BLOCKED: GitHub actor must be Shards-inc")
+    # GitHub Actions authenticates as github-actions[bot], whereas Termux must
+    # authenticate directly as Shards-inc. In CI, check the exact repository.
+    ci_repo = __import__("os").environ.get("GITHUB_REPOSITORY")
+    if ci_repo:
+        if ci_repo.lower() != "shards-inc/shards-inc":
+            raise RuntimeError("BLOCKED: CI repository must be Shards-inc/Shards-inc")
+    else:
+        actor = gh(["user"]).get("login")
+        if not actor or actor.lower() != TARGET.lower():
+            raise RuntimeError("BLOCKED: GitHub actor must be Shards-inc")
     config = read_json(CONFIG,{})
     if config.get("target_account") != TARGET:
         raise RuntimeError("BLOCKED: licence audit must target Shards-inc")
     priorities = {i["upstream"].lower():i for i in config["watchlist"]}
     sources = current_sources()
-    own = list_owned_with_parents()
+    own = all_forks()
+    if any(not r.get("parent") or not r["parent"].get("nameWithOwner") for r in own):
+        raise RuntimeError("BLOCKED: a Shards-inc fork has an unknown upstream parent")
     parents = {r["parent"]["nameWithOwner"].lower() for r in own if r.get("isFork")}
     rows, ready_missing = source_exclusions(sources, parents, priorities)
     previous = read_json(REPORT,{})
