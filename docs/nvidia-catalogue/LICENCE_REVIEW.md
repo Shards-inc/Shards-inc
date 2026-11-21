@@ -2,10 +2,10 @@
 
 **Read-only**: no project is automatically forked, cloned, executed, merged or re-licensed.
 
-Last scan: 2026-11-16T05:01:33+00:00  
-Source repositories discovered: 1508  
-Current candidates requiring review: 663  
-Verified distinct fork parents under Shards-inc: 849
+Last scan: 2026-11-21T15:43:02+00:00  
+Source repositories discovered: 1517  
+Current candidates requiring review: 667  
+Verified distinct fork parents under Shards-inc: 851
 
 ## Classification policy
 
@@ -18,13 +18,14 @@ Verified distinct fork parents under Shards-inc: 849
 
 ## Metadata classifications
 
-- no-recognised-spdx-in-repository-metadata: 659
+- no-recognised-spdx-in-repository-metadata: 663
 - non-allowlisted-spdx-requires-review: 4
 
 ## Standard GitHub licence-file endpoint evidence
 
-- not-yet-inspected: 623
-- standard-licence-evidence-found: 40
+- not-yet-inspected: 595
+- standard-licence-endpoint-not-found: 2
+- standard-licence-evidence-found: 70
 
 ## Curated high-priority review candidates
 

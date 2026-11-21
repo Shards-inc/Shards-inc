@@ -4,7 +4,7 @@
       "description": "A Datacenter Scale Distributed Inference Serving Framework",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T04:59:17+00:00",
+        "checked_at": "2026-11-21T15:40:47+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE",
@@ -17,10 +17,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "P1",
-      "pushed_at": "2026-11-16T04:03:48Z",
+      "pushed_at": "2026-11-21T12:14:16Z",
       "shards_use": "Distributed inference scheduling architecture",
-      "stars": 8496,
-      "updated_at": "2026-11-16T02:01:32Z",
+      "stars": 8543,
+      "updated_at": "2026-11-21T14:30:18Z",
       "upstream": "ai-dynamo/dynamo",
       "url": "https://github.com/ai-dynamo/dynamo"
     },
@@ -28,7 +28,7 @@
       "description": "NVIDIA Inference Xfer Library (NIXL)",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T04:59:21+00:00",
+        "checked_at": "2026-11-21T15:40:50+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE",
@@ -41,10 +41,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "P1",
-      "pushed_at": "2026-11-15T22:53:59Z",
+      "pushed_at": "2026-11-21T14:54:39Z",
       "shards_use": "Inference data movement and memory transports",
-      "stars": 1365,
-      "updated_at": "2026-11-14T07:20:40Z",
+      "stars": 1373,
+      "updated_at": "2026-11-21T01:52:31Z",
       "upstream": "ai-dynamo/nixl",
       "url": "https://github.com/ai-dynamo/nixl"
     },
@@ -52,7 +52,7 @@
       "description": "Unified framework for robot learning with multi-physics/renderer support",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T04:59:24+00:00",
+        "checked_at": "2026-11-21T15:40:54+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE",
@@ -65,10 +65,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "P2",
-      "pushed_at": "2026-11-16T04:48:59Z",
+      "pushed_at": "2026-11-21T14:38:24Z",
       "shards_use": "Robot learning and simulation",
-      "stars": 8657,
-      "updated_at": "2026-11-15T19:03:41Z",
+      "stars": 8694,
+      "updated_at": "2026-11-21T14:53:24Z",
       "upstream": "isaac-sim/IsaacLab",
       "url": "https://github.com/isaac-sim/IsaacLab"
     },
@@ -91,8 +91,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-02-02T12:32:34Z",
       "shards_use": "",
-      "stars": 17602,
-      "updated_at": "2026-11-15T09:30:25Z",
+      "stars": 17606,
+      "updated_at": "2026-11-20T04:08:20Z",
       "upstream": "NVlabs/instant-ngp",
       "url": "https://github.com/NVlabs/instant-ngp"
     },
@@ -115,8 +115,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-04-10T08:30:29Z",
       "shards_use": "",
-      "stars": 14410,
-      "updated_at": "2026-11-14T20:52:07Z",
+      "stars": 14413,
+      "updated_at": "2026-11-20T12:49:56Z",
       "upstream": "NVlabs/stylegan",
       "url": "https://github.com/NVlabs/stylegan"
     },
@@ -139,8 +139,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-05-18T15:55:42Z",
       "shards_use": "",
-      "stars": 11182,
-      "updated_at": "2026-11-14T17:51:44Z",
+      "stars": 11187,
+      "updated_at": "2026-11-20T08:38:56Z",
       "upstream": "NVlabs/stylegan2",
       "url": "https://github.com/NVlabs/stylegan2"
     },
@@ -163,8 +163,8 @@
       "priority": "Unranked",
       "pushed_at": "2023-06-07T07:40:31Z",
       "shards_use": "",
-      "stars": 11177,
-      "updated_at": "2026-11-13T07:30:02Z",
+      "stars": 11175,
+      "updated_at": "2026-11-19T20:49:44Z",
       "upstream": "NVIDIA/FastPhotoStyle",
       "url": "https://github.com/NVIDIA/FastPhotoStyle"
     },
@@ -187,8 +187,8 @@
       "priority": "Unranked",
       "pushed_at": "2022-05-17T05:09:30Z",
       "shards_use": "",
-      "stars": 8699,
-      "updated_at": "2026-11-13T07:30:13Z",
+      "stars": 8698,
+      "updated_at": "2026-11-20T09:07:37Z",
       "upstream": "NVIDIA/vid2vid",
       "url": "https://github.com/NVIDIA/vid2vid"
     },
@@ -211,8 +211,8 @@
       "priority": "Unranked",
       "pushed_at": "2023-08-07T10:52:48Z",
       "shards_use": "",
-      "stars": 7718,
-      "updated_at": "2026-11-15T07:12:19Z",
+      "stars": 7719,
+      "updated_at": "2026-11-20T09:01:39Z",
       "upstream": "NVlabs/SPADE",
       "url": "https://github.com/NVlabs/SPADE"
     },
@@ -235,8 +235,8 @@
       "priority": "Unranked",
       "pushed_at": "2023-09-12T17:04:25Z",
       "shards_use": "",
-      "stars": 6942,
-      "updated_at": "2026-11-15T12:06:27Z",
+      "stars": 6944,
+      "updated_at": "2026-11-18T10:07:30Z",
       "upstream": "NVlabs/stylegan3",
       "url": "https://github.com/NVlabs/stylegan3"
     },
@@ -260,7 +260,7 @@
       "pushed_at": "2024-11-04T18:13:20Z",
       "shards_use": "",
       "stars": 6927,
-      "updated_at": "2026-11-13T07:30:19Z",
+      "updated_at": "2026-11-19T20:44:05Z",
       "upstream": "NVIDIA/pix2pixHD",
       "url": "https://github.com/NVIDIA/pix2pixHD"
     },
@@ -284,7 +284,7 @@
       "pushed_at": "2024-04-14T21:29:12Z",
       "shards_use": "",
       "stars": 4620,
-      "updated_at": "2026-11-11T04:13:26Z",
+      "updated_at": "2026-11-19T19:54:00Z",
       "upstream": "NVlabs/neuralangelo",
       "url": "https://github.com/NVlabs/neuralangelo"
     },
@@ -307,10 +307,34 @@
       "priority": "Unranked",
       "pushed_at": "2026-09-29T16:39:58Z",
       "shards_use": "",
-      "stars": 4547,
-      "updated_at": "2026-11-13T20:49:25Z",
+      "stars": 4551,
+      "updated_at": "2026-11-21T10:49:16Z",
       "upstream": "NVlabs/tiny-cuda-nn",
       "url": "https://github.com/NVlabs/tiny-cuda-nn"
+    },
+    {
+      "description": "NVIDIA Isaac Sim\u2122 is an open-source application on NVIDIA Omniverse for developing, simulating, and testing AI-driven robots in realistic virtual environments.",
+      "evidence": {
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:40:57+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "6c0a478c97f5994906059642e0a8c3bdc879bf5f",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/isaac-sim/IsaacSim/blob/release/6.3/LICENSE"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-16T17:45:37Z",
+      "shards_use": "",
+      "stars": 4521,
+      "updated_at": "2026-11-21T09:39:08Z",
+      "upstream": "isaac-sim/IsaacSim",
+      "url": "https://github.com/isaac-sim/IsaacSim"
     },
     {
       "description": "StyleGAN2-ADA - Official PyTorch implementation",
@@ -332,33 +356,9 @@
       "pushed_at": "2024-05-10T18:13:37Z",
       "shards_use": "",
       "stars": 4491,
-      "updated_at": "2026-11-15T02:24:29Z",
+      "updated_at": "2026-11-17T18:26:22Z",
       "upstream": "NVlabs/stylegan2-ada-pytorch",
       "url": "https://github.com/NVlabs/stylegan2-ada-pytorch"
-    },
-    {
-      "description": "NVIDIA Isaac Sim\u2122 is an open-source application on NVIDIA Omniverse for developing, simulating, and testing AI-driven robots in realistic virtual environments.",
-      "evidence": {
-        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T05:00:05+00:00",
-        "detected_name": "Other",
-        "detected_spdx": "NOASSERTION",
-        "path": "LICENSE",
-        "sha": "6c0a478c97f5994906059642e0a8c3bdc879bf5f",
-        "status": "standard-licence-evidence-found",
-        "url": "https://github.com/isaac-sim/IsaacSim/blob/release/6.3/LICENSE"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-13T16:47:30Z",
-      "shards_use": "",
-      "stars": 4485,
-      "updated_at": "2026-11-16T04:21:50Z",
-      "upstream": "isaac-sim/IsaacSim",
-      "url": "https://github.com/isaac-sim/IsaacSim"
     },
     {
       "description": "Flickr-Faces-HQ Dataset (FFHQ)",
@@ -379,8 +379,8 @@
       "priority": "Unranked",
       "pushed_at": "2022-11-18T17:43:03Z",
       "shards_use": "",
-      "stars": 4208,
-      "updated_at": "2026-11-14T10:23:13Z",
+      "stars": 4210,
+      "updated_at": "2026-11-21T04:26:27Z",
       "upstream": "NVlabs/ffhq-dataset",
       "url": "https://github.com/NVlabs/ffhq-dataset"
     },
@@ -404,7 +404,7 @@
       "pushed_at": "2022-11-29T10:24:50Z",
       "shards_use": "",
       "stars": 4077,
-      "updated_at": "2026-11-16T00:31:53Z",
+      "updated_at": "2026-11-21T07:20:06Z",
       "upstream": "NVlabs/imaginaire",
       "url": "https://github.com/NVlabs/imaginaire"
     },
@@ -427,8 +427,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-03T00:27:13Z",
       "shards_use": "",
-      "stars": 3920,
-      "updated_at": "2026-11-16T02:35:37Z",
+      "stars": 3938,
+      "updated_at": "2026-11-21T06:58:13Z",
       "upstream": "NVlabs/GR00T-WholeBodyControl",
       "url": "https://github.com/NVlabs/GR00T-WholeBodyControl"
     },
@@ -451,8 +451,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-08-02T15:50:33Z",
       "shards_use": "",
-      "stars": 3717,
-      "updated_at": "2026-11-15T02:47:53Z",
+      "stars": 3718,
+      "updated_at": "2026-11-21T05:48:56Z",
       "upstream": "NVlabs/SegFormer",
       "url": "https://github.com/NVlabs/SegFormer"
     },
@@ -475,8 +475,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-04-29T16:53:08Z",
       "shards_use": "",
-      "stars": 3700,
-      "updated_at": "2026-11-15T13:44:26Z",
+      "stars": 3708,
+      "updated_at": "2026-11-21T14:44:31Z",
       "upstream": "NVlabs/FoundationPose",
       "url": "https://github.com/NVlabs/FoundationPose"
     },
@@ -499,8 +499,8 @@
       "priority": "Unranked",
       "pushed_at": "2023-06-10T19:59:28Z",
       "shards_use": "",
-      "stars": 3337,
-      "updated_at": "2026-11-10T12:11:25Z",
+      "stars": 3336,
+      "updated_at": "2026-11-19T04:39:07Z",
       "upstream": "NVlabs/eg3d",
       "url": "https://github.com/NVlabs/eg3d"
     },
@@ -523,8 +523,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-03-30T19:34:57Z",
       "shards_use": "",
-      "stars": 3291,
-      "updated_at": "2026-11-13T23:58:39Z",
+      "stars": 3290,
+      "updated_at": "2026-11-19T20:43:08Z",
       "upstream": "NVIDIA/flownet2-pytorch",
       "url": "https://github.com/NVIDIA/flownet2-pytorch"
     },
@@ -547,8 +547,8 @@
       "priority": "Unranked",
       "pushed_at": "2025-12-19T00:46:24Z",
       "shards_use": "",
-      "stars": 2999,
-      "updated_at": "2026-11-16T03:33:49Z",
+      "stars": 3007,
+      "updated_at": "2026-11-20T07:33:53Z",
       "upstream": "NVlabs/FoundationStereo",
       "url": "https://github.com/NVlabs/FoundationStereo"
     },
@@ -572,7 +572,7 @@
       "pushed_at": "2024-03-05T16:00:19Z",
       "shards_use": "",
       "stars": 2975,
-      "updated_at": "2026-11-11T04:16:15Z",
+      "updated_at": "2026-11-19T21:20:43Z",
       "upstream": "NVIDIA/MinkowskiEngine",
       "url": "https://github.com/NVIDIA/MinkowskiEngine"
     },
@@ -595,8 +595,8 @@
       "priority": "Unranked",
       "pushed_at": "2022-09-20T12:23:52Z",
       "shards_use": "",
-      "stars": 2710,
-      "updated_at": "2026-11-14T00:29:13Z",
+      "stars": 2708,
+      "updated_at": "2026-11-19T20:53:25Z",
       "upstream": "NVlabs/MUNIT",
       "url": "https://github.com/NVlabs/MUNIT"
     },
@@ -604,7 +604,7 @@
       "description": "CUDA Core Compute Libraries",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T05:00:42+00:00",
+        "checked_at": "2026-11-21T15:41:00+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE",
@@ -617,10 +617,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-14T23:52:07Z",
+      "pushed_at": "2026-11-21T15:25:07Z",
       "shards_use": "",
-      "stars": 2577,
-      "updated_at": "2026-11-16T03:24:05Z",
+      "stars": 2581,
+      "updated_at": "2026-11-21T14:35:46Z",
       "upstream": "NVIDIA/cccl",
       "url": "https://github.com/NVIDIA/cccl"
     },
@@ -628,7 +628,7 @@
       "description": "NVIDIA Object Oriented Agents: the Pythonic way to build AI Agents.",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T05:00:45+00:00",
+        "checked_at": "2026-11-21T15:41:04+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE",
@@ -641,10 +641,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T23:45:10Z",
+      "pushed_at": "2026-11-21T01:27:51Z",
       "shards_use": "",
-      "stars": 2320,
-      "updated_at": "2026-11-16T03:38:10Z",
+      "stars": 2323,
+      "updated_at": "2026-11-20T12:59:10Z",
       "upstream": "NVIDIA-NeMo/labs-OO-Agents",
       "url": "https://github.com/NVIDIA-NeMo/labs-OO-Agents"
     },
@@ -667,8 +667,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-08-12T06:42:47Z",
       "shards_use": "",
-      "stars": 2302,
-      "updated_at": "2026-11-16T02:50:35Z",
+      "stars": 2301,
+      "updated_at": "2026-11-19T22:24:07Z",
       "upstream": "NVlabs/nvdiffrec",
       "url": "https://github.com/NVlabs/nvdiffrec"
     },
@@ -692,7 +692,7 @@
       "pushed_at": "2026-03-11T20:34:23Z",
       "shards_use": "",
       "stars": 2255,
-      "updated_at": "2026-11-13T05:29:18Z",
+      "updated_at": "2026-11-21T07:30:52Z",
       "upstream": "NVlabs/MambaVision",
       "url": "https://github.com/NVlabs/MambaVision"
     },
@@ -700,7 +700,7 @@
       "description": "NVIDIA curated collection of educational resources related to general purpose GPU programming.",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T05:00:56+00:00",
+        "checked_at": "2026-11-21T15:41:07+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE",
@@ -713,10 +713,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T19:39:45Z",
+      "pushed_at": "2026-11-19T22:53:05Z",
       "shards_use": "",
-      "stars": 2226,
-      "updated_at": "2026-11-16T01:24:50Z",
+      "stars": 2238,
+      "updated_at": "2026-11-21T14:16:29Z",
       "upstream": "NVIDIA/accelerated-computing-hub",
       "url": "https://github.com/NVIDIA/accelerated-computing-hub"
     },
@@ -724,7 +724,7 @@
       "description": "cuTile is a programming model for writing parallel kernels for NVIDIA GPUs",
       "evidence": {
         "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
-        "checked_at": "2026-11-16T05:00:59+00:00",
+        "checked_at": "2026-11-21T15:41:10+00:00",
         "detected_name": "Other",
         "detected_spdx": "NOASSERTION",
         "path": "LICENSE.md",
@@ -737,10 +737,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-14T11:16:17Z",
+      "pushed_at": "2026-11-21T11:06:36Z",
       "shards_use": "",
-      "stars": 2170,
-      "updated_at": "2026-11-15T21:33:40Z",
+      "stars": 2172,
+      "updated_at": "2026-11-20T16:03:27Z",
       "upstream": "NVIDIA/cutile-python",
       "url": "https://github.com/NVIDIA/cutile-python"
     },
@@ -763,8 +763,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-03-16T09:02:18Z",
       "shards_use": "",
-      "stars": 2009,
-      "updated_at": "2026-11-14T14:10:11Z",
+      "stars": 2008,
+      "updated_at": "2026-11-16T08:52:30Z",
       "upstream": "NVlabs/edm",
       "url": "https://github.com/NVlabs/edm"
     },
@@ -787,8 +787,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-06T11:11:36Z",
       "shards_use": "",
-      "stars": 2002,
-      "updated_at": "2026-11-15T13:44:27Z",
+      "stars": 2008,
+      "updated_at": "2026-11-19T10:52:25Z",
       "upstream": "NVlabs/RADIO",
       "url": "https://github.com/NVlabs/RADIO"
     },
@@ -811,8 +811,8 @@
       "priority": "Unranked",
       "pushed_at": "2025-12-08T13:25:14Z",
       "shards_use": "",
-      "stars": 1941,
-      "updated_at": "2026-11-15T23:54:24Z",
+      "stars": 1940,
+      "updated_at": "2026-11-19T22:01:42Z",
       "upstream": "NVlabs/nvdiffrast",
       "url": "https://github.com/NVlabs/nvdiffrast"
     },
@@ -835,8 +835,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-07-28T09:51:55Z",
       "shards_use": "",
-      "stars": 1909,
-      "updated_at": "2026-11-10T21:43:34Z",
+      "stars": 1914,
+      "updated_at": "2026-11-20T23:46:46Z",
       "upstream": "NVIDIA-AI-IOT/Lidar_AI_Solution",
       "url": "https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution"
     },
@@ -859,8 +859,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-04-01T08:46:09Z",
       "shards_use": "",
-      "stars": 1898,
-      "updated_at": "2026-11-12T00:41:04Z",
+      "stars": 1901,
+      "updated_at": "2026-11-21T03:03:37Z",
       "upstream": "NVIDIA-AI-IOT/deepstream_python_apps",
       "url": "https://github.com/NVIDIA-AI-IOT/deepstream_python_apps"
     },
@@ -883,8 +883,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-07-02T14:00:16Z",
       "shards_use": "",
-      "stars": 1828,
-      "updated_at": "2026-11-15T18:34:51Z",
+      "stars": 1829,
+      "updated_at": "2026-11-19T22:59:02Z",
       "upstream": "NVlabs/stylegan2-ada",
       "url": "https://github.com/NVlabs/stylegan2-ada"
     },
@@ -907,8 +907,8 @@
       "priority": "Unranked",
       "pushed_at": "2021-10-27T20:38:38Z",
       "shards_use": "",
-      "stars": 1794,
-      "updated_at": "2026-11-10T11:52:17Z",
+      "stars": 1793,
+      "updated_at": "2026-11-16T12:16:58Z",
       "upstream": "NVlabs/few-shot-vid2vid",
       "url": "https://github.com/NVlabs/few-shot-vid2vid"
     },
@@ -931,8 +931,8 @@
       "priority": "Unranked",
       "pushed_at": "2022-08-22T16:53:14Z",
       "shards_use": "",
-      "stars": 1741,
-      "updated_at": "2026-11-01T01:54:22Z",
+      "stars": 1740,
+      "updated_at": "2026-11-19T20:59:11Z",
       "upstream": "NVlabs/PWC-Net",
       "url": "https://github.com/NVlabs/PWC-Net"
     },
@@ -956,14 +956,21 @@
       "pushed_at": "2025-05-05T19:25:53Z",
       "shards_use": "",
       "stars": 1716,
-      "updated_at": "2026-11-15T23:48:53Z",
+      "updated_at": "2026-11-19T23:16:03Z",
       "upstream": "NVlabs/InstantSplat",
       "url": "https://github.com/NVlabs/InstantSplat"
     },
     {
       "description": "Sionna: An Open-Source Library for Research on Communication Systems",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:14+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "7d986f03342b8e6ae4741dfb94e179d829631108",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/sionna/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -972,15 +979,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-20T18:01:10Z",
       "shards_use": "",
-      "stars": 1681,
-      "updated_at": "2026-11-16T00:45:12Z",
+      "stars": 1691,
+      "updated_at": "2026-11-21T06:04:11Z",
       "upstream": "NVlabs/sionna",
       "url": "https://github.com/NVlabs/sionna"
     },
     {
       "description": "NVIDIA DLSS is a new and improved deep learning neural network that boosts frame rates and generates beautiful, sharp images for your games",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:17+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.txt",
+        "sha": "80756566d773cdac55179c5ae16c4495df7f73b5",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA/DLSS/blob/main/LICENSE.txt"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -989,15 +1003,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-16T16:07:09Z",
       "shards_use": "",
-      "stars": 1671,
-      "updated_at": "2026-11-16T02:52:51Z",
+      "stars": 1684,
+      "updated_at": "2026-11-21T10:13:39Z",
       "upstream": "NVIDIA/DLSS",
       "url": "https://github.com/NVIDIA/DLSS"
     },
     {
       "description": "[CVPR 2026] Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:21+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.txt",
+        "sha": "db16c96e458c7ba6ef4f4d3890dadb2b7bf56431",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/Fast-FoundationStereo/blob/master/LICENSE.txt"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1006,15 +1027,46 @@
       "priority": "Unranked",
       "pushed_at": "2026-09-11T23:35:44Z",
       "shards_use": "",
-      "stars": 1601,
-      "updated_at": "2026-11-16T04:37:01Z",
+      "stars": 1617,
+      "updated_at": "2026-11-20T17:59:13Z",
       "upstream": "NVlabs/Fast-FoundationStereo",
       "url": "https://github.com/NVlabs/Fast-FoundationStereo"
     },
     {
+      "description": "Kernel Design Agents (KDA) is a agent-centric workflow to write high-performance CUDA Kernels.",
+      "evidence": {
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:24+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "4082ac2f164e2ca780039c75dc1a045dae009e5a",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/kda/blob/main/LICENSE"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-19T06:05:09Z",
+      "shards_use": "",
+      "stars": 1611,
+      "updated_at": "2026-11-21T06:00:20Z",
+      "upstream": "NVlabs/kda",
+      "url": "https://github.com/NVlabs/kda"
+    },
+    {
       "description": "Translate images to unseen domains in the test time with few example images.",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:27+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.md",
+        "sha": "c0191147d34bfa76baab54ee07d5ffddcee0c07b",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/FUNIT/blob/master/LICENSE.md"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1029,26 +1081,16 @@
       "url": "https://github.com/NVlabs/FUNIT"
     },
     {
-      "description": "Kernel Design Agents (KDA) is a agent-centric workflow to write high-performance CUDA Kernels.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-19T06:05:09Z",
-      "shards_use": "",
-      "stars": 1584,
-      "updated_at": "2026-11-16T02:16:10Z",
-      "upstream": "NVlabs/kda",
-      "url": "https://github.com/NVlabs/kda"
-    },
-    {
       "description": "Noise2Noise: Learning Image Restoration without Clean Data - Official TensorFlow implementation of the ICML 2018 paper",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:31+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.txt",
+        "sha": "193f8009295e62dca9d73ff35d84d473c753abeb",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/noise2noise/blob/master/LICENSE.txt"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1057,15 +1099,46 @@
       "priority": "Unranked",
       "pushed_at": "2021-11-12T08:54:23Z",
       "shards_use": "",
-      "stars": 1568,
-      "updated_at": "2026-11-08T00:21:34Z",
+      "stars": 1569,
+      "updated_at": "2026-11-18T06:39:20Z",
       "upstream": "NVlabs/noise2noise",
       "url": "https://github.com/NVlabs/noise2noise"
     },
     {
+      "description": "Official implementation of MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives (SIGGRAPH 2026)",
+      "evidence": {
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:34+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "f6083b8e8a68bc9274a066ef2989f28225b6c5fc",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/motionbricks/blob/main/LICENSE"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-26T16:06:13Z",
+      "shards_use": "",
+      "stars": 1558,
+      "updated_at": "2026-11-21T14:58:17Z",
+      "upstream": "NVlabs/motionbricks",
+      "url": "https://github.com/NVlabs/motionbricks"
+    },
+    {
       "description": "[CVPR 2023] BundleSDF: Neural 6-DoF Tracking and 3D Reconstruction of Unknown Objects",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:38+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.txt",
+        "sha": "fa3d3dcc358cbd179fd96f99c993dd80d79052ef",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/BundleSDF/blob/master/LICENSE.txt"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1074,15 +1147,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-05-01T20:30:49Z",
       "shards_use": "",
-      "stars": 1429,
-      "updated_at": "2026-11-11T11:12:12Z",
+      "stars": 1432,
+      "updated_at": "2026-11-17T13:15:54Z",
       "upstream": "NVlabs/BundleSDF",
       "url": "https://github.com/NVlabs/BundleSDF"
     },
     {
       "description": "Samples for TensorRT/Deepstream for Tesla & Jetson",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:41+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "971af82597503f663fea5f2afb50bd0f62610eda",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/blob/master/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1091,15 +1171,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-07-15T09:40:36Z",
       "shards_use": "",
-      "stars": 1365,
-      "updated_at": "2026-11-14T18:41:52Z",
+      "stars": 1367,
+      "updated_at": "2026-11-20T02:09:12Z",
       "upstream": "NVIDIA-AI-IOT/deepstream_reference_apps",
       "url": "https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps"
     },
     {
       "description": "The implementation of \"Prismer: A Vision-Language Model with Multi-Task Experts\".",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:44+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "4b1dabd4f387f6d9641c805c0bd44df4bdd47bbe",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/prismer/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1108,15 +1195,22 @@
       "priority": "Unranked",
       "pushed_at": "2024-01-17T21:55:00Z",
       "shards_use": "",
-      "stars": 1308,
-      "updated_at": "2026-10-30T23:08:22Z",
+      "stars": 1306,
+      "updated_at": "2026-11-19T22:50:45Z",
       "upstream": "NVlabs/prismer",
       "url": "https://github.com/NVlabs/prismer"
     },
     {
       "description": ":couple: Joint Discriminative and Generative Learning for Person Re-identification. CVPR'19 (Oral) :couple:",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:48+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.md",
+        "sha": "c8d0dd115402eddddc8d0849fa329f3dfebdc3a8",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/DG-Net/blob/master/LICENSE.md"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1125,15 +1219,17 @@
       "priority": "Unranked",
       "pushed_at": "2023-07-09T10:24:47Z",
       "shards_use": "",
-      "stars": 1301,
-      "updated_at": "2026-10-30T04:54:30Z",
+      "stars": 1299,
+      "updated_at": "2026-11-19T21:27:02Z",
       "upstream": "NVlabs/DG-Net",
       "url": "https://github.com/NVlabs/DG-Net"
     },
     {
       "description": "Alias-Free GAN project website and code",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "404 does not establish the absence of a licence in other files or subdirectories",
+        "checked_at": "2026-11-21T15:41:51+00:00",
+        "status": "standard-licence-endpoint-not-found"
       },
       "fork_exists": false,
       "metadata_license_name": "",
@@ -1142,15 +1238,22 @@
       "priority": "Unranked",
       "pushed_at": "2021-10-11T21:11:20Z",
       "shards_use": "",
-      "stars": 1290,
-      "updated_at": "2026-11-15T23:50:29Z",
+      "stars": 1287,
+      "updated_at": "2026-11-19T22:15:33Z",
       "upstream": "NVlabs/alias-free-gan",
       "url": "https://github.com/NVlabs/alias-free-gan"
     },
     {
       "description": "A New Padding Scheme: Partial Convolution based Padding",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:41:55+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "4a0c48be6bbf74410d2900eeb40b1d3139e9023d",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA/partialconv/blob/master/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1167,7 +1270,9 @@
     {
       "description": "PyTorch implementation of Audio Flamingo: Series of Advanced Audio Understanding Language Models",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "404 does not establish the absence of a licence in other files or subdirectories",
+        "checked_at": "2026-11-21T15:41:58+00:00",
+        "status": "standard-licence-endpoint-not-found"
       },
       "fork_exists": false,
       "metadata_license_name": "",
@@ -1176,15 +1281,22 @@
       "priority": "Unranked",
       "pushed_at": "2025-12-15T18:24:26Z",
       "shards_use": "",
-      "stars": 1223,
-      "updated_at": "2026-11-15T10:23:50Z",
+      "stars": 1224,
+      "updated_at": "2026-11-21T03:55:28Z",
       "upstream": "NVIDIA/audio-flamingo",
       "url": "https://github.com/NVIDIA/audio-flamingo"
     },
     {
       "description": "Official PyTorch implementation of VoxFormer [CVPR 2023 Highlight]",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:01+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "a2403662607f920bed452ef6c471a15aaf2935a4",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/VoxFormer/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1194,14 +1306,21 @@
       "pushed_at": "2023-12-07T22:46:17Z",
       "shards_use": "",
       "stars": 1212,
-      "updated_at": "2026-11-13T16:54:35Z",
+      "updated_at": "2026-11-19T22:50:12Z",
       "upstream": "NVlabs/VoxFormer",
       "url": "https://github.com/NVlabs/VoxFormer"
     },
     {
       "description": "Deep Object Pose Estimation (DOPE) \u2013 ROS inference (CoRL 2018)",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:05+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "license.md",
+        "sha": "c655510273b51ca092503c4b5b4961ffe7af007c",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/Deep_Object_Pose/blob/master/license.md"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1218,7 +1337,14 @@
     {
       "description": "Omniverse Kit App Template",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:08+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "8e8e43daf5ed136c4bbe944348fdca3567d6167c",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA-Omniverse/kit-app-template/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1227,15 +1353,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-02T14:34:24Z",
       "shards_use": "",
-      "stars": 1148,
-      "updated_at": "2026-11-16T03:35:31Z",
+      "stars": 1152,
+      "updated_at": "2026-11-18T17:57:38Z",
       "upstream": "NVIDIA-Omniverse/kit-app-template",
       "url": "https://github.com/NVIDIA-Omniverse/kit-app-template"
     },
     {
       "description": "The Official PyTorch Implementation of \"NVAE: A Deep Hierarchical Variational Autoencoder\" (NeurIPS 2020 spotlight paper)",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:12+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "2b704502c3f8a1a803b3fcce90d6e6097bfeee2e",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/NVAE/blob/master/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1252,7 +1385,14 @@
     {
       "description": "Unsupervised Language Modeling at scale for robust sentiment classification",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:15+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "17f1e4c6c69068ed98c12ca6808d76640ee05e93",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA/sentiment-discovery/blob/master/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1269,7 +1409,14 @@
     {
       "description": "CUDA Tile IR is an MLIR-based intermediate representation and compiler infrastructure for CUDA kernel optimization, focusing on tile-based computation patterns and optimizations targeting NVIDIA tensor core units.",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:18+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.txt",
+        "sha": "6aa3392700582b0704359de0564e1f39caf9ab82",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA/cuda-tile/blob/main/LICENSE.txt"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1278,49 +1425,46 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-07T00:27:27Z",
       "shards_use": "",
-      "stars": 1058,
-      "updated_at": "2026-11-15T00:15:29Z",
+      "stars": 1061,
+      "updated_at": "2026-11-19T12:10:37Z",
       "upstream": "NVIDIA/cuda-tile",
       "url": "https://github.com/NVIDIA/cuda-tile"
     },
     {
-      "description": "Official implementation of MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives (SIGGRAPH 2026)",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-26T16:06:13Z",
-      "shards_use": "",
-      "stars": 1025,
-      "updated_at": "2026-11-15T20:26:18Z",
-      "upstream": "NVlabs/motionbricks",
-      "url": "https://github.com/NVlabs/motionbricks"
-    },
-    {
       "description": "NVIDIA cuDF for Apache Spark plugin - accelerate Apache Spark with GPUs",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:22+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "884b334376fab9418b5500d56d46ce1ffb60f221",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA/cudf-spark/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-16T01:27:45Z",
+      "pushed_at": "2026-11-21T04:35:18Z",
       "shards_use": "",
-      "stars": 1020,
-      "updated_at": "2026-11-15T12:21:04Z",
+      "stars": 1021,
+      "updated_at": "2026-11-19T06:18:43Z",
       "upstream": "NVIDIA/cudf-spark",
       "url": "https://github.com/NVIDIA/cudf-spark"
     },
     {
       "description": "[CVPR 2026 Best Paper Finalist & NeurIPS 2026]",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:25+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "d36c6bb0713e38289ca49ba221a151263976ecc8",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/PixelDiT/blob/master/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1329,15 +1473,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-16T04:33:41Z",
       "shards_use": "",
-      "stars": 1015,
-      "updated_at": "2026-11-13T01:34:44Z",
+      "stars": 1018,
+      "updated_at": "2026-11-21T12:51:25Z",
       "upstream": "NVlabs/PixelDiT",
       "url": "https://github.com/NVlabs/PixelDiT"
     },
     {
       "description": "[ICML2024 (Oral)] Official PyTorch implementation of DoRA: Weight-Decomposed Low-Rank Adaptation",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:29+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "43c5b76fa95eb032aab3058605f1e6f1c6713476",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/DoRA/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1346,15 +1497,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-03-24T09:13:24Z",
       "shards_use": "",
-      "stars": 1008,
-      "updated_at": "2026-11-08T08:29:36Z",
+      "stars": 1007,
+      "updated_at": "2026-11-19T23:14:38Z",
       "upstream": "NVlabs/DoRA",
       "url": "https://github.com/NVlabs/DoRA"
     },
     {
       "description": "[CVPR 2025] Sparse Voxels Rasterization: Real-time High-fidelity Radiance Field Rendering",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:32+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "d9b801dbc8423cd65dcecb941b8c0d0e293442d9",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/svraster/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1363,15 +1521,22 @@
       "priority": "Unranked",
       "pushed_at": "2025-07-25T06:18:29Z",
       "shards_use": "",
-      "stars": 954,
-      "updated_at": "2026-11-06T10:37:16Z",
+      "stars": 955,
+      "updated_at": "2026-11-16T08:05:36Z",
       "upstream": "NVlabs/svraster",
       "url": "https://github.com/NVlabs/svraster"
     },
     {
       "description": "Official PyTorch implementation of ODISE: Open-Vocabulary Panoptic Segmentation with Text-to-Image Diffusion Models [CVPR 2023 Highlight]",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:35+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "6aad82f5191018b15fb883b5f2a7f715d5be4356",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/ODISE/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1388,7 +1553,14 @@
     {
       "description": "[ICLR 2024] Official PyTorch implementation of FasterViT: Fast Vision Transformers with Hierarchical Attention",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:39+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "01ab301a717b852c9f94393f1f02b09e413b8418",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/FasterViT/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1405,7 +1577,14 @@
     {
       "description": "EDM2 and Autoguidance -- Official PyTorch implementation",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:42+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.txt",
+        "sha": "702c2995d62ba79f343088f043ed4efc2aa3dc62",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/edm2/blob/main/LICENSE.txt"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1414,32 +1593,46 @@
       "priority": "Unranked",
       "pushed_at": "2024-12-09T11:57:40Z",
       "shards_use": "",
-      "stars": 854,
-      "updated_at": "2026-10-15T22:46:35Z",
+      "stars": 856,
+      "updated_at": "2026-11-21T01:35:15Z",
       "upstream": "NVlabs/edm2",
       "url": "https://github.com/NVlabs/edm2"
     },
     {
       "description": "Helpful kernel tutorials, examples and SKILLs for tile-based GPU programming",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:46+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "c4f883e0004d76fbe2332490ec3fb146eb05c966",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVIDIA/TileGym/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-15T14:07:08Z",
+      "pushed_at": "2026-11-21T14:07:11Z",
       "shards_use": "",
-      "stars": 845,
-      "updated_at": "2026-11-16T03:47:21Z",
+      "stars": 848,
+      "updated_at": "2026-11-20T16:20:34Z",
       "upstream": "NVIDIA/TileGym",
       "url": "https://github.com/NVIDIA/TileGym"
     },
     {
       "description": "Efficient Part-level 3D Object Generation via Dual Volume Packing",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:49+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "license.md",
+        "sha": "8641ad26b26f6a96a5dcdfd0c9175bcf74344cb5",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/PartPacker/blob/main/license.md"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1456,7 +1649,14 @@
     {
       "description": "[ICCV 2025] LongSplat: Robust Unposed 3D Gaussian Splatting for Casual Long Videos",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:52+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE.md",
+        "sha": "77cdaad8a9d8c7a04c7f42f7c666a6a9e7ef1eb1",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/LongSplat/blob/main/LICENSE.md"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1465,15 +1665,22 @@
       "priority": "Unranked",
       "pushed_at": "2026-01-19T14:58:55Z",
       "shards_use": "",
-      "stars": 816,
-      "updated_at": "2026-11-07T21:51:44Z",
+      "stars": 818,
+      "updated_at": "2026-11-17T09:29:36Z",
       "upstream": "NVlabs/LongSplat",
       "url": "https://github.com/NVlabs/LongSplat"
     },
     {
       "description": "Official PyTorch implementation of FB-BEV & FB-OCC - Forward-backward view transformation for vision-centric autonomous driving perception",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:56+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "a2403662607f920bed452ef6c471a15aaf2935a4",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/FB-BEV/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1490,7 +1697,14 @@
     {
       "description": "",
       "evidence": {
-        "status": "not-yet-inspected"
+        "caution": "Metadata and a discovered licence file are evidence, not an independent legal approval",
+        "checked_at": "2026-11-21T15:42:59+00:00",
+        "detected_name": "Other",
+        "detected_spdx": "NOASSERTION",
+        "path": "LICENSE",
+        "sha": "f4400449769162e1ac91b492929594976315c6b7",
+        "status": "standard-licence-evidence-found",
+        "url": "https://github.com/NVlabs/CF-3DGS/blob/main/LICENSE"
       },
       "fork_exists": false,
       "metadata_license_name": "Other",
@@ -1584,8 +1798,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-07-09T07:00:23Z",
       "shards_use": "",
-      "stars": 706,
-      "updated_at": "2026-11-14T10:12:48Z",
+      "stars": 707,
+      "updated_at": "2026-11-18T12:25:52Z",
       "upstream": "NVIDIA/AMGX",
       "url": "https://github.com/NVIDIA/AMGX"
     },
@@ -1602,7 +1816,7 @@
       "pushed_at": "2023-10-02T10:51:44Z",
       "shards_use": "",
       "stars": 705,
-      "updated_at": "2026-11-07T21:19:27Z",
+      "updated_at": "2026-11-19T22:37:36Z",
       "upstream": "NVlabs/FourCastNet",
       "url": "https://github.com/NVlabs/FourCastNet"
     },
@@ -1618,8 +1832,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-03-13T21:53:31Z",
       "shards_use": "",
-      "stars": 694,
-      "updated_at": "2026-11-13T22:38:19Z",
+      "stars": 695,
+      "updated_at": "2026-11-18T12:46:34Z",
       "upstream": "NVlabs/GatedDeltaNet",
       "url": "https://github.com/NVlabs/GatedDeltaNet"
     },
@@ -1652,8 +1866,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-21T17:53:51Z",
       "shards_use": "",
-      "stars": 670,
-      "updated_at": "2026-11-13T09:21:20Z",
+      "stars": 673,
+      "updated_at": "2026-11-21T14:25:35Z",
       "upstream": "NVlabs/mimicgen",
       "url": "https://github.com/NVlabs/mimicgen"
     },
@@ -1669,8 +1883,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-13T14:04:36Z",
       "shards_use": "",
-      "stars": 667,
-      "updated_at": "2026-11-14T20:58:08Z",
+      "stars": 669,
+      "updated_at": "2026-11-19T05:52:30Z",
       "upstream": "NVlabs/flip",
       "url": "https://github.com/NVlabs/flip"
     },
@@ -1684,12 +1898,29 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-16T03:23:46Z",
+      "pushed_at": "2026-11-21T11:02:03Z",
       "shards_use": "",
-      "stars": 655,
-      "updated_at": "2026-11-13T21:44:22Z",
+      "stars": 665,
+      "updated_at": "2026-11-20T13:28:18Z",
       "upstream": "isaac-sim/IsaacLab-Arena",
       "url": "https://github.com/isaac-sim/IsaacLab-Arena"
+    },
+    {
+      "description": "Our inference and training framework to run on the Cosmos Models",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-21T05:13:46Z",
+      "shards_use": "",
+      "stars": 656,
+      "updated_at": "2026-11-20T06:10:27Z",
+      "upstream": "NVIDIA/cosmos-framework",
+      "url": "https://github.com/NVIDIA/cosmos-framework"
     },
     {
       "description": "",
@@ -1707,23 +1938,6 @@
       "updated_at": "2026-11-14T03:14:07Z",
       "upstream": "NVlabs/OmniDrive",
       "url": "https://github.com/NVlabs/OmniDrive"
-    },
-    {
-      "description": "Our inference and training framework to run on the Cosmos Models",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-16T03:18:59Z",
-      "shards_use": "",
-      "stars": 642,
-      "updated_at": "2026-11-15T12:16:59Z",
-      "upstream": "NVIDIA/cosmos-framework",
-      "url": "https://github.com/NVIDIA/cosmos-framework"
     },
     {
       "description": "PyTorch Implementation of EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
@@ -1771,8 +1985,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-07-06T17:42:04Z",
       "shards_use": "",
-      "stars": 630,
-      "updated_at": "2026-11-14T17:59:04Z",
+      "stars": 632,
+      "updated_at": "2026-11-16T11:38:51Z",
       "upstream": "NVlabs/GraspGen",
       "url": "https://github.com/NVlabs/GraspGen"
     },
@@ -1788,8 +2002,8 @@
       "priority": "Unranked",
       "pushed_at": "2023-07-16T07:00:56Z",
       "shards_use": "",
-      "stars": 624,
-      "updated_at": "2026-11-11T10:20:23Z",
+      "stars": 625,
+      "updated_at": "2026-11-18T07:39:18Z",
       "upstream": "NVlabs/CALM",
       "url": "https://github.com/NVlabs/CALM"
     },
@@ -1803,10 +2017,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-04T02:45:10Z",
+      "pushed_at": "2026-11-21T01:39:45Z",
       "shards_use": "",
-      "stars": 616,
-      "updated_at": "2026-11-13T18:56:08Z",
+      "stars": 621,
+      "updated_at": "2026-11-20T02:40:12Z",
       "upstream": "NVlabs/GRAIL",
       "url": "https://github.com/NVlabs/GRAIL"
     },
@@ -1845,23 +2059,6 @@
       "url": "https://github.com/NVIDIA/Dataset_Synthesizer"
     },
     {
-      "description": "The NVIDIA\u00ae Tools Extension SDK (NVTX) is a C-based Application Programming Interface (API) for annotating events, code ranges, and resources in your applications.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-02T21:19:18Z",
-      "shards_use": "",
-      "stars": 571,
-      "updated_at": "2026-11-12T09:59:08Z",
-      "upstream": "NVIDIA/NVTX",
-      "url": "https://github.com/NVIDIA/NVTX"
-    },
-    {
       "description": " repo collection for NVIDIA Audio2Face-3D models and tools",
       "evidence": {
         "status": "not-yet-inspected"
@@ -1873,10 +2070,27 @@
       "priority": "Unranked",
       "pushed_at": "2025-09-24T23:18:36Z",
       "shards_use": "",
-      "stars": 562,
-      "updated_at": "2026-11-14T19:53:17Z",
+      "stars": 574,
+      "updated_at": "2026-11-21T14:49:09Z",
       "upstream": "NVIDIA/Audio2Face-3D",
       "url": "https://github.com/NVIDIA/Audio2Face-3D"
+    },
+    {
+      "description": "The NVIDIA\u00ae Tools Extension SDK (NVTX) is a C-based Application Programming Interface (API) for annotating events, code ranges, and resources in your applications.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-02T21:19:18Z",
+      "shards_use": "",
+      "stars": 572,
+      "updated_at": "2026-11-19T21:45:00Z",
+      "upstream": "NVIDIA/NVTX",
+      "url": "https://github.com/NVIDIA/NVTX"
     },
     {
       "description": "Efficient 6-DoF Grasp Generation in Cluttered Scenes",
@@ -1890,8 +2104,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-11-21T07:12:20Z",
       "shards_use": "",
-      "stars": 551,
-      "updated_at": "2026-11-13T13:05:58Z",
+      "stars": 553,
+      "updated_at": "2026-11-20T13:26:43Z",
       "upstream": "NVlabs/contact_graspnet",
       "url": "https://github.com/NVlabs/contact_graspnet"
     },
@@ -1905,29 +2119,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-16T04:11:06Z",
+      "pushed_at": "2026-11-21T02:18:58Z",
       "shards_use": "",
-      "stars": 545,
-      "updated_at": "2026-11-14T22:36:13Z",
+      "stars": 548,
+      "updated_at": "2026-11-20T15:40:44Z",
       "upstream": "NVIDIA/flashdreams",
       "url": "https://github.com/NVIDIA/flashdreams"
-    },
-    {
-      "description": "The GL Vendor-Neutral Dispatch library",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "",
-      "metadata_spdx": "unknown",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2024-05-17T14:24:20Z",
-      "shards_use": "",
-      "stars": 543,
-      "updated_at": "2026-10-28T07:54:03Z",
-      "upstream": "NVIDIA/libglvnd",
-      "url": "https://github.com/NVIDIA/libglvnd"
     },
     {
       "description": "",
@@ -1941,10 +2138,27 @@
       "priority": "Unranked",
       "pushed_at": "2026-06-23T20:58:10Z",
       "shards_use": "",
-      "stars": 543,
-      "updated_at": "2026-11-12T05:13:48Z",
+      "stars": 547,
+      "updated_at": "2026-11-19T15:04:56Z",
       "upstream": "NVlabs/GENMO",
       "url": "https://github.com/NVlabs/GENMO"
+    },
+    {
+      "description": "The GL Vendor-Neutral Dispatch library",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "",
+      "metadata_spdx": "unknown",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2024-05-17T14:24:20Z",
+      "shards_use": "",
+      "stars": 544,
+      "updated_at": "2026-11-19T01:21:40Z",
+      "upstream": "NVIDIA/libglvnd",
+      "url": "https://github.com/NVIDIA/libglvnd"
     },
     {
       "description": "",
@@ -1976,7 +2190,7 @@
       "pushed_at": "2023-01-25T20:41:47Z",
       "shards_use": "",
       "stars": 522,
-      "updated_at": "2026-10-21T05:41:19Z",
+      "updated_at": "2026-11-19T21:44:24Z",
       "upstream": "NVlabs/DeepInversion",
       "url": "https://github.com/NVlabs/DeepInversion"
     },
@@ -2024,29 +2238,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-07-06T17:32:59Z",
+      "pushed_at": "2026-11-20T18:10:26Z",
       "shards_use": "",
-      "stars": 507,
-      "updated_at": "2026-11-14T19:14:20Z",
+      "stars": 510,
+      "updated_at": "2026-11-20T03:34:02Z",
       "upstream": "NVIDIA/cuda-checkpoint",
       "url": "https://github.com/NVIDIA/cuda-checkpoint"
-    },
-    {
-      "description": "Differentiable rasterization applied to 3D model simplification tasks",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2022-01-10T12:48:22Z",
-      "shards_use": "",
-      "stars": 499,
-      "updated_at": "2026-11-07T05:42:20Z",
-      "upstream": "NVlabs/nvdiffmodeling",
-      "url": "https://github.com/NVlabs/nvdiffmodeling"
     },
     {
       "description": "VLA-0: Building State-of-the-Art VLAs with Zero Modification",
@@ -2060,10 +2257,27 @@
       "priority": "Unranked",
       "pushed_at": "2026-02-21T19:18:22Z",
       "shards_use": "",
-      "stars": 499,
-      "updated_at": "2026-11-08T04:05:04Z",
+      "stars": 501,
+      "updated_at": "2026-11-19T14:26:21Z",
       "upstream": "NVlabs/vla0",
       "url": "https://github.com/NVlabs/vla0"
+    },
+    {
+      "description": "Differentiable rasterization applied to 3D model simplification tasks",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2022-01-10T12:48:22Z",
+      "shards_use": "",
+      "stars": 500,
+      "updated_at": "2026-11-17T14:42:18Z",
+      "upstream": "NVlabs/nvdiffmodeling",
+      "url": "https://github.com/NVlabs/nvdiffmodeling"
     },
     {
       "description": "Verilog evaluation benchmark for large language model",
@@ -2077,8 +2291,8 @@
       "priority": "Unranked",
       "pushed_at": "2025-07-14T21:47:51Z",
       "shards_use": "",
-      "stars": 493,
-      "updated_at": "2026-11-08T13:24:35Z",
+      "stars": 495,
+      "updated_at": "2026-11-18T06:20:15Z",
       "upstream": "NVlabs/verilog-eval",
       "url": "https://github.com/NVlabs/verilog-eval"
     },
@@ -2111,8 +2325,8 @@
       "priority": "Unranked",
       "pushed_at": "2025-08-26T17:20:05Z",
       "shards_use": "",
-      "stars": 470,
-      "updated_at": "2026-11-14T09:44:38Z",
+      "stars": 471,
+      "updated_at": "2026-11-16T20:11:40Z",
       "upstream": "NVlabs/UniversalDeepResearch",
       "url": "https://github.com/NVlabs/UniversalDeepResearch"
     },
@@ -2128,8 +2342,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-09-16T15:52:24Z",
       "shards_use": "",
-      "stars": 459,
-      "updated_at": "2026-11-14T19:13:29Z",
+      "stars": 462,
+      "updated_at": "2026-11-21T14:35:09Z",
       "upstream": "NVIDIA/aerial-cuda-accelerated-ran",
       "url": "https://github.com/NVIDIA/aerial-cuda-accelerated-ran"
     },
@@ -2145,8 +2359,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-10-29T14:29:01Z",
       "shards_use": "",
-      "stars": 453,
-      "updated_at": "2026-11-15T04:37:23Z",
+      "stars": 454,
+      "updated_at": "2026-11-19T00:05:34Z",
       "upstream": "NVlabs/SpatialClaw",
       "url": "https://github.com/NVlabs/SpatialClaw"
     },
@@ -2160,10 +2374,10 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-06T20:27:09Z",
+      "pushed_at": "2026-11-21T01:36:00Z",
       "shards_use": "",
-      "stars": 450,
-      "updated_at": "2026-11-14T12:16:03Z",
+      "stars": 452,
+      "updated_at": "2026-11-17T09:31:56Z",
       "upstream": "NVIDIA/cuEquivariance",
       "url": "https://github.com/NVIDIA/cuEquivariance"
     },
@@ -2219,6 +2433,23 @@
       "url": "https://github.com/NVlabs/Hydra-MDP"
     },
     {
+      "description": "This repo contains CUDA-Q Academic materials, including self-paced Jupyter notebook modules for building and optimizing hybrid quantum-classical algorithms using CUDA-Q.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-16T17:19:17Z",
+      "shards_use": "",
+      "stars": 419,
+      "updated_at": "2026-11-18T02:53:29Z",
+      "upstream": "NVIDIA/cuda-q-academic",
+      "url": "https://github.com/NVIDIA/cuda-q-academic"
+    },
+    {
       "description": "Samples demonstrating how to use various APIs of NVIDIA Video Codec SDK",
       "evidence": {
         "status": "not-yet-inspected"
@@ -2234,23 +2465,6 @@
       "updated_at": "2026-09-21T18:15:00Z",
       "upstream": "NVIDIA/video-sdk-samples",
       "url": "https://github.com/NVIDIA/video-sdk-samples"
-    },
-    {
-      "description": "This repo contains CUDA-Q Academic materials, including self-paced Jupyter notebook modules for building and optimizing hybrid quantum-classical algorithms using CUDA-Q.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-13T23:58:09Z",
-      "shards_use": "",
-      "stars": 415,
-      "updated_at": "2026-11-16T02:07:47Z",
-      "upstream": "NVIDIA/cuda-q-academic",
-      "url": "https://github.com/NVIDIA/cuda-q-academic"
     },
     {
       "description": "",
@@ -2282,26 +2496,9 @@
       "pushed_at": "2026-08-12T07:36:43Z",
       "shards_use": "",
       "stars": 411,
-      "updated_at": "2026-10-21T00:28:07Z",
+      "updated_at": "2026-11-19T22:41:44Z",
       "upstream": "NVlabs/nvdiffrecmc",
       "url": "https://github.com/NVlabs/nvdiffrecmc"
-    },
-    {
-      "description": "Official Code for RVT-2 and RVT",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-02-14T11:19:36Z",
-      "shards_use": "",
-      "stars": 409,
-      "updated_at": "2026-10-06T06:23:30Z",
-      "upstream": "NVlabs/RVT",
-      "url": "https://github.com/NVlabs/RVT"
     },
     {
       "description": "A Fusion Code Generator for NVIDIA GPUs (commonly known as \"nvFuser\")",
@@ -2315,10 +2512,27 @@
       "priority": "Unranked",
       "pushed_at": "2026-05-31T01:55:27Z",
       "shards_use": "",
-      "stars": 408,
-      "updated_at": "2026-11-05T08:02:06Z",
+      "stars": 409,
+      "updated_at": "2026-11-19T22:51:32Z",
       "upstream": "NVIDIA/Fuser",
       "url": "https://github.com/NVIDIA/Fuser"
+    },
+    {
+      "description": "Official Code for RVT-2 and RVT",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-02-14T11:19:36Z",
+      "shards_use": "",
+      "stars": 408,
+      "updated_at": "2026-11-19T22:58:20Z",
+      "upstream": "NVlabs/RVT",
+      "url": "https://github.com/NVlabs/RVT"
     },
     {
       "description": "NVIDIA-accelerated zero latency video compression library for interactive remoting applications",
@@ -2398,7 +2612,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T17:35:07Z",
+      "pushed_at": "2026-11-20T13:30:37Z",
       "shards_use": "",
       "stars": 388,
       "updated_at": "2026-11-11T15:11:06Z",
@@ -2434,8 +2648,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-05-03T16:17:17Z",
       "shards_use": "",
-      "stars": 381,
-      "updated_at": "2026-11-12T06:52:50Z",
+      "stars": 382,
+      "updated_at": "2026-11-17T07:30:15Z",
       "upstream": "NVlabs/DiffRL",
       "url": "https://github.com/NVlabs/DiffRL"
     },
@@ -2500,12 +2714,29 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-15T02:05:53Z",
+      "pushed_at": "2026-11-19T11:41:30Z",
       "shards_use": "",
-      "stars": 365,
-      "updated_at": "2026-11-16T03:27:53Z",
+      "stars": 368,
+      "updated_at": "2026-11-20T10:53:22Z",
       "upstream": "NVIDIA/recsys-examples",
       "url": "https://github.com/NVIDIA/recsys-examples"
+    },
+    {
+      "description": "Official PyTorch Implementation of Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-11T07:14:12Z",
+      "shards_use": "",
+      "stars": 368,
+      "updated_at": "2026-11-21T13:28:26Z",
+      "upstream": "NVlabs/GatedDeltaNet-2",
+      "url": "https://github.com/NVlabs/GatedDeltaNet-2"
     },
     {
       "description": "Weakly-supervised object detection.",
@@ -2525,7 +2756,7 @@
       "url": "https://github.com/NVlabs/wetectron"
     },
     {
-      "description": "Official PyTorch Implementation of Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
+      "description": "",
       "evidence": {
         "status": "not-yet-inspected"
       },
@@ -2534,12 +2765,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-11T07:14:12Z",
+      "pushed_at": "2026-08-24T00:40:56Z",
       "shards_use": "",
       "stars": 363,
-      "updated_at": "2026-11-13T05:11:50Z",
-      "upstream": "NVlabs/GatedDeltaNet-2",
-      "url": "https://github.com/NVlabs/GatedDeltaNet-2"
+      "updated_at": "2026-11-20T11:37:59Z",
+      "upstream": "NVIDIA-AI-IOT/remembr",
+      "url": "https://github.com/NVIDIA-AI-IOT/remembr"
     },
     {
       "description": "Superpixel Sampling Networks (ECCV2018)",
@@ -2559,23 +2790,6 @@
       "url": "https://github.com/NVlabs/ssn_superpixels"
     },
     {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-08-24T00:40:56Z",
-      "shards_use": "",
-      "stars": 361,
-      "updated_at": "2026-10-28T20:44:08Z",
-      "upstream": "NVIDIA-AI-IOT/remembr",
-      "url": "https://github.com/NVIDIA-AI-IOT/remembr"
-    },
-    {
       "description": "Advanced Samples for the NVIDIA OptiX 7 Ray Tracing SDK",
       "evidence": {
         "status": "not-yet-inspected"
@@ -2587,8 +2801,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-15T21:02:18Z",
       "shards_use": "",
-      "stars": 360,
-      "updated_at": "2026-11-10T21:27:52Z",
+      "stars": 361,
+      "updated_at": "2026-11-17T07:27:55Z",
       "upstream": "NVIDIA/OptiX_Apps",
       "url": "https://github.com/NVIDIA/OptiX_Apps"
     },
@@ -2610,6 +2824,23 @@
       "url": "https://github.com/NVlabs/geomapnet"
     },
     {
+      "description": "NVIDIA Resiliency Extension is a python package for framework developers and users to implement fault-tolerant features. It improves the effective training time by minimizing the downtime due to failures and interruptions.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-20T21:03:46Z",
+      "shards_use": "",
+      "stars": 358,
+      "updated_at": "2026-11-21T08:46:06Z",
+      "upstream": "NVIDIA/nvidia-resiliency-ext",
+      "url": "https://github.com/NVIDIA/nvidia-resiliency-ext"
+    },
+    {
       "description": "Pytorch implementation and demo of FAZE: Few-Shot Adaptive Gaze Estimation (ICCV 2019, oral)",
       "evidence": {
         "status": "not-yet-inspected"
@@ -2627,23 +2858,6 @@
       "url": "https://github.com/NVlabs/few_shot_gaze"
     },
     {
-      "description": "NVIDIA Resiliency Extension is a python package for framework developers and users to implement fault-tolerant features. It improves the effective training time by minimizing the downtime due to failures and interruptions.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-15T20:57:25Z",
-      "shards_use": "",
-      "stars": 355,
-      "updated_at": "2026-11-13T21:22:59Z",
-      "upstream": "NVIDIA/nvidia-resiliency-ext",
-      "url": "https://github.com/NVIDIA/nvidia-resiliency-ext"
-    },
-    {
       "description": "",
       "evidence": {
         "status": "not-yet-inspected"
@@ -2653,10 +2867,10 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-09-29T19:40:47Z",
+      "pushed_at": "2026-11-18T23:49:20Z",
       "shards_use": "",
-      "stars": 354,
-      "updated_at": "2026-11-11T06:29:26Z",
+      "stars": 355,
+      "updated_at": "2026-11-19T23:43:11Z",
       "upstream": "NVlabs/NVBit",
       "url": "https://github.com/NVlabs/NVBit"
     },
@@ -2672,8 +2886,8 @@
       "priority": "Unranked",
       "pushed_at": "2022-09-21T05:03:34Z",
       "shards_use": "",
-      "stars": 347,
-      "updated_at": "2026-11-09T15:29:28Z",
+      "stars": 348,
+      "updated_at": "2026-11-19T07:14:32Z",
       "upstream": "NVlabs/CenterPose",
       "url": "https://github.com/NVlabs/CenterPose"
     },
@@ -2706,8 +2920,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-03-11T20:16:07Z",
       "shards_use": "",
-      "stars": 341,
-      "updated_at": "2026-11-13T23:33:59Z",
+      "stars": 342,
+      "updated_at": "2026-11-19T17:54:39Z",
       "upstream": "NVIDIA/Audio2Face-3D-Samples",
       "url": "https://github.com/NVIDIA/Audio2Face-3D-Samples"
     },
@@ -2723,10 +2937,27 @@
       "priority": "Unranked",
       "pushed_at": "2025-06-26T09:26:08Z",
       "shards_use": "",
-      "stars": 332,
-      "updated_at": "2026-11-14T02:15:27Z",
+      "stars": 333,
+      "updated_at": "2026-11-17T07:59:32Z",
       "upstream": "NVIDIA/ACE",
       "url": "https://github.com/NVIDIA/ACE"
+    },
+    {
+      "description": "NVIDIA DeepStream Monorepo: DeepStream SDK and reference apps for building GPU\u2011accelerated, real-time video and multi\u2011sensor analytics pipelines with GStreamer, TensorRT, and vision AI models across edge, on\u2011prem, and cloud deployments.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-20T22:22:52Z",
+      "shards_use": "",
+      "stars": 333,
+      "updated_at": "2026-11-20T12:53:32Z",
+      "upstream": "NVIDIA/DeepStream",
+      "url": "https://github.com/NVIDIA/DeepStream"
     },
     {
       "description": "Pruning Neural Networks with Taylor criterion in Pytorch",
@@ -2740,27 +2971,10 @@
       "priority": "Unranked",
       "pushed_at": "2019-11-03T06:24:46Z",
       "shards_use": "",
-      "stars": 323,
-      "updated_at": "2026-07-23T01:51:39Z",
+      "stars": 324,
+      "updated_at": "2026-11-17T14:14:33Z",
       "upstream": "NVlabs/Taylor_pruning",
       "url": "https://github.com/NVlabs/Taylor_pruning"
-    },
-    {
-      "description": "NVIDIA DeepStream Monorepo: DeepStream SDK and reference apps for building GPU\u2011accelerated, real-time video and multi\u2011sensor analytics pipelines with GStreamer, TensorRT, and vision AI models across edge, on\u2011prem, and cloud deployments.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-13T18:50:02Z",
-      "shards_use": "",
-      "stars": 322,
-      "updated_at": "2026-11-13T14:23:54Z",
-      "upstream": "NVIDIA/DeepStream",
-      "url": "https://github.com/NVIDIA/DeepStream"
     },
     {
       "description": "High-Quality Self-Supervised Deep Image Denoising - Official TensorFlow implementation of the NeurIPS 2019 paper",
@@ -2826,9 +3040,26 @@
       "pushed_at": "2023-01-16T08:24:53Z",
       "shards_use": "",
       "stars": 315,
-      "updated_at": "2026-11-14T04:37:29Z",
+      "updated_at": "2026-11-19T22:31:49Z",
       "upstream": "NVlabs/FreeSOLO",
       "url": "https://github.com/NVlabs/FreeSOLO"
+    },
+    {
+      "description": "Code Release for GraspGenX",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-10T00:05:57Z",
+      "shards_use": "",
+      "stars": 311,
+      "updated_at": "2026-11-21T00:10:09Z",
+      "upstream": "NVlabs/GraspGenX",
+      "url": "https://github.com/NVlabs/GraspGenX"
     },
     {
       "description": "A collection of open-source GPU accelerated Python tools and examples for quantitative analyst tasks and leverages RAPIDS AI project, Numba, cuDF, and Dask.",
@@ -2842,10 +3073,27 @@
       "priority": "Unranked",
       "pushed_at": "2024-11-01T18:29:42Z",
       "shards_use": "",
-      "stars": 311,
-      "updated_at": "2026-11-15T12:41:17Z",
+      "stars": 310,
+      "updated_at": "2026-11-19T21:26:04Z",
       "upstream": "NVIDIA/fsi-samples",
       "url": "https://github.com/NVIDIA/fsi-samples"
+    },
+    {
+      "description": "Deep Learning tools and applications for NVIDIA AGX platforms.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "",
+      "metadata_spdx": "unknown",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-03-13T18:07:42Z",
+      "shards_use": "",
+      "stars": 304,
+      "updated_at": "2026-11-19T06:16:06Z",
+      "upstream": "NVIDIA/DL4AGX",
+      "url": "https://github.com/NVIDIA/DL4AGX"
     },
     {
       "description": "SystemC/C++ library of commonly-used hardware functions and components for HLS.",
@@ -2865,23 +3113,6 @@
       "url": "https://github.com/NVlabs/matchlib"
     },
     {
-      "description": "Deep Learning tools and applications for NVIDIA AGX platforms.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "",
-      "metadata_spdx": "unknown",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-03-13T18:07:42Z",
-      "shards_use": "",
-      "stars": 302,
-      "updated_at": "2026-11-01T22:26:30Z",
-      "upstream": "NVIDIA/DL4AGX",
-      "url": "https://github.com/NVIDIA/DL4AGX"
-    },
-    {
       "description": "This code corresponds to simulation environments used as part of the DexMimicGen project.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -2893,27 +3124,10 @@
       "priority": "Unranked",
       "pushed_at": "2025-12-06T07:51:20Z",
       "shards_use": "",
-      "stars": 300,
-      "updated_at": "2026-11-11T14:22:12Z",
+      "stars": 301,
+      "updated_at": "2026-11-16T20:48:57Z",
       "upstream": "NVlabs/dexmimicgen",
       "url": "https://github.com/NVlabs/dexmimicgen"
-    },
-    {
-      "description": "Code Release for GraspGenX",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-10T00:05:57Z",
-      "shards_use": "",
-      "stars": 300,
-      "updated_at": "2026-11-14T17:59:40Z",
-      "upstream": "NVlabs/GraspGenX",
-      "url": "https://github.com/NVlabs/GraspGenX"
     },
     {
       "description": "",
@@ -2927,8 +3141,8 @@
       "priority": "Unranked",
       "pushed_at": "2021-09-16T11:28:41Z",
       "shards_use": "",
-      "stars": 300,
-      "updated_at": "2026-10-05T14:28:27Z",
+      "stars": 299,
+      "updated_at": "2026-11-20T06:29:41Z",
       "upstream": "NVlabs/metfaces-dataset",
       "url": "https://github.com/NVlabs/metfaces-dataset"
     },
@@ -2976,7 +3190,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T00:09:05Z",
+      "pushed_at": "2026-11-19T22:20:58Z",
       "shards_use": "",
       "stars": 288,
       "updated_at": "2026-11-10T00:09:12Z",
@@ -2993,7 +3207,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-11T21:36:46Z",
+      "pushed_at": "2026-11-21T14:44:31Z",
       "shards_use": "",
       "stars": 280,
       "updated_at": "2026-11-11T22:04:26Z",
@@ -3029,8 +3243,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-14T03:12:11Z",
       "shards_use": "",
-      "stars": 270,
-      "updated_at": "2026-11-15T00:02:44Z",
+      "stars": 271,
+      "updated_at": "2026-11-17T11:59:34Z",
       "upstream": "NVIDIA-Omniverse/ovrtx",
       "url": "https://github.com/NVIDIA-Omniverse/ovrtx"
     },
@@ -3080,8 +3294,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-10T05:20:31Z",
       "shards_use": "",
-      "stars": 257,
-      "updated_at": "2026-11-13T08:41:02Z",
+      "stars": 258,
+      "updated_at": "2026-11-16T15:13:36Z",
       "upstream": "NVIDIA/nvapi",
       "url": "https://github.com/NVIDIA/nvapi"
     },
@@ -3114,10 +3328,27 @@
       "priority": "Unranked",
       "pushed_at": "2026-09-24T13:46:12Z",
       "shards_use": "",
-      "stars": 254,
-      "updated_at": "2026-11-11T04:53:12Z",
+      "stars": 256,
+      "updated_at": "2026-11-19T03:06:46Z",
       "upstream": "NVIDIA/digital-biology-examples",
       "url": "https://github.com/NVIDIA/digital-biology-examples"
+    },
+    {
+      "description": "ALCHEMI Toolkit-Ops is a collection of optimized batch kernels to accelerate computational chemistry and material science workflows.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-18T23:08:51Z",
+      "shards_use": "",
+      "stars": 254,
+      "updated_at": "2026-11-20T02:04:29Z",
+      "upstream": "NVIDIA/nvalchemi-toolkit-ops",
+      "url": "https://github.com/NVIDIA/nvalchemi-toolkit-ops"
     },
     {
       "description": "CGBN:   CUDA Accelerated Multiple Precision Arithmetic (Big Num) using Cooperative Groups",
@@ -3137,7 +3368,7 @@
       "url": "https://github.com/NVlabs/CGBN"
     },
     {
-      "description": "ALCHEMI Toolkit-Ops is a collection of optimized batch kernels to accelerate computational chemistry and material science workflows.",
+      "description": "Help shape the future of Project G-Assist",
       "evidence": {
         "status": "not-yet-inspected"
       },
@@ -3146,12 +3377,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T23:08:50Z",
+      "pushed_at": "2026-09-30T05:27:31Z",
       "shards_use": "",
       "stars": 252,
-      "updated_at": "2026-11-11T06:08:11Z",
-      "upstream": "NVIDIA/nvalchemi-toolkit-ops",
-      "url": "https://github.com/NVIDIA/nvalchemi-toolkit-ops"
+      "updated_at": "2026-11-20T21:56:00Z",
+      "upstream": "NVIDIA/G-Assist",
+      "url": "https://github.com/NVIDIA/G-Assist"
     },
     {
       "description": "Stochastic Tensor Optimization for Robot Motion - A GPU Robot Motion Toolkit",
@@ -3169,23 +3400,6 @@
       "updated_at": "2026-10-20T18:24:46Z",
       "upstream": "NVlabs/storm",
       "url": "https://github.com/NVlabs/storm"
-    },
-    {
-      "description": "Help shape the future of Project G-Assist",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-09-30T05:27:31Z",
-      "shards_use": "",
-      "stars": 251,
-      "updated_at": "2026-11-04T18:25:41Z",
-      "upstream": "NVIDIA/G-Assist",
-      "url": "https://github.com/NVIDIA/G-Assist"
     },
     {
       "description": "STEP: Spatio-Temporal Progressive Learning for Video Action Detection. CVPR'19 (Oral)",
@@ -3216,8 +3430,8 @@
       "priority": "Unranked",
       "pushed_at": "2023-11-14T20:38:59Z",
       "shards_use": "",
-      "stars": 249,
-      "updated_at": "2026-10-03T22:53:59Z",
+      "stars": 248,
+      "updated_at": "2026-11-19T14:13:17Z",
       "upstream": "NVIDIA-AI-IOT/jetson-intro-to-distillation",
       "url": "https://github.com/NVIDIA-AI-IOT/jetson-intro-to-distillation"
     },
@@ -3239,6 +3453,23 @@
       "url": "https://github.com/NVlabs/LSM"
     },
     {
+      "description": "[CVPR 2026] CARI4D: Category Agnostic 4D Reconstruction of Human-Object Interaction",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-08-17T17:37:13Z",
+      "shards_use": "",
+      "stars": 237,
+      "updated_at": "2026-11-19T11:58:09Z",
+      "upstream": "NVlabs/CARI4D",
+      "url": "https://github.com/NVlabs/CARI4D"
+    },
+    {
       "description": "PyTorch implementation of the PoseCNN framework",
       "evidence": {
         "status": "not-yet-inspected"
@@ -3256,40 +3487,6 @@
       "url": "https://github.com/NVlabs/PoseCNN-PyTorch"
     },
     {
-      "description": "[CVPR 2026] CARI4D: Category Agnostic 4D Reconstruction of Human-Object Interaction",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-08-17T17:37:13Z",
-      "shards_use": "",
-      "stars": 235,
-      "updated_at": "2026-11-13T14:58:12Z",
-      "upstream": "NVlabs/CARI4D",
-      "url": "https://github.com/NVlabs/CARI4D"
-    },
-    {
-      "description": "Self-supervised Single-view 3D Reconstruction",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2020-12-19T18:00:57Z",
-      "shards_use": "",
-      "stars": 234,
-      "updated_at": "2026-09-13T11:29:34Z",
-      "upstream": "NVlabs/UMR",
-      "url": "https://github.com/NVlabs/UMR"
-    },
-    {
       "description": "Running object detection on a webcam feed using TensorRT on NVIDIA GPUs in Python.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -3305,6 +3502,40 @@
       "updated_at": "2026-08-31T05:33:25Z",
       "upstream": "NVIDIA/object-detection-tensorrt-example",
       "url": "https://github.com/NVIDIA/object-detection-tensorrt-example"
+    },
+    {
+      "description": "Self-supervised Single-view 3D Reconstruction",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2020-12-19T18:00:57Z",
+      "shards_use": "",
+      "stars": 232,
+      "updated_at": "2026-11-19T07:38:27Z",
+      "upstream": "NVlabs/UMR",
+      "url": "https://github.com/NVlabs/UMR"
+    },
+    {
+      "description": "Minimal HW-based demo of GPUDirect RDMA on NVIDIA Jetson AGX Xavier running L4T",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2024-07-15T23:36:23Z",
+      "shards_use": "",
+      "stars": 229,
+      "updated_at": "2026-11-17T09:50:44Z",
+      "upstream": "NVIDIA/jetson-rdma-picoevb",
+      "url": "https://github.com/NVIDIA/jetson-rdma-picoevb"
     },
     {
       "description": "YOLOv5 on Orin DLA",
@@ -3339,23 +3570,6 @@
       "updated_at": "2026-11-06T13:04:54Z",
       "upstream": "NVIDIA/grcuda",
       "url": "https://github.com/NVIDIA/grcuda"
-    },
-    {
-      "description": "Minimal HW-based demo of GPUDirect RDMA on NVIDIA Jetson AGX Xavier running L4T",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2024-07-15T23:36:23Z",
-      "shards_use": "",
-      "stars": 228,
-      "updated_at": "2026-11-09T11:28:56Z",
-      "upstream": "NVIDIA/jetson-rdma-picoevb",
-      "url": "https://github.com/NVIDIA/jetson-rdma-picoevb"
     },
     {
       "description": "",
@@ -3418,10 +3632,10 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-12T19:36:51Z",
+      "pushed_at": "2026-11-18T09:09:37Z",
       "shards_use": "",
-      "stars": 216,
-      "updated_at": "2026-11-11T22:24:56Z",
+      "stars": 217,
+      "updated_at": "2026-11-21T13:27:31Z",
       "upstream": "NVIDIA-AI-IOT/jetson-ai-lab",
       "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab"
     },
@@ -3477,6 +3691,23 @@
       "url": "https://github.com/NVlabs/catk"
     },
     {
+      "description": "[ICCV 2023] Official PyTorch implementation of FocalFormer3D",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-01-02T07:12:48Z",
+      "shards_use": "",
+      "stars": 213,
+      "updated_at": "2026-11-20T02:35:21Z",
+      "upstream": "NVlabs/FocalFormer3D",
+      "url": "https://github.com/NVlabs/FocalFormer3D"
+    },
+    {
       "description": "Pytorch implementation of SSV: Self-Supervised Viewpoint Learning from Image Collections (CVPR 2020)",
       "evidence": {
         "status": "not-yet-inspected"
@@ -3492,23 +3723,6 @@
       "updated_at": "2026-09-19T05:43:54Z",
       "upstream": "NVlabs/SSV",
       "url": "https://github.com/NVlabs/SSV"
-    },
-    {
-      "description": "[ICCV 2023] Official PyTorch implementation of FocalFormer3D",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-01-02T07:12:48Z",
-      "shards_use": "",
-      "stars": 212,
-      "updated_at": "2026-11-01T12:14:22Z",
-      "upstream": "NVlabs/FocalFormer3D",
-      "url": "https://github.com/NVlabs/FocalFormer3D"
     },
     {
       "description": "An example of using DeepStream SDK for redaction",
@@ -3590,8 +3804,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-11-05T16:32:43Z",
       "shards_use": "",
-      "stars": 193,
-      "updated_at": "2026-11-13T07:41:39Z",
+      "stars": 194,
+      "updated_at": "2026-11-17T13:18:17Z",
       "upstream": "NVlabs/sionna-rt",
       "url": "https://github.com/NVlabs/sionna-rt"
     },
@@ -3611,6 +3825,23 @@
       "updated_at": "2026-11-12T08:23:47Z",
       "upstream": "NVIDIA-AI-IOT/jetson-multicamera-pipelines",
       "url": "https://github.com/NVIDIA-AI-IOT/jetson-multicamera-pipelines"
+    },
+    {
+      "description": "Training material for Nsight developer tools",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-09T12:03:09Z",
+      "shards_use": "",
+      "stars": 192,
+      "updated_at": "2026-11-19T22:58:40Z",
+      "upstream": "NVIDIA/nsight-training",
+      "url": "https://github.com/NVIDIA/nsight-training"
     },
     {
       "description": "[NeurIPS 24 Spotlight] MaskLLM: Learnable Semi-structured Sparsity for Large Language Models",
@@ -3647,7 +3878,7 @@
       "url": "https://github.com/NVlabs/UnseenObjectClustering"
     },
     {
-      "description": "Training material for Nsight developer tools",
+      "description": "This repo is used to create a pre-configured Isaac Sim and Isaac Lab environment using the NVIDIA Brev's Launchable feature. Learners get access to a VSCode instance, a Kit App Streaming client, Isaac Sim, and Isaac Lab.",
       "evidence": {
         "status": "not-yet-inspected"
       },
@@ -3656,12 +3887,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-09T12:03:09Z",
+      "pushed_at": "2026-08-12T17:14:44Z",
       "shards_use": "",
-      "stars": 191,
-      "updated_at": "2026-11-05T12:03:10Z",
-      "upstream": "NVIDIA/nsight-training",
-      "url": "https://github.com/NVIDIA/nsight-training"
+      "stars": 189,
+      "updated_at": "2026-11-19T13:09:23Z",
+      "upstream": "isaac-sim/isaac-launchable",
+      "url": "https://github.com/isaac-sim/isaac-launchable"
     },
     {
       "description": "DREAM: Deep Robot-to-Camera Extrinsics for Articulated Manipulators (ICRA 2020)",
@@ -3681,21 +3912,21 @@
       "url": "https://github.com/NVlabs/DREAM"
     },
     {
-      "description": "This repo is used to create a pre-configured Isaac Sim and Isaac Lab environment using the NVIDIA Brev's Launchable feature. Learners get access to a VSCode instance, a Kit App Streaming client, Isaac Sim, and Isaac Lab.",
+      "description": "A deep learning model for small molecule drug discovery and cheminformatics based on SMILES",
       "evidence": {
         "status": "not-yet-inspected"
       },
       "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
+      "metadata_license_name": "",
+      "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-08-12T17:14:44Z",
+      "pushed_at": "2023-06-20T15:13:16Z",
       "shards_use": "",
       "stars": 188,
-      "updated_at": "2026-11-02T15:03:39Z",
-      "upstream": "isaac-sim/isaac-launchable",
-      "url": "https://github.com/isaac-sim/isaac-launchable"
+      "updated_at": "2026-11-19T09:01:05Z",
+      "upstream": "NVIDIA/MegaMolBART",
+      "url": "https://github.com/NVIDIA/MegaMolBART"
     },
     {
       "description": "Official PyTorch implementation of QUEEN: QUantized Efficient ENcoding of Dynamic Gaussians for Streaming Free-viewpoint Videos (NeurIPS 2024)",
@@ -3715,21 +3946,21 @@
       "url": "https://github.com/NVlabs/queen"
     },
     {
-      "description": "A deep learning model for small molecule drug discovery and cheminformatics based on SMILES",
+      "description": "DEXTRAH",
       "evidence": {
         "status": "not-yet-inspected"
       },
       "fork_exists": false,
-      "metadata_license_name": "",
-      "metadata_spdx": "unknown",
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2023-06-20T15:13:16Z",
+      "pushed_at": "2025-09-09T21:12:12Z",
       "shards_use": "",
-      "stars": 186,
-      "updated_at": "2026-11-05T13:02:53Z",
-      "upstream": "NVIDIA/MegaMolBART",
-      "url": "https://github.com/NVIDIA/MegaMolBART"
+      "stars": 183,
+      "updated_at": "2026-11-17T08:22:05Z",
+      "upstream": "NVlabs/DEXTRAH",
+      "url": "https://github.com/NVlabs/DEXTRAH"
     },
     {
       "description": "Synthetic Data Generation Examples",
@@ -3747,23 +3978,6 @@
       "updated_at": "2026-11-14T11:00:15Z",
       "upstream": "NVIDIA-Omniverse/synthetic-data-examples",
       "url": "https://github.com/NVIDIA-Omniverse/synthetic-data-examples"
-    },
-    {
-      "description": "DEXTRAH",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-09-09T21:12:12Z",
-      "shards_use": "",
-      "stars": 182,
-      "updated_at": "2026-11-03T05:09:41Z",
-      "upstream": "NVlabs/DEXTRAH",
-      "url": "https://github.com/NVlabs/DEXTRAH"
     },
     {
       "description": "Facilitates searching, screening, and organizing large chemical databases",
@@ -3845,8 +4059,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-09-24T20:27:00Z",
       "shards_use": "",
-      "stars": 169,
-      "updated_at": "2026-11-13T13:52:21Z",
+      "stars": 171,
+      "updated_at": "2026-11-17T03:17:48Z",
       "upstream": "NVIDIA-AI-IOT/jetson-device-skills",
       "url": "https://github.com/NVIDIA-AI-IOT/jetson-device-skills"
     },
@@ -3902,6 +4116,23 @@
       "url": "https://github.com/NVIDIA/diffusion-audio-restoration"
     },
     {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-15T03:36:44Z",
+      "shards_use": "",
+      "stars": 156,
+      "updated_at": "2026-11-21T04:59:37Z",
+      "upstream": "NVIDIA/cuPotential",
+      "url": "https://github.com/NVIDIA/cuPotential"
+    },
+    {
       "description": "A Rao-Blackwellized Particle Filter for 6D Object Pose Tracking",
       "evidence": {
         "status": "not-yet-inspected"
@@ -3947,8 +4178,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-06-17T00:50:17Z",
       "shards_use": "",
-      "stars": 155,
-      "updated_at": "2026-11-08T17:32:25Z",
+      "stars": 156,
+      "updated_at": "2026-11-19T07:52:34Z",
       "upstream": "NVlabs/RoboSpatial",
       "url": "https://github.com/NVlabs/RoboSpatial"
     },
@@ -3979,7 +4210,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T14:34:53Z",
+      "pushed_at": "2026-11-20T15:30:30Z",
       "shards_use": "",
       "stars": 151,
       "updated_at": "2026-11-10T03:56:32Z",
@@ -4004,23 +4235,6 @@
       "url": "https://github.com/NVlabs/SMERF"
     },
     {
-      "description": "Evaluating Large Language Models for CUDA Code Generation ComputeEval is a framework designed to generate and evaluate CUDA code from Large Language Models.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-09-14T20:23:26Z",
-      "shards_use": "",
-      "stars": 150,
-      "updated_at": "2026-11-01T21:38:24Z",
-      "upstream": "NVIDIA/compute-eval",
-      "url": "https://github.com/NVIDIA/compute-eval"
-    },
-    {
       "description": "An Optimizer for Nvidia Compilers.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4030,12 +4244,29 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-14T00:52:25Z",
+      "pushed_at": "2026-11-20T20:41:47Z",
       "shards_use": "",
-      "stars": 148,
-      "updated_at": "2026-11-12T09:03:18Z",
+      "stars": 150,
+      "updated_at": "2026-11-19T03:48:42Z",
       "upstream": "NVIDIA/CompileIQ",
       "url": "https://github.com/NVIDIA/CompileIQ"
+    },
+    {
+      "description": "Evaluating Large Language Models for CUDA Code Generation ComputeEval is a framework designed to generate and evaluate CUDA code from Large Language Models.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T00:03:45Z",
+      "shards_use": "",
+      "stars": 150,
+      "updated_at": "2026-11-01T21:38:24Z",
+      "upstream": "NVIDIA/compute-eval",
+      "url": "https://github.com/NVIDIA/compute-eval"
     },
     {
       "description": "Learning Rigidity in Dynamic Scenes with a Moving Camera for 3D Motion Field Estimation (ECCV 2018)",
@@ -4053,6 +4284,23 @@
       "updated_at": "2025-12-25T07:53:32Z",
       "upstream": "NVlabs/learningrigidity",
       "url": "https://github.com/NVlabs/learningrigidity"
+    },
+    {
+      "description": "The open-source model suite for robotics data engine by NVIDIA GEAR",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-05T17:15:50Z",
+      "shards_use": "",
+      "stars": 147,
+      "updated_at": "2026-11-21T13:29:57Z",
+      "upstream": "NVlabs/Flora",
+      "url": "https://github.com/NVlabs/Flora"
     },
     {
       "description": "",
@@ -4140,6 +4388,23 @@
       "url": "https://github.com/NVIDIA/audio-intelligence"
     },
     {
+      "description": "AISim predicts LLM serving behavior and searches for strong deployment configurations offline, without bringing up a GPU serving cluster",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-21T10:53:00Z",
+      "shards_use": "",
+      "stars": 139,
+      "updated_at": "2026-11-20T02:11:04Z",
+      "upstream": "ai-dynamo/aisim",
+      "url": "https://github.com/ai-dynamo/aisim"
+    },
+    {
       "description": "A toolchain for generating high-performance, GPU-accelerated 5G/6G pipelines from Python and a modular, real-time runtime for executing the pipelines on NVIDIA Aerial\u2122 RAN Computer platforms.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4189,23 +4454,6 @@
       "updated_at": "2026-10-28T08:51:54Z",
       "upstream": "NVlabs/handover-sim2real",
       "url": "https://github.com/NVlabs/handover-sim2real"
-    },
-    {
-      "description": "AISimulate predicts LLM serving behavior and searches for strong deployment configurations offline, without bringing up a GPU serving cluster",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-16T04:34:45Z",
-      "shards_use": "",
-      "stars": 134,
-      "updated_at": "2026-11-13T19:17:48Z",
-      "upstream": "ai-dynamo/aisim",
-      "url": "https://github.com/ai-dynamo/aisim"
     },
     {
       "description": "Official code release for CoRL'25 paper: VT-Refine: Learning Bimanual Assembly with Visuo-Tactile Feedback via Simulation Fine-Tuning",
@@ -4276,6 +4524,23 @@
       "url": "https://github.com/NVlabs/conv-tt-lstm"
     },
     {
+      "description": "GPU Stress Test is a tool to stress the compute engine of NVIDIA Tesla GPU\u2019s by running a BLAS matrix multiply using different data types. It can be compiled and run on both Linux and Windows.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-07-08T22:43:06Z",
+      "shards_use": "",
+      "stars": 129,
+      "updated_at": "2026-11-19T22:59:04Z",
+      "upstream": "NVIDIA/GPUStressTest",
+      "url": "https://github.com/NVIDIA/GPUStressTest"
+    },
+    {
       "description": "",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4291,23 +4556,6 @@
       "updated_at": "2026-11-05T18:02:55Z",
       "upstream": "NVlabs/the-ai-telco-engineer",
       "url": "https://github.com/NVlabs/the-ai-telco-engineer"
-    },
-    {
-      "description": "GPU Stress Test is a tool to stress the compute engine of NVIDIA Tesla GPU\u2019s by running a BLAS matrix multiply using different data types. It can be compiled and run on both Linux and Windows.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-07-08T22:43:06Z",
-      "shards_use": "",
-      "stars": 128,
-      "updated_at": "2026-11-03T17:16:06Z",
-      "upstream": "NVIDIA/GPUStressTest",
-      "url": "https://github.com/NVIDIA/GPUStressTest"
     },
     {
       "description": "Experimental projects related to TensorRT",
@@ -4361,23 +4609,6 @@
       "url": "https://github.com/NVlabs/DDO"
     },
     {
-      "description": "The open-source model suite for robotics data engine by NVIDIA GEAR",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-05T17:15:50Z",
-      "shards_use": "",
-      "stars": 125,
-      "updated_at": "2026-11-16T02:47:08Z",
-      "upstream": "NVlabs/Flora",
-      "url": "https://github.com/NVlabs/Flora"
-    },
-    {
       "description": "FDFO: Finite Difference Flow Optimization",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4412,6 +4643,23 @@
       "url": "https://github.com/NVIDIA-AI-IOT/synthetic_data_generation_training_workflow"
     },
     {
+      "description": "Ubuntu kernels which are optimized for NVIDIA server systems",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "",
+      "metadata_spdx": "unknown",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-21T13:01:53Z",
+      "shards_use": "",
+      "stars": 120,
+      "updated_at": "2026-11-21T01:45:51Z",
+      "upstream": "NVIDIA/NV-Kernels",
+      "url": "https://github.com/NVIDIA/NV-Kernels"
+    },
+    {
       "description": "",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4427,23 +4675,6 @@
       "updated_at": "2026-07-02T13:54:13Z",
       "upstream": "NVlabs/conditional-restir-prototype",
       "url": "https://github.com/NVlabs/conditional-restir-prototype"
-    },
-    {
-      "description": "Ubuntu kernels which are optimized for NVIDIA server systems",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "",
-      "metadata_spdx": "unknown",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-14T13:03:20Z",
-      "shards_use": "",
-      "stars": 118,
-      "updated_at": "2026-11-16T04:28:28Z",
-      "upstream": "NVIDIA/NV-Kernels",
-      "url": "https://github.com/NVIDIA/NV-Kernels"
     },
     {
       "description": "A project demonstrating how to use nvmetamux to run multiple models in parallel.",
@@ -4548,6 +4779,40 @@
       "url": "https://github.com/NVlabs/face-vid2vid"
     },
     {
+      "description": "Real-Time Inference of 5G NR Multi-user MIMO Neural Receivers",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-12-11T10:04:57Z",
+      "shards_use": "",
+      "stars": 111,
+      "updated_at": "2026-11-19T16:47:31Z",
+      "upstream": "NVlabs/neural_rx",
+      "url": "https://github.com/NVlabs/neural_rx"
+    },
+    {
+      "description": "Sionna Research Kit: A GPU-Accelerated Research Platform for AI-RAN",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-15T17:29:33Z",
+      "shards_use": "",
+      "stars": 111,
+      "updated_at": "2026-11-17T14:47:51Z",
+      "upstream": "NVlabs/sionna-rk",
+      "url": "https://github.com/NVlabs/sionna-rk"
+    },
+    {
       "description": "Quantitative finance example applications on GPUs using portable programming models.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4565,23 +4830,6 @@
       "url": "https://github.com/NVIDIA/accelerated-quant-finance"
     },
     {
-      "description": "Sionna Research Kit: A GPU-Accelerated Research Platform for AI-RAN",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-15T17:29:33Z",
-      "shards_use": "",
-      "stars": 110,
-      "updated_at": "2026-11-02T15:34:29Z",
-      "upstream": "NVlabs/sionna-rk",
-      "url": "https://github.com/NVlabs/sionna-rk"
-    },
-    {
       "description": "The NVIDIA NeMo Agent Toolkit UI streamlines interacting with NeMo Agent Toolkit workflows in an easy-to-use web application.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4591,7 +4839,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-30T03:16:19Z",
+      "pushed_at": "2026-11-21T09:44:41Z",
       "shards_use": "",
       "stars": 109,
       "updated_at": "2026-10-30T14:56:41Z",
@@ -4614,23 +4862,6 @@
       "updated_at": "2026-08-17T00:49:19Z",
       "upstream": "NVlabs/GSPN",
       "url": "https://github.com/NVlabs/GSPN"
-    },
-    {
-      "description": "Real-Time Inference of 5G NR Multi-user MIMO Neural Receivers",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-12-11T10:04:57Z",
-      "shards_use": "",
-      "stars": 108,
-      "updated_at": "2026-11-11T03:17:23Z",
-      "upstream": "NVlabs/neural_rx",
-      "url": "https://github.com/NVlabs/neural_rx"
     },
     {
       "description": "Unsupervised Video Interpolation using Cycle Consistency ",
@@ -4695,8 +4926,8 @@
       "priority": "Unranked",
       "pushed_at": "2026-02-26T16:52:57Z",
       "shards_use": "",
-      "stars": 101,
-      "updated_at": "2026-11-02T05:58:25Z",
+      "stars": 104,
+      "updated_at": "2026-11-20T02:01:09Z",
       "upstream": "NVlabs/vla-perf",
       "url": "https://github.com/NVlabs/vla-perf"
     },
@@ -4803,6 +5034,23 @@
       "url": "https://github.com/NVlabs/xmp"
     },
     {
+      "description": "Synthetic Data Generation Workflows for Physical AI",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-30T17:06:10Z",
+      "shards_use": "",
+      "stars": 95,
+      "updated_at": "2026-11-20T06:23:54Z",
+      "upstream": "NVIDIA/cosmos-data-factory",
+      "url": "https://github.com/NVIDIA/cosmos-data-factory"
+    },
+    {
       "description": "",
       "evidence": {
         "status": "not-yet-inspected"
@@ -4812,7 +5060,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-14T07:08:58Z",
+      "pushed_at": "2026-11-20T19:28:45Z",
       "shards_use": "",
       "stars": 95,
       "updated_at": "2026-11-11T21:05:30Z",
@@ -4882,8 +5130,8 @@
       "priority": "Unranked",
       "pushed_at": "2021-08-13T15:23:43Z",
       "shards_use": "",
-      "stars": 91,
-      "updated_at": "2026-10-15T02:12:11Z",
+      "stars": 92,
+      "updated_at": "2026-11-19T22:59:18Z",
       "upstream": "NVIDIA-AI-IOT/my-jetson-nano-baseboard",
       "url": "https://github.com/NVIDIA-AI-IOT/my-jetson-nano-baseboard"
     },
@@ -4899,8 +5147,8 @@
       "priority": "Unranked",
       "pushed_at": "2024-10-23T13:28:12Z",
       "shards_use": "",
-      "stars": 91,
-      "updated_at": "2026-10-22T14:49:13Z",
+      "stars": 92,
+      "updated_at": "2026-11-21T13:04:34Z",
       "upstream": "NVlabs/M2T2",
       "url": "https://github.com/NVlabs/M2T2"
     },
@@ -5177,6 +5425,23 @@
       "url": "https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent"
     },
     {
+      "description": "Communication patterns for AI, built on top of NCCL device and host APIs",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T01:01:47Z",
+      "shards_use": "",
+      "stars": 83,
+      "updated_at": "2026-11-18T06:47:47Z",
+      "upstream": "NVIDIA/nccl-extensions",
+      "url": "https://github.com/NVIDIA/nccl-extensions"
+    },
+    {
       "description": "NVIDIA BioNeMo",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5192,23 +5457,6 @@
       "updated_at": "2026-11-03T15:55:39Z",
       "upstream": "NVIDIA/BioNeMo",
       "url": "https://github.com/NVIDIA/BioNeMo"
-    },
-    {
-      "description": "Synthetic Data Generation Workflows for Physical AI",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-30T17:06:10Z",
-      "shards_use": "",
-      "stars": 81,
-      "updated_at": "2026-11-14T00:05:08Z",
-      "upstream": "NVIDIA/cosmos-data-factory",
-      "url": "https://github.com/NVIDIA/cosmos-data-factory"
     },
     {
       "description": "Code for the CVPR 2022 paper \"ScePT: Scene-consistent, Policy-based Trajectory Predictions for Planning\" by Yuxiao Chen, Boris Ivanovic, and Marco Pavone",
@@ -5260,23 +5508,6 @@
       "updated_at": "2026-06-17T23:14:53Z",
       "upstream": "NVlabs/sds-complete",
       "url": "https://github.com/NVlabs/sds-complete"
-    },
-    {
-      "description": "Communication patterns for AI, built on top of NCCL device and host APIs",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-13T20:25:28Z",
-      "shards_use": "",
-      "stars": 79,
-      "updated_at": "2026-11-14T06:42:37Z",
-      "upstream": "NVIDIA/nccl-extensions",
-      "url": "https://github.com/NVIDIA/nccl-extensions"
     },
     {
       "description": "A Vision-Language-Model for Detecting and Reasoning Over Failures in Robotic Manipulation",
@@ -5381,6 +5612,23 @@
       "url": "https://github.com/NVlabs/LoRWeB"
     },
     {
+      "description": "Agentic Skills for Jetson BSP Customization",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-06-22T14:45:33Z",
+      "shards_use": "",
+      "stars": 76,
+      "updated_at": "2026-11-17T03:17:50Z",
+      "upstream": "NVIDIA-AI-IOT/jetson-bsp-skills",
+      "url": "https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills"
+    },
+    {
       "description": "ACID: Action-Conditional Implicit Visual Dynamics for Deformable Object Manipulation",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5415,23 +5663,6 @@
       "url": "https://github.com/NVlabs/extreme-view-synth"
     },
     {
-      "description": "Agentic Skills for Jetson BSP Customization",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-06-22T14:45:33Z",
-      "shards_use": "",
-      "stars": 75,
-      "updated_at": "2026-11-11T07:23:18Z",
-      "upstream": "NVIDIA-AI-IOT/jetson-bsp-skills",
-      "url": "https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills"
-    },
-    {
       "description": "NVIDIA HPCG is based on the HPCG benchmark and optimized for performance on NVIDIA accelerated HPC systems.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5441,7 +5672,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-12T18:31:48Z",
+      "pushed_at": "2026-11-17T19:50:56Z",
       "shards_use": "",
       "stars": 75,
       "updated_at": "2026-11-02T16:20:35Z",
@@ -5464,6 +5695,23 @@
       "updated_at": "2026-09-16T05:18:54Z",
       "upstream": "NVlabs/DQTrack",
       "url": "https://github.com/NVlabs/DQTrack"
+    },
+    {
+      "description": "Decoder-only View Synthesis Model",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-13T08:19:34Z",
+      "shards_use": "",
+      "stars": 75,
+      "updated_at": "2026-11-21T06:18:55Z",
+      "upstream": "NVlabs/DVSM",
+      "url": "https://github.com/NVlabs/DVSM"
     },
     {
       "description": "",
@@ -5568,6 +5816,23 @@
       "url": "https://github.com/NVlabs/LACE"
     },
     {
+      "description": "Prompt tune geometry reconstruction models for long-sequence.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-09-04T10:17:38Z",
+      "shards_use": "",
+      "stars": 73,
+      "updated_at": "2026-11-17T23:56:58Z",
+      "upstream": "NVlabs/scal3r",
+      "url": "https://github.com/NVlabs/scal3r"
+    },
+    {
       "description": "Triton CLI is an open source command line interface that enables users to create, deploy, and profile models served by the Triton Inference Server.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5602,6 +5867,23 @@
       "url": "https://github.com/NVIDIA-AI-IOT/Formula1Epoch"
     },
     {
+      "description": "This a open source collection of USD materials and textures using MaterialX",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-06-12T02:30:45Z",
+      "shards_use": "",
+      "stars": 72,
+      "updated_at": "2026-11-18T17:58:27Z",
+      "upstream": "NVIDIA-Omniverse/PhysicalAI-SimReady-Materials",
+      "url": "https://github.com/NVIDIA-Omniverse/PhysicalAI-SimReady-Materials"
+    },
+    {
       "description": "Extended and advanced applications to the Rivermax SDK (Networking SDK for Media and Data Streaming).",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5617,6 +5899,23 @@
       "updated_at": "2026-10-16T12:21:54Z",
       "upstream": "NVIDIA/Rivermax",
       "url": "https://github.com/NVIDIA/Rivermax"
+    },
+    {
+      "description": "NVIDIA\u2019s repository for enabling trustworthy AI.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Creative Commons Zero v1.0 Universal",
+      "metadata_spdx": "CC0-1.0",
+      "metadata_status": "non-allowlisted-spdx-requires-review",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-16T22:44:39Z",
+      "shards_use": "",
+      "stars": 72,
+      "updated_at": "2026-11-19T21:26:43Z",
+      "upstream": "NVIDIA/Trustworthy-AI",
+      "url": "https://github.com/NVIDIA/Trustworthy-AI"
     },
     {
       "description": "[CVPR 2022 (oral)] Bongard-HOI for benchmarking few-shot visual reasoning",
@@ -5653,40 +5952,6 @@
       "url": "https://github.com/NVlabs/ocropus3-ocroseg"
     },
     {
-      "description": "Prompt tune geometry reconstruction models for long-sequence.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-09-04T10:17:38Z",
-      "shards_use": "",
-      "stars": 72,
-      "updated_at": "2026-10-23T12:25:44Z",
-      "upstream": "NVlabs/scal3r",
-      "url": "https://github.com/NVlabs/scal3r"
-    },
-    {
-      "description": "This a open source collection of USD materials and textures using MaterialX",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-06-12T02:30:45Z",
-      "shards_use": "",
-      "stars": 71,
-      "updated_at": "2026-11-14T21:24:36Z",
-      "upstream": "NVIDIA-Omniverse/PhysicalAI-SimReady-Materials",
-      "url": "https://github.com/NVIDIA-Omniverse/PhysicalAI-SimReady-Materials"
-    },
-    {
       "description": "",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5721,21 +5986,21 @@
       "url": "https://github.com/NVlabs/PAMTRI"
     },
     {
-      "description": "NVIDIA\u2019s repository for enabling trustworthy AI.",
+      "description": "Source code and the model for ReflectNet: Separating Reflection and Transmission Images in the Wild, ECCV 2018",
       "evidence": {
         "status": "not-yet-inspected"
       },
       "fork_exists": false,
-      "metadata_license_name": "Creative Commons Zero v1.0 Universal",
-      "metadata_spdx": "CC0-1.0",
-      "metadata_status": "non-allowlisted-spdx-requires-review",
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-29T20:29:58Z",
+      "pushed_at": "2024-11-15T21:48:48Z",
       "shards_use": "",
-      "stars": 70,
-      "updated_at": "2026-11-14T18:05:44Z",
-      "upstream": "NVIDIA/Trustworthy-AI",
-      "url": "https://github.com/NVIDIA/Trustworthy-AI"
+      "stars": 71,
+      "updated_at": "2026-11-17T08:29:57Z",
+      "upstream": "NVlabs/ReflectNet",
+      "url": "https://github.com/NVlabs/ReflectNet"
     },
     {
       "description": "RGB-D Local Implicit Function for Depth Completion of Transparent Objects",
@@ -5753,23 +6018,6 @@
       "updated_at": "2026-11-13T14:19:04Z",
       "upstream": "NVlabs/implicit_depth",
       "url": "https://github.com/NVlabs/implicit_depth"
-    },
-    {
-      "description": "Source code and the model for ReflectNet: Separating Reflection and Transmission Images in the Wild, ECCV 2018",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2024-11-15T21:48:48Z",
-      "shards_use": "",
-      "stars": 70,
-      "updated_at": "2026-10-29T13:04:03Z",
-      "upstream": "NVlabs/ReflectNet",
-      "url": "https://github.com/NVlabs/ReflectNet"
     },
     {
       "description": "Omniverse Kit sample for CAE use-cases",
@@ -5891,6 +6139,23 @@
       "url": "https://github.com/NVIDIA/dllogger"
     },
     {
+      "description": "Industrial SOP Monitoring Blueprints for Training & Inference",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-08-28T07:36:29Z",
+      "shards_use": "",
+      "stars": 66,
+      "updated_at": "2026-11-19T01:39:20Z",
+      "upstream": "NVIDIA/sop-monitoring-blueprints",
+      "url": "https://github.com/NVIDIA/sop-monitoring-blueprints"
+    },
+    {
       "description": "Pose estimation refiner",
       "evidence": {
         "status": "not-yet-inspected"
@@ -5934,7 +6199,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-14T03:03:08Z",
+      "pushed_at": "2026-11-18T18:57:30Z",
       "shards_use": "",
       "stars": 65,
       "updated_at": "2026-11-14T21:35:04Z",
@@ -5942,7 +6207,7 @@
       "url": "https://github.com/NVIDIA-Omniverse/omniverse-labs"
     },
     {
-      "description": "Industrial SOP Monitoring Blueprints for Training & Inference",
+      "description": "",
       "evidence": {
         "status": "not-yet-inspected"
       },
@@ -5951,12 +6216,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-08-28T07:36:29Z",
+      "pushed_at": "2026-11-19T01:57:39Z",
       "shards_use": "",
       "stars": 65,
-      "updated_at": "2026-11-01T21:41:52Z",
-      "upstream": "NVIDIA/sop-monitoring-blueprints",
-      "url": "https://github.com/NVIDIA/sop-monitoring-blueprints"
+      "updated_at": "2026-11-18T13:21:47Z",
+      "upstream": "rapidsai/gqe",
+      "url": "https://github.com/rapidsai/gqe"
     },
     {
       "description": "Research package for MPC VR teleop with Isaac Sim and cuRobo",
@@ -6025,23 +6290,6 @@
       "updated_at": "2026-05-08T03:36:10Z",
       "upstream": "NVlabs/unas",
       "url": "https://github.com/NVlabs/unas"
-    },
-    {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-08-11T01:04:13Z",
-      "shards_use": "",
-      "stars": 63,
-      "updated_at": "2026-11-03T04:55:14Z",
-      "upstream": "rapidsai/gqe",
-      "url": "https://github.com/rapidsai/gqe"
     },
     {
       "description": "Official PyTorch implementation of BLADE: Single-view Body Mesh Estimation through Accurate Depth Estimation (CVPR 2025). BLADE tackles close-range human mesh recovery where perspective distortion is strongest, and solves for camera pose and focal length in addition to SMPL(-X) parameters.",
@@ -6418,6 +6666,23 @@
       "url": "https://github.com/NVIDIA/nvbmc-docs"
     },
     {
+      "description": "OptiX SDK headers, everything needed to build & run OptiX applications. SDK samples not included.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-12-12T19:08:58Z",
+      "shards_use": "",
+      "stars": 52,
+      "updated_at": "2026-11-17T03:25:33Z",
+      "upstream": "NVIDIA/optix-dev",
+      "url": "https://github.com/NVIDIA/optix-dev"
+    },
+    {
       "description": "A new retrieval-based framework for controllable molecule generation.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -6435,7 +6700,7 @@
       "url": "https://github.com/NVlabs/RetMol"
     },
     {
-      "description": "OptiX SDK headers, everything needed to build & run OptiX applications. SDK samples not included.",
+      "description": "Scripts for building minimal Linux distribution for diagnostics",
       "evidence": {
         "status": "not-yet-inspected"
       },
@@ -6444,12 +6709,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2025-12-12T19:08:58Z",
+      "pushed_at": "2026-05-22T11:27:57Z",
       "shards_use": "",
       "stars": 51,
-      "updated_at": "2026-11-06T19:07:22Z",
-      "upstream": "NVIDIA/optix-dev",
-      "url": "https://github.com/NVIDIA/optix-dev"
+      "updated_at": "2026-11-19T01:19:30Z",
+      "upstream": "NVIDIA/tinylinux-scripts",
+      "url": "https://github.com/NVIDIA/tinylinux-scripts"
     },
     {
       "description": "This project demonstrate how to infer and track from a 360 videos by using the dewarper plugin. ",
@@ -6486,7 +6751,7 @@
       "url": "https://github.com/NVIDIA/hoti-gpu-comms-tutorial"
     },
     {
-      "description": "Scripts for building minimal Linux distribution for diagnostics",
+      "description": "An agentic context evolution approach for RTL coding",
       "evidence": {
         "status": "not-yet-inspected"
       },
@@ -6495,29 +6760,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-05-22T11:27:57Z",
+      "pushed_at": "2026-09-20T16:55:46Z",
       "shards_use": "",
       "stars": 50,
-      "updated_at": "2026-11-01T21:44:30Z",
-      "upstream": "NVIDIA/tinylinux-scripts",
-      "url": "https://github.com/NVIDIA/tinylinux-scripts"
-    },
-    {
-      "description": "Decoder-only View Synthesis Model",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-13T08:19:34Z",
-      "shards_use": "",
-      "stars": 50,
-      "updated_at": "2026-11-16T04:50:12Z",
-      "upstream": "NVlabs/DVSM",
-      "url": "https://github.com/NVlabs/DVSM"
+      "updated_at": "2026-11-19T14:47:41Z",
+      "upstream": "NVlabs/ACE-RTL",
+      "url": "https://github.com/NVlabs/ACE-RTL"
     },
     {
       "description": "",
@@ -6569,23 +6817,6 @@
       "updated_at": "2026-11-02T08:35:12Z",
       "upstream": "NVIDIA/synthda",
       "url": "https://github.com/NVIDIA/synthda"
-    },
-    {
-      "description": "An agentic context evolution approach for RTL coding",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-09-20T16:55:46Z",
-      "shards_use": "",
-      "stars": 49,
-      "updated_at": "2026-11-11T05:06:48Z",
-      "upstream": "NVlabs/ACE-RTL",
-      "url": "https://github.com/NVlabs/ACE-RTL"
     },
     {
       "description": "[ICLRW'26] EoRA: Fine-tuning-free Compensation for Compressed LLM with Eigenspace Low-Rank Approximation",
@@ -6673,6 +6904,23 @@
       "url": "https://github.com/NVlabs/FeatSharp"
     },
     {
+      "description": "LLM Evaluation Benchmark on Hardware Formal Verification",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-04-03T18:06:15Z",
+      "shards_use": "",
+      "stars": 47,
+      "updated_at": "2026-11-19T20:30:48Z",
+      "upstream": "NVlabs/FVEval",
+      "url": "https://github.com/NVlabs/FVEval"
+    },
+    {
       "description": "",
       "evidence": {
         "status": "not-yet-inspected"
@@ -6705,23 +6953,6 @@
       "updated_at": "2026-08-23T02:47:58Z",
       "upstream": "NVIDIA-AI-IOT/JEP_ChatBot",
       "url": "https://github.com/NVIDIA-AI-IOT/JEP_ChatBot"
-    },
-    {
-      "description": "LLM Evaluation Benchmark on Hardware Formal Verification",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-04-03T18:06:15Z",
-      "shards_use": "",
-      "stars": 46,
-      "updated_at": "2026-10-29T05:36:00Z",
-      "upstream": "NVlabs/FVEval",
-      "url": "https://github.com/NVlabs/FVEval"
     },
     {
       "description": "GBRL-based Actor-Critic algorithms implemented in stable-baselines3",
@@ -6775,6 +7006,23 @@
       "url": "https://github.com/NVlabs/viewpoint-robustness"
     },
     {
+      "description": "AI Agent Skill for converting CAD models to OpenUSD. Enables autonomous agents to translate 3D CAD assets into USD/USDA/USDC by leveraging the usd-convert-cad PyPI package",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T23:33:44Z",
+      "shards_use": "",
+      "stars": 45,
+      "updated_at": "2026-11-19T11:11:02Z",
+      "upstream": "NVIDIA-Omniverse/usd-convert-cad",
+      "url": "https://github.com/NVIDIA-Omniverse/usd-convert-cad"
+    },
+    {
       "description": "Linux driver for diagnostic software",
       "evidence": {
         "status": "not-yet-inspected"
@@ -6826,6 +7074,23 @@
       "url": "https://github.com/NVlabs/SNN"
     },
     {
+      "description": "[CVPR 2025] ZeroMSF: Zero-shot Monocular Scene Flow Estimation in the Wild",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-09-16T17:26:16Z",
+      "shards_use": "",
+      "stars": 45,
+      "updated_at": "2026-11-17T13:05:12Z",
+      "upstream": "NVlabs/zero-msf",
+      "url": "https://github.com/NVlabs/zero-msf"
+    },
+    {
       "description": "Isaac ROS image_pipeline package for hardware-accelerated image processing in ROS2.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -6860,23 +7125,6 @@
       "url": "https://github.com/NVIDIA-AI-IOT/scene-text-recognition"
     },
     {
-      "description": "[CVPR 2025] ZeroMSF: Zero-shot Monocular Scene Flow Estimation in the Wild",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-09-16T17:26:16Z",
-      "shards_use": "",
-      "stars": 44,
-      "updated_at": "2026-11-06T05:32:11Z",
-      "upstream": "NVlabs/zero-msf",
-      "url": "https://github.com/NVlabs/zero-msf"
-    },
-    {
       "description": "Sample application repository for AutoMagicCalib tool",
       "evidence": {
         "status": "not-yet-inspected"
@@ -6892,23 +7140,6 @@
       "updated_at": "2026-11-11T15:37:44Z",
       "upstream": "NVIDIA-AI-IOT/auto-magic-calib",
       "url": "https://github.com/NVIDIA-AI-IOT/auto-magic-calib"
-    },
-    {
-      "description": "AI Agent Skill for converting CAD models to OpenUSD. Enables autonomous agents to translate 3D CAD assets into USD/USDA/USDC by leveraging the usd-convert-cad PyPI package",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-09-16T00:42:35Z",
-      "shards_use": "",
-      "stars": 43,
-      "updated_at": "2026-11-15T12:13:02Z",
-      "upstream": "NVIDIA-Omniverse/usd-convert-cad",
-      "url": "https://github.com/NVIDIA-Omniverse/usd-convert-cad"
     },
     {
       "description": "[CVPR 2026 (Highlight)] 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation",
@@ -7047,6 +7278,23 @@
       "url": "https://github.com/NVlabs/GANcraft"
     },
     {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "",
+      "metadata_spdx": "unknown",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-10-03T23:17:06Z",
+      "shards_use": "",
+      "stars": 40,
+      "updated_at": "2026-11-19T19:19:47Z",
+      "upstream": "NVlabs/GraspDataGen",
+      "url": "https://github.com/NVlabs/GraspDataGen"
+    },
+    {
       "description": "MPI accelerator-integrated communication extensions",
       "evidence": {
         "status": "not-yet-inspected"
@@ -7064,23 +7312,6 @@
       "url": "https://github.com/NVIDIA/mpi-acx"
     },
     {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "",
-      "metadata_spdx": "unknown",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-10-03T23:17:06Z",
-      "shards_use": "",
-      "stars": 39,
-      "updated_at": "2026-11-11T17:27:37Z",
-      "upstream": "NVlabs/GraspDataGen",
-      "url": "https://github.com/NVlabs/GraspDataGen"
-    },
-    {
       "description": "Stream your L\u00d6VR VR applications wirelessly to supported headsets using NVIDIA CloudXR technology. This sample integrates CloudXR Runtime into L\u00d6VR, enabling untethered VR experiences without physical cables.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -7093,7 +7324,7 @@
       "pushed_at": "2026-11-09T22:11:55Z",
       "shards_use": "",
       "stars": 38,
-      "updated_at": "2026-11-08T17:51:20Z",
+      "updated_at": "2026-11-16T05:26:49Z",
       "upstream": "NVIDIA/cloudxr-lovr-sample",
       "url": "https://github.com/NVIDIA/cloudxr-lovr-sample"
     },
@@ -7192,7 +7423,7 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T13:01:58Z",
+      "pushed_at": "2026-11-17T16:17:03Z",
       "shards_use": "",
       "stars": 35,
       "updated_at": "2026-11-12T13:21:38Z",
@@ -7421,6 +7652,23 @@
       "url": "https://github.com/NVlabs/DICOD"
     },
     {
+      "description": "Aerial Omniverse Digital Twin (AODT)",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-08-27T15:57:34Z",
+      "shards_use": "",
+      "stars": 31,
+      "updated_at": "2026-11-19T18:10:32Z",
+      "upstream": "NVIDIA/aerial-omniverse-digital-twin",
+      "url": "https://github.com/NVIDIA/aerial-omniverse-digital-twin"
+    },
+    {
       "description": "Official code repository for the paper Molecule Generation with Fragment Retrieval Augmentation (NeurIPS 2024)",
       "evidence": {
         "status": "not-yet-inspected"
@@ -7436,23 +7684,6 @@
       "updated_at": "2026-04-22T06:53:52Z",
       "upstream": "NVlabs/f-RAG",
       "url": "https://github.com/NVlabs/f-RAG"
-    },
-    {
-      "description": "Aerial Omniverse Digital Twin (AODT)",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-08-27T15:57:34Z",
-      "shards_use": "",
-      "stars": 30,
-      "updated_at": "2026-11-13T11:56:40Z",
-      "upstream": "NVIDIA/aerial-omniverse-digital-twin",
-      "url": "https://github.com/NVIDIA/aerial-omniverse-digital-twin"
     },
     {
       "description": "The GBM EGL external platform library",
@@ -7549,7 +7780,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T10:09:02Z",
+      "pushed_at": "2026-11-20T15:30:50Z",
       "shards_use": "",
       "stars": 29,
       "updated_at": "2026-09-09T00:58:30Z",
@@ -7736,12 +7967,29 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-15T21:49:18Z",
+      "pushed_at": "2026-11-20T19:41:02Z",
       "shards_use": "",
       "stars": 28,
       "updated_at": "2026-11-11T02:48:46Z",
       "upstream": "rapidsai/devcontainers",
       "url": "https://github.com/rapidsai/devcontainers"
+    },
+    {
+      "description": "A utility for stressing GPUs by driving utilization (and thus power consumption) up and down in user-defined cycle intervals. It will also randomly drop power consumption down to idle and spike it back up",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2023-05-10T18:45:18Z",
+      "shards_use": "",
+      "stars": 27,
+      "updated_at": "2026-11-17T12:10:24Z",
+      "upstream": "NVIDIA/GPUPowerTest",
+      "url": "https://github.com/NVIDIA/GPUPowerTest"
     },
     {
       "description": "Hosting a tutorial documentation for running Isaac ROS Visual SLAM on Jetson device.",
@@ -7759,23 +8007,6 @@
       "updated_at": "2026-03-20T11:45:18Z",
       "upstream": "NVIDIA-AI-IOT/jetson_isaac_ros_visual_slam_tutorial",
       "url": "https://github.com/NVIDIA-AI-IOT/jetson_isaac_ros_visual_slam_tutorial"
-    },
-    {
-      "description": "A utility for stressing GPUs by driving utilization (and thus power consumption) up and down in user-defined cycle intervals. It will also randomly drop power consumption down to idle and spike it back up",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2023-05-10T18:45:18Z",
-      "shards_use": "",
-      "stars": 26,
-      "updated_at": "2026-07-21T12:32:08Z",
-      "upstream": "NVIDIA/GPUPowerTest",
-      "url": "https://github.com/NVIDIA/GPUPowerTest"
     },
     {
       "description": "nv-one-logger enables tracking of GPU application progress over time and can help to identify overhead from workload and cluster inefficiencies to provide efficiency metrics.",
@@ -7810,6 +8041,23 @@
       "updated_at": "2026-09-29T01:41:06Z",
       "upstream": "NVlabs/PerAda",
       "url": "https://github.com/NVlabs/PerAda"
+    },
+    {
+      "description": "Large-scale simulation of wireless network coverage maps using Sionna RT.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-02-23T17:07:26Z",
+      "shards_use": "",
+      "stars": 26,
+      "updated_at": "2026-11-18T17:01:30Z",
+      "upstream": "NVlabs/sionna-large-radio-maps",
+      "url": "https://github.com/NVlabs/sionna-large-radio-maps"
     },
     {
       "description": "SRSA: Skill Retrieval and Adaptation for Robotic Assembly Tasks",
@@ -7878,23 +8126,6 @@
       "updated_at": "2023-03-05T08:58:53Z",
       "upstream": "NVlabs/ocropus3-ocrobin",
       "url": "https://github.com/NVlabs/ocropus3-ocrobin"
-    },
-    {
-      "description": "Large-scale simulation of wireless network coverage maps using Sionna RT.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-02-23T17:07:26Z",
-      "shards_use": "",
-      "stars": 25,
-      "updated_at": "2026-11-08T16:07:51Z",
-      "upstream": "NVlabs/sionna-large-radio-maps",
-      "url": "https://github.com/NVlabs/sionna-large-radio-maps"
     },
     {
       "description": "Swift frameworks for building client applications that connect to CloudXR servers. These frameworks offer the base connection, streaming and communication systems needed to create a connection.",
@@ -8361,6 +8592,23 @@
         "status": "not-yet-inspected"
       },
       "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-07-14T18:29:04Z",
+      "shards_use": "",
+      "stars": 20,
+      "updated_at": "2026-11-19T06:33:13Z",
+      "upstream": "NVlabs/dexplore",
+      "url": "https://github.com/NVlabs/dexplore"
+    },
+    {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
       "metadata_license_name": "",
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
@@ -8450,12 +8698,29 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-03-16T11:29:49Z",
+      "pushed_at": "2026-11-20T14:33:16Z",
       "shards_use": "",
       "stars": 18,
       "updated_at": "2026-10-15T02:16:24Z",
       "upstream": "NVIDIA-Omniverse/usdsearch-client",
       "url": "https://github.com/NVIDIA-Omniverse/usdsearch-client"
+    },
+    {
+      "description": "NVIDIA Digital Health skills repo for agent-guided healthcare AI workflows, including evaluation, data generation, model adaptation, deployment guidance, and developer best practices.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-02T17:30:54Z",
+      "shards_use": "",
+      "stars": 18,
+      "updated_at": "2026-11-19T17:30:34Z",
+      "upstream": "NVIDIA/digital-health-skills",
+      "url": "https://github.com/NVIDIA/digital-health-skills"
     },
     {
       "description": "Guides and examples to help achieve optimal performance on a NVIDIA Grace CPU",
@@ -8501,7 +8766,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T16:26:53Z",
+      "pushed_at": "2026-11-19T21:17:54Z",
       "shards_use": "",
       "stars": 18,
       "updated_at": "2026-10-16T17:33:56Z",
@@ -8541,23 +8806,6 @@
       "updated_at": "2024-07-01T08:20:07Z",
       "upstream": "NVlabs/AL-SSL",
       "url": "https://github.com/NVlabs/AL-SSL"
-    },
-    {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-07-14T18:29:04Z",
-      "shards_use": "",
-      "stars": 18,
-      "updated_at": "2026-11-09T02:43:12Z",
-      "upstream": "NVlabs/dexplore",
-      "url": "https://github.com/NVlabs/dexplore"
     },
     {
       "description": "",
@@ -8626,6 +8874,23 @@
       "updated_at": "2026-08-26T20:08:34Z",
       "upstream": "NVlabs/spline-planner",
       "url": "https://github.com/NVlabs/spline-planner"
+    },
+    {
+      "description": "A project demonstration on how to use the GigE camera to do the DeepStream Yolo3 object detection, how to set up the GigE camera, and deployment for the DeepStream apps. ",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2022-02-11T17:24:21Z",
+      "shards_use": "",
+      "stars": 17,
+      "updated_at": "2026-11-19T22:59:23Z",
+      "upstream": "NVIDIA-AI-IOT/deepstream-yolo3-gige-apps",
+      "url": "https://github.com/NVIDIA-AI-IOT/deepstream-yolo3-gige-apps"
     },
     {
       "description": "Plugin for SideFX Houdini adding Omniverse support.",
@@ -8713,23 +8978,6 @@
       "url": "https://github.com/NVlabs/rule-hierarchies"
     },
     {
-      "description": "A project demonstration on how to use the GigE camera to do the DeepStream Yolo3 object detection, how to set up the GigE camera, and deployment for the DeepStream apps. ",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2022-02-11T17:24:21Z",
-      "shards_use": "",
-      "stars": 16,
-      "updated_at": "2026-10-15T02:12:14Z",
-      "upstream": "NVIDIA-AI-IOT/deepstream-yolo3-gige-apps",
-      "url": "https://github.com/NVIDIA-AI-IOT/deepstream-yolo3-gige-apps"
-    },
-    {
       "description": "Simple Arm assembly kernels for testing the performance and functionality of Arm CPUs.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -8762,23 +9010,6 @@
       "updated_at": "2026-11-02T03:45:37Z",
       "upstream": "NVIDIA/cumulus-test-drive",
       "url": "https://github.com/NVIDIA/cumulus-test-drive"
-    },
-    {
-      "description": "NVIDIA Digital Health skills repo for agent-guided healthcare AI workflows, including evaluation, data generation, model adaptation, deployment guidance, and developer best practices.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-02T17:30:54Z",
-      "shards_use": "",
-      "stars": 16,
-      "updated_at": "2026-11-15T15:30:30Z",
-      "upstream": "NVIDIA/digital-health-skills",
-      "url": "https://github.com/NVIDIA/digital-health-skills"
     },
     {
       "description": "Demonstration of the use of TensorRT and TRITON",
@@ -8926,7 +9157,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-04T17:44:11Z",
+      "pushed_at": "2026-11-20T23:14:33Z",
       "shards_use": "",
       "stars": 15,
       "updated_at": "2026-11-04T17:44:25Z",
@@ -9034,6 +9265,23 @@
       "updated_at": "2026-02-09T04:08:31Z",
       "upstream": "NVlabs/Parsimony-CGO23",
       "url": "https://github.com/NVlabs/Parsimony-CGO23"
+    },
+    {
+      "description": "A C and Python library for presenting NVIDIA Omniverse RTX scenes on OpenXR headsets in VR and AR",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T16:06:12Z",
+      "shards_use": "",
+      "stars": 14,
+      "updated_at": "2026-11-20T13:06:56Z",
+      "upstream": "NVIDIA-Omniverse/ovxr",
+      "url": "https://github.com/NVIDIA-Omniverse/ovxr"
     },
     {
       "description": "A collection of kit samples for interfacing with USD Search API.",
@@ -9172,23 +9420,6 @@
       "url": "https://github.com/NVIDIA-Omniverse/nanousd-labs"
     },
     {
-      "description": "A C and Python library for presenting NVIDIA Omniverse RTX scenes on OpenXR headsets in VR and AR",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-20T13:19:10Z",
-      "shards_use": "",
-      "stars": 12,
-      "updated_at": "2026-11-10T20:35:17Z",
-      "upstream": "NVIDIA-Omniverse/ovxr",
-      "url": "https://github.com/NVIDIA-Omniverse/ovxr"
-    },
-    {
       "description": "A comprehensive guide to using CUDA Graphs effectively with PyTorch, covering CUDA fundamentals, PyTorch integration, Megatron-LM implementations, and practical troubleshooting.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -9215,7 +9446,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T14:35:01Z",
+      "pushed_at": "2026-11-20T15:31:07Z",
       "shards_use": "",
       "stars": 12,
       "updated_at": "2026-11-10T10:07:15Z",
@@ -9272,6 +9503,23 @@
       "updated_at": "2026-07-21T12:33:02Z",
       "upstream": "NVIDIA/optee_os-nvidia",
       "url": "https://github.com/NVIDIA/optee_os-nvidia"
+    },
+    {
+      "description": "A FastAPI http server which calls out to the curobo motion planning library",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2025-08-19T22:44:18Z",
+      "shards_use": "",
+      "stars": 12,
+      "updated_at": "2026-11-21T13:54:09Z",
+      "upstream": "NVlabs/curobo_service",
+      "url": "https://github.com/NVlabs/curobo_service"
     },
     {
       "description": "Differentiable Edge-Based OPC",
@@ -9374,23 +9622,6 @@
       "updated_at": "2026-11-01T21:37:45Z",
       "upstream": "NVIDIA/whetstone",
       "url": "https://github.com/NVIDIA/whetstone"
-    },
-    {
-      "description": "A FastAPI http server which calls out to the curobo motion planning library",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2025-08-19T22:44:18Z",
-      "shards_use": "",
-      "stars": 11,
-      "updated_at": "2025-12-13T05:11:25Z",
-      "upstream": "NVlabs/curobo_service",
-      "url": "https://github.com/NVlabs/curobo_service"
     },
     {
       "description": "",
@@ -9657,7 +9888,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-12T16:52:18Z",
+      "pushed_at": "2026-11-16T18:01:56Z",
       "shards_use": "",
       "stars": 9,
       "updated_at": "2026-10-28T16:20:02Z",
@@ -9716,6 +9947,23 @@
       "url": "https://github.com/NVIDIA-AI-IOT/template_project"
     },
     {
+      "description": "Packaging and distributing agent skills and agent plugins as OCI artifacts.",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-05T13:43:57Z",
+      "shards_use": "",
+      "stars": 8,
+      "updated_at": "2026-11-17T01:59:46Z",
+      "upstream": "NVIDIA/agent-package-spec",
+      "url": "https://github.com/NVIDIA/agent-package-spec"
+    },
+    {
       "description": "NVIDIA fork of tianocore/edk2-non-osi",
       "evidence": {
         "status": "not-yet-inspected"
@@ -9725,12 +9973,29 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T14:34:59Z",
+      "pushed_at": "2026-11-20T15:30:58Z",
       "shards_use": "",
       "stars": 8,
       "updated_at": "2026-11-05T10:08:12Z",
       "upstream": "NVIDIA/edk2-non-osi",
       "url": "https://github.com/NVIDIA/edk2-non-osi"
+    },
+    {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-13T22:47:35Z",
+      "shards_use": "",
+      "stars": 8,
+      "updated_at": "2026-11-21T11:20:33Z",
+      "upstream": "NVIDIA/nsight",
+      "url": "https://github.com/NVIDIA/nsight"
     },
     {
       "description": "Monitor and react to platform events",
@@ -9793,7 +10058,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-09-01T21:35:56Z",
+      "pushed_at": "2026-11-18T22:35:05Z",
       "shards_use": "",
       "stars": 8,
       "updated_at": "2026-09-01T21:29:00Z",
@@ -9852,23 +10117,6 @@
       "url": "https://github.com/NVIDIA-Omniverse/vfi-samples"
     },
     {
-      "description": "Packaging and distributing agent skills and agent plugins as OCI artifacts.",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-05T13:43:57Z",
-      "shards_use": "",
-      "stars": 7,
-      "updated_at": "2026-11-01T21:41:39Z",
-      "upstream": "NVIDIA/agent-package-spec",
-      "url": "https://github.com/NVIDIA/agent-package-spec"
-    },
-    {
       "description": "NVIDIA fork of tianocore/edk2-edkrepo-manifest",
       "evidence": {
         "status": "not-yet-inspected"
@@ -9878,7 +10126,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-14T17:08:05Z",
+      "pushed_at": "2026-11-20T15:30:01Z",
       "shards_use": "",
       "stars": 7,
       "updated_at": "2026-11-02T14:55:32Z",
@@ -9895,7 +10143,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-06T16:10:41Z",
+      "pushed_at": "2026-11-20T16:11:05Z",
       "shards_use": "",
       "stars": 7,
       "updated_at": "2026-11-05T19:55:25Z",
@@ -10116,12 +10364,29 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-11T03:15:20Z",
+      "pushed_at": "2026-11-19T18:24:50Z",
       "shards_use": "",
       "stars": 6,
       "updated_at": "2026-11-11T04:15:24Z",
       "upstream": "rapidsai/workflows",
       "url": "https://github.com/rapidsai/workflows"
+    },
+    {
+      "description": "This is the public kit sample extension repository",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T06:13:06Z",
+      "shards_use": "",
+      "stars": 5,
+      "updated_at": "2026-11-21T01:32:32Z",
+      "upstream": "NVIDIA-Omniverse/kit-sample-extensions",
+      "url": "https://github.com/NVIDIA-Omniverse/kit-sample-extensions"
     },
     {
       "description": "Omniverse USD Resolver is an implementation of OpenUSD's ArResolver plugin abstraction. Its sole purpose is to identify and resolve an asset in OpenUSD against the Omniverse asset management system.",
@@ -10235,7 +10500,7 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T14:34:55Z",
+      "pushed_at": "2026-11-20T15:30:37Z",
       "shards_use": "",
       "stars": 5,
       "updated_at": "2026-10-30T15:51:55Z",
@@ -10252,7 +10517,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T14:04:34Z",
+      "pushed_at": "2026-11-21T13:16:55Z",
       "shards_use": "",
       "stars": 5,
       "updated_at": "2026-11-12T09:11:02Z",
@@ -10303,7 +10568,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-09-01T22:36:45Z",
+      "pushed_at": "2026-11-18T22:23:43Z",
       "shards_use": "",
       "stars": 5,
       "updated_at": "2026-09-10T01:51:41Z",
@@ -10362,23 +10627,6 @@
       "url": "https://github.com/rapidsai/rvc"
     },
     {
-      "description": "This is the public kit sample extension repository",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-12T07:57:24Z",
-      "shards_use": "",
-      "stars": 4,
-      "updated_at": "2026-11-04T19:58:42Z",
-      "upstream": "NVIDIA-Omniverse/kit-sample-extensions",
-      "url": "https://github.com/NVIDIA-Omniverse/kit-sample-extensions"
-    },
-    {
       "description": "Moved to NVIDIA-Omniverse/omniverse-labs \u2192 projects/nanousd-labs/nanousd. Standalone repo retired. Flagship portable C-ABI implementation of the USD Core Spec.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -10405,12 +10653,29 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-23T09:38:28Z",
+      "pushed_at": "2026-11-19T06:12:24Z",
       "shards_use": "",
       "stars": 4,
       "updated_at": "2026-11-04T19:34:46Z",
       "upstream": "NVIDIA-Omniverse/omniverse-kit",
       "url": "https://github.com/NVIDIA-Omniverse/omniverse-kit"
+    },
+    {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-10-29T19:32:49Z",
+      "shards_use": "",
+      "stars": 4,
+      "updated_at": "2026-11-16T22:57:29Z",
+      "upstream": "NVIDIA-Omniverse/usd-exporter-revit",
+      "url": "https://github.com/NVIDIA-Omniverse/usd-exporter-revit"
     },
     {
       "description": "A Python agent for receiving instructions from the NVIDIA Air platform",
@@ -10481,23 +10746,6 @@
       "url": "https://github.com/NVIDIA/nautobot-broker-nats"
     },
     {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-13T22:47:35Z",
-      "shards_use": "",
-      "stars": 4,
-      "updated_at": "2026-11-05T12:02:07Z",
-      "upstream": "NVIDIA/nsight",
-      "url": "https://github.com/NVIDIA/nsight"
-    },
-    {
       "description": "NVIDIA Air Platform SDK",
       "evidence": {
         "status": "not-yet-inspected"
@@ -10507,7 +10755,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-27T16:10:23Z",
+      "pushed_at": "2026-11-18T18:12:48Z",
       "shards_use": "",
       "stars": 4,
       "updated_at": "2026-10-27T16:07:48Z",
@@ -10583,6 +10831,23 @@
       "url": "https://github.com/NVlabs/SoftTreeMax"
     },
     {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "",
+      "metadata_spdx": "unknown",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-16T14:20:16Z",
+      "shards_use": "",
+      "stars": 3,
+      "updated_at": "2026-11-16T11:59:13Z",
+      "upstream": "NVIDIA-NeMo/.github",
+      "url": "https://github.com/NVIDIA-NeMo/.github"
+    },
+    {
       "description": "Moved to NVIDIA-Omniverse/omniverse-labs \u2192 projects/nanousd-labs/usd-developer-skillgraph. Standalone repo retired. Skill graph that generates USD library code from the USD Core Spec.",
       "evidence": {
         "status": "not-yet-inspected"
@@ -10598,23 +10863,6 @@
       "updated_at": "2026-07-12T14:33:16Z",
       "upstream": "NVIDIA-Omniverse/usd-developer-skillgraph",
       "url": "https://github.com/NVIDIA-Omniverse/usd-developer-skillgraph"
-    },
-    {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "Other",
-      "metadata_spdx": "NOASSERTION",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-10-29T19:32:49Z",
-      "shards_use": "",
-      "stars": 3,
-      "updated_at": "2026-10-29T19:31:11Z",
-      "upstream": "NVIDIA-Omniverse/usd-exporter-revit",
-      "url": "https://github.com/NVIDIA-Omniverse/usd-exporter-revit"
     },
     {
       "description": "Applied Deep Learning Research",
@@ -10660,7 +10908,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-10T14:35:05Z",
+      "pushed_at": "2026-11-21T10:09:52Z",
       "shards_use": "",
       "stars": 3,
       "updated_at": "2026-08-05T09:09:42Z",
@@ -10677,7 +10925,7 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-02T22:03:22Z",
+      "pushed_at": "2026-11-17T01:16:15Z",
       "shards_use": "",
       "stars": 3,
       "updated_at": "2026-11-02T22:03:27Z",
@@ -10779,29 +11027,12 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-08-11T01:04:24Z",
+      "pushed_at": "2026-11-19T16:35:34Z",
       "shards_use": "",
       "stars": 3,
       "updated_at": "2026-09-03T19:04:37Z",
       "upstream": "rapidsai/gqe-bench",
       "url": "https://github.com/rapidsai/gqe-bench"
-    },
-    {
-      "description": "",
-      "evidence": {
-        "status": "not-yet-inspected"
-      },
-      "fork_exists": false,
-      "metadata_license_name": "",
-      "metadata_spdx": "unknown",
-      "metadata_status": "no-recognised-spdx-in-repository-metadata",
-      "priority": "Unranked",
-      "pushed_at": "2026-11-07T01:49:23Z",
-      "shards_use": "",
-      "stars": 2,
-      "updated_at": "2026-11-07T01:49:28Z",
-      "upstream": "NVIDIA-NeMo/.github",
-      "url": "https://github.com/NVIDIA-NeMo/.github"
     },
     {
       "description": "",
@@ -10915,7 +11146,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-13T13:51:25Z",
+      "pushed_at": "2026-11-19T15:31:59Z",
       "shards_use": "",
       "stars": 2,
       "updated_at": "2026-10-11T07:47:43Z",
@@ -11068,7 +11299,7 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-10-27T19:34:38Z",
+      "pushed_at": "2026-11-18T21:39:36Z",
       "shards_use": "",
       "stars": 2,
       "updated_at": "2026-10-27T19:34:40Z",
@@ -11153,7 +11384,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-08-12T16:32:11Z",
+      "pushed_at": "2026-11-19T16:27:45Z",
       "shards_use": "",
       "stars": 1,
       "updated_at": "2026-08-12T16:32:23Z",
@@ -11204,7 +11435,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-08-12T16:34:38Z",
+      "pushed_at": "2026-11-19T16:58:55Z",
       "shards_use": "",
       "stars": 1,
       "updated_at": "2026-08-24T09:29:26Z",
@@ -11238,7 +11469,7 @@
       "metadata_spdx": "NOASSERTION",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-08-12T16:33:21Z",
+      "pushed_at": "2026-11-19T16:35:49Z",
       "shards_use": "",
       "stars": 1,
       "updated_at": "2026-07-21T12:46:18Z",
@@ -11428,7 +11659,7 @@
       "pushed_at": "2026-05-27T22:15:11Z",
       "shards_use": "",
       "stars": 1,
-      "updated_at": "2026-05-27T22:15:16Z",
+      "updated_at": "2026-11-18T12:40:09Z",
       "upstream": "rapidsai/build-planning",
       "url": "https://github.com/rapidsai/build-planning"
     },
@@ -11442,7 +11673,7 @@
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
       "priority": "Unranked",
-      "pushed_at": "2026-11-15T18:06:32Z",
+      "pushed_at": "2026-11-21T04:22:42Z",
       "shards_use": "",
       "stars": 1,
       "updated_at": "2026-11-04T15:42:51Z",
@@ -11467,6 +11698,23 @@
       "url": "https://github.com/isaac-sim/.github"
     },
     {
+      "description": "ovsensors",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T20:08:11Z",
+      "shards_use": "",
+      "stars": 0,
+      "updated_at": "2026-11-19T20:57:43Z",
+      "upstream": "NVIDIA-Omniverse/ovsensors",
+      "url": "https://github.com/NVIDIA-Omniverse/ovsensors"
+    },
+    {
       "description": "Skills for using the Newton physics simulation",
       "evidence": {
         "status": "not-yet-inspected"
@@ -11482,6 +11730,23 @@
       "updated_at": "2026-11-11T20:11:14Z",
       "upstream": "NVIDIA/newton-skills",
       "url": "https://github.com/NVIDIA/newton-skills"
+    },
+    {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-19T18:39:52Z",
+      "shards_use": "",
+      "stars": 0,
+      "updated_at": "2026-11-19T22:49:01Z",
+      "upstream": "NVIDIA/nvidia-linux-utils",
+      "url": "https://github.com/NVIDIA/nvidia-linux-utils"
     },
     {
       "description": "Data submodule for falcor2",
@@ -11540,6 +11805,23 @@
         "status": "not-yet-inspected"
       },
       "fork_exists": false,
+      "metadata_license_name": "Other",
+      "metadata_spdx": "NOASSERTION",
+      "metadata_status": "no-recognised-spdx-in-repository-metadata",
+      "priority": "Unranked",
+      "pushed_at": "2026-11-20T05:00:01Z",
+      "shards_use": "",
+      "stars": 0,
+      "updated_at": "2026-11-20T23:37:06Z",
+      "upstream": "NVlabs/srl-controllers",
+      "url": "https://github.com/NVlabs/srl-controllers"
+    },
+    {
+      "description": "",
+      "evidence": {
+        "status": "not-yet-inspected"
+      },
+      "fork_exists": false,
       "metadata_license_name": "",
       "metadata_spdx": "unknown",
       "metadata_status": "no-recognised-spdx-in-repository-metadata",
@@ -11552,19 +11834,45 @@
       "url": "https://github.com/rapidsai/.github"
     }
   ],
-  "candidates_count": 663,
+  "candidates_count": 667,
   "disclaimer": "Read-only evidence inventory, NOT legal advice or permission to fork.",
   "evidence_statuses": {
-    "not-yet-inspected": 623,
-    "standard-licence-evidence-found": 40
+    "not-yet-inspected": 595,
+    "standard-licence-endpoint-not-found": 2,
+    "standard-licence-evidence-found": 70
   },
-  "generated_at": "2026-11-16T05:01:33+00:00",
+  "generated_at": "2026-11-21T15:43:02+00:00",
   "metadata_statuses": {
-    "no-recognised-spdx-in-repository-metadata": 659,
+    "no-recognised-spdx-in-repository-metadata": 663,
     "non-allowlisted-spdx-requires-review": 4
   },
   "new_file_inspections": 40,
-  "recognised_spdx_not_yet_forked": [],
+  "recognised_spdx_not_yet_forked": [
+    {
+      "spdx": "Apache-2.0",
+      "upstream": "NVIDIA/platform-init"
+    },
+    {
+      "spdx": "Apache-2.0",
+      "upstream": "NVIDIA/doca-platform-scale-sim"
+    },
+    {
+      "spdx": "Apache-2.0",
+      "upstream": "NVIDIA/scadactl"
+    },
+    {
+      "spdx": "Apache-2.0",
+      "upstream": "NVIDIA-Omniverse/ovfmi"
+    },
+    {
+      "spdx": "Apache-2.0",
+      "upstream": "NVIDIA-Omniverse/ovspatialquery"
+    },
+    {
+      "spdx": "Apache-2.0",
+      "upstream": "NVlabs/DOPER"
+    }
+  ],
   "schema_version": 1,
   "source_organisations": [
     "NVIDIA",
@@ -11577,7 +11885,7 @@
     "ai-dynamo",
     "NVlabs"
   ],
-  "sources_discovered": 1508,
+  "sources_discovered": 1517,
   "target": "Shards-inc",
-  "verified_upstream_parents": 849
+  "verified_upstream_parents": 851
 }
