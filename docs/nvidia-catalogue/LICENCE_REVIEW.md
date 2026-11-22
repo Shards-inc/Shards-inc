@@ -2,7 +2,7 @@
 
 **Read-only**: no project is automatically forked, cloned, executed, merged or re-licensed.
 
-Last scan: 2026-11-21T15:43:02+00:00  
+Last scan: 2026-11-22T15:47:53+00:00  
 Source repositories discovered: 1517  
 Current candidates requiring review: 667  
 Verified distinct fork parents under Shards-inc: 851
@@ -23,9 +23,9 @@ Verified distinct fork parents under Shards-inc: 851
 
 ## Standard GitHub licence-file endpoint evidence
 
-- not-yet-inspected: 595
-- standard-licence-endpoint-not-found: 2
-- standard-licence-evidence-found: 70
+- not-yet-inspected: 561
+- standard-licence-endpoint-not-found: 8
+- standard-licence-evidence-found: 98
 
 ## Curated high-priority review candidates
 
