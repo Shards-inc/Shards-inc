@@ -1,5 +1,7 @@
 # (Shards-inc / Shards-labs / Shards-foundation)
 "https://github.com/Shards-foundation"
+"https://linktr.ee/shardslab"
+"https://shardsinc.co.uk"
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Shards-inc&fontSize=90&animation=fadeIn&fontAlignY=38" width="100%" />
