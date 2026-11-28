@@ -1,6 +1,127 @@
 {
-  "changes": [],
-  "generated_at": "2026-11-15T23:01:18+00:00",
+  "changes": [
+    {
+      "compare_url": "https://github.com/ai-dynamo/dynamo/compare/b20fe6fe94021b854597965c7305931175e8f482...d48216c0e2349a25b9185c107e826513490b8f8c",
+      "new_head": "d48216c0e2349a25b9185c107e826513490b8f8c",
+      "old_head": "b20fe6fe94021b854597965c7305931175e8f482",
+      "upstream": "ai-dynamo/dynamo"
+    },
+    {
+      "compare_url": "https://github.com/ai-dynamo/nixl/compare/1958864a1bad755ea246a4dbd395a9b39522830c...aa6d5f29f2bda86b7971821d364bfaa26c478f29",
+      "new_head": "aa6d5f29f2bda86b7971821d364bfaa26c478f29",
+      "old_head": "1958864a1bad755ea246a4dbd395a9b39522830c",
+      "upstream": "ai-dynamo/nixl"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA-NeMo/agent-hardener/compare/f37f58625c9ee0a112e7756532a404189322d369...6650412a6823479619d7c2c17af453e3a92185ee",
+      "new_head": "6650412a6823479619d7c2c17af453e3a92185ee",
+      "old_head": "f37f58625c9ee0a112e7756532a404189322d369",
+      "upstream": "NVIDIA-NeMo/agent-hardener"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA-NeMo/Curator/compare/bb670416eebb67011c2fc649e8df85db9572ce0e...5a781387ff6b9b4644da3e42168cee2240bc0a42",
+      "new_head": "5a781387ff6b9b4644da3e42168cee2240bc0a42",
+      "old_head": "bb670416eebb67011c2fc649e8df85db9572ce0e",
+      "upstream": "NVIDIA-NeMo/Curator"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA-NeMo/Evaluator/compare/ea35ba36756abd59de201f60af8a2feba014744d...e3bc321f2f42ff2cc0778f907eb192fb3943c2fc",
+      "new_head": "e3bc321f2f42ff2cc0778f907eb192fb3943c2fc",
+      "old_head": "ea35ba36756abd59de201f60af8a2feba014744d",
+      "upstream": "NVIDIA-NeMo/Evaluator"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA-NeMo/Guardrails/compare/5d7f4c1ca62fb6155066e6c581379d1a5ec11338...5112cf1cae863e5a96a21766046b933c43a1c6d8",
+      "new_head": "5112cf1cae863e5a96a21766046b933c43a1c6d8",
+      "old_head": "5d7f4c1ca62fb6155066e6c581379d1a5ec11338",
+      "upstream": "NVIDIA-NeMo/Guardrails"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA-NeMo/Nemotron/compare/a121b64f95f31c0eced9179240ab1fe1bd2c12c2...4bdc0d7bcf304675232955208393273b2fdd0e76",
+      "new_head": "4bdc0d7bcf304675232955208393273b2fdd0e76",
+      "old_head": "a121b64f95f31c0eced9179240ab1fe1bd2c12c2",
+      "upstream": "NVIDIA-NeMo/Nemotron"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/AI-Factory-Operations-Agent/compare/54972382750e20c2f69329bf89ef022aefc14a72...f741d0c2094bbf4de4aaf1ef97d044173d859eb4",
+      "new_head": "f741d0c2094bbf4de4aaf1ef97d044173d859eb4",
+      "old_head": "54972382750e20c2f69329bf89ef022aefc14a72",
+      "upstream": "NVIDIA/AI-Factory-Operations-Agent"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/garak/compare/892779207cbc38f65a738ef9cbdfbc1e83aa0b55...223712893aea7338745c297e6fbf444a75d36d76",
+      "new_head": "223712893aea7338745c297e6fbf444a75d36d76",
+      "old_head": "892779207cbc38f65a738ef9cbdfbc1e83aa0b55",
+      "upstream": "NVIDIA/garak"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/gpu-operator/compare/0addf2f67b32df8b3deeae6e4bd5f057335cc484...877c98604aa7e9d88bf5b805307172acdf73548e",
+      "new_head": "877c98604aa7e9d88bf5b805307172acdf73548e",
+      "old_head": "0addf2f67b32df8b3deeae6e4bd5f057335cc484",
+      "upstream": "NVIDIA/gpu-operator"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/compare/9296f5311a4aebfb0e583221cc2bc774ad2f0732...99340052a102a097c311519083a1fbdf95a3daf3",
+      "new_head": "99340052a102a097c311519083a1fbdf95a3daf3",
+      "old_head": "9296f5311a4aebfb0e583221cc2bc774ad2f0732",
+      "upstream": "NVIDIA/NeMo-Agent-Toolkit"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/NeMo-Retriever/compare/378fda86ad88fd8cc8b86c5b50ca339e229713f2...65986798b6c153e33da229d4c19db7a51146198b",
+      "new_head": "65986798b6c153e33da229d4c19db7a51146198b",
+      "old_head": "378fda86ad88fd8cc8b86c5b50ca339e229713f2",
+      "upstream": "NVIDIA/NeMo-Retriever"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/NemoClaw/compare/82e1ad7474ec7175c5b860b2bfa9d7940bc6e75f...9e197055938fde927ed5d57ba5e00f200d74b626",
+      "new_head": "9e197055938fde927ed5d57ba5e00f200d74b626",
+      "old_head": "82e1ad7474ec7175c5b860b2bfa9d7940bc6e75f",
+      "upstream": "NVIDIA/NemoClaw"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/nvidia-container-toolkit/compare/f0e220ddd94e5aba384f62f9f0b3c8cfdafcf712...8abf947869fd1f97019c267e9f02397c3ce4dc97",
+      "new_head": "8abf947869fd1f97019c267e9f02397c3ce4dc97",
+      "old_head": "f0e220ddd94e5aba384f62f9f0b3c8cfdafcf712",
+      "upstream": "NVIDIA/nvidia-container-toolkit"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/OpenShell/compare/2e5589b2180dd432320adda124c4f7bcede119b5...659b45f3bed896897de20a8b67289916a3d9fffc",
+      "new_head": "659b45f3bed896897de20a8b67289916a3d9fffc",
+      "old_head": "2e5589b2180dd432320adda124c4f7bcede119b5",
+      "upstream": "NVIDIA/OpenShell"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/OpenShell-Research/compare/9a0f3c874a1b79dcb8d0af6e51996658a9ae138c...edb01c0c02c355266888d011fc0f6f47e9b2c993",
+      "new_head": "edb01c0c02c355266888d011fc0f6f47e9b2c993",
+      "old_head": "9a0f3c874a1b79dcb8d0af6e51996658a9ae138c",
+      "upstream": "NVIDIA/OpenShell-Research"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/Personal-AI-Router/compare/40975d667cbb9785a299f4a3d5e1752fc4927ab9...dfac16ad391b37531c2a8671bb53e69a01dff889",
+      "new_head": "dfac16ad391b37531c2a8671bb53e69a01dff889",
+      "old_head": "40975d667cbb9785a299f4a3d5e1752fc4927ab9",
+      "upstream": "NVIDIA/Personal-AI-Router"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/SkillSpector/compare/c81615007d40e86051a302a3cf897f8a05264928...636e4293e81c1e49b6730e011e2cdbc1029bd93a",
+      "new_head": "636e4293e81c1e49b6730e011e2cdbc1029bd93a",
+      "old_head": "c81615007d40e86051a302a3cf897f8a05264928",
+      "upstream": "NVIDIA/SkillSpector"
+    },
+    {
+      "compare_url": "https://github.com/NVIDIA/TensorRT-LLM/compare/72f85d772ffe9c01d8f92e9e7b59b501c325f05b...90cb078b9d9cd0978e117f52a7c6bdb998e3e5e2",
+      "new_head": "90cb078b9d9cd0978e117f52a7c6bdb998e3e5e2",
+      "old_head": "72f85d772ffe9c01d8f92e9e7b59b501c325f05b",
+      "upstream": "NVIDIA/TensorRT-LLM"
+    },
+    {
+      "compare_url": "https://github.com/triton-inference-server/server/compare/1751a2c84904ef21d7c424179891ab7e0f7f5a89...5e29eea8ab58c2f1777d3bdd28ff20f0adec5d8f",
+      "new_head": "5e29eea8ab58c2f1777d3bdd28ff20f0adec5d8f",
+      "old_head": "1751a2c84904ef21d7c424179891ab7e0f7f5a89",
+      "upstream": "triton-inference-server/server"
+    }
+  ],
+  "generated_at": "2026-11-28T15:29:10+00:00",
   "seeded": [],
   "unavailable_heads": []
 }

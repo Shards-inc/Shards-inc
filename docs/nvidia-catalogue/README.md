@@ -2,10 +2,10 @@
 
 Generated from verified GitHub fork-parent relationships.
 
-Last scan: 2026-11-15T23:01:18+00:00  
-NVIDIA-related forks: 495  
-Curated integration candidates: 30  
-Monitored forks: 22
+Last scan: 2026-11-28T15:29:10+00:00  
+NVIDIA-related forks: 846  
+Curated integration candidates: 29  
+Monitored forks: 21
 
 ## Browse
 
@@ -19,7 +19,6 @@ Monitored forks: 22
 | Priority | Fork | Upstream | Domain | Shards use |
 | --- | --- | --- | --- | --- |
 | P0 | [Shards-inc/NemoClaw](https://github.com/Shards-inc/NemoClaw) | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Agent OS | Agent sandbox orchestration; evaluate governable execution |
-| P0 | [Shards-inc/OpenShell](https://github.com/Shards-inc/OpenShell) | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | Agent OS | Sandbox runtime policies and agent isolation |
 | P0 | [Shards-inc/garak](https://github.com/Shards-inc/garak) | [NVIDIA/garak](https://github.com/NVIDIA/garak) | Kernel / Security | Adversarial testing of LLM applications |
 | P0 | [Shards-inc/Guardrails](https://github.com/Shards-inc/Guardrails) | [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Kernel / Security | Language-model guardrails alongside deterministic permits |
 | P0 | [Shards-inc/SkillSpector](https://github.com/Shards-inc/SkillSpector) | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Kernel / Security | Inspection of agent skills and provenance |
@@ -51,17 +50,17 @@ Monitored forks: 22
 
 ## Categories
 
-- Agent OS: 4
-- Inference: 73
-- Infrastructure: 81
-- Kernel / Security: 5
-- MCP / Agent Hub: 41
-- Models / Training: 66
-- RAG / Data: 45
-- Research / Other: 126
-- Robotics / Simulation: 54
+- Agent OS: 3
+- Inference: 96
+- Infrastructure: 123
+- Kernel / Security: 6
+- MCP / Agent Hub: 67
+- Models / Training: 87
+- RAG / Data: 84
+- Research / Other: 297
+- Robotics / Simulation: 83
 
 ## Monitoring
 
-New upstream SHA changes: 0.
+New upstream SHA changes: 20.
 No source code is merged automatically. SHA changes are review signals, not merge instructions.
